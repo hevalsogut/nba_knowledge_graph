@@ -8,7 +8,7 @@ from rdflib.namespace import OWL
 # ==========================================
 # 1. SETTINGS & CONFIGURATION
 # ==========================================
-HF_TOKEN = "***REMOVED***" # Enter your Hugging Face token here
+HF_TOKEN = os.environ.get("HF_TOKEN")  # set HF_TOKEN env var before running
 client = InferenceClient(token=HF_TOKEN)
 
 # Namespace URI MUST exactly match your Protégé ontology

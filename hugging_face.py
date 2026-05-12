@@ -1,7 +1,7 @@
+import os
 from huggingface_hub import InferenceClient
 
-# Token'ının 'hf_' ile başladığından emin ol
-HF_TOKEN = "***REMOVED***"
+HF_TOKEN = os.environ.get("HF_TOKEN")
 client = InferenceClient(token=HF_TOKEN)
 
 def extract_nba_triples(text):
