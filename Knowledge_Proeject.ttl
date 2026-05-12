@@ -1,0 +1,220 @@
+@prefix : <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Team ;
+           rdfs:range :Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/coaches
+:coaches rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Coach ;
+         rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasHomeArena
+:hasHomeArena rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Team ;
+              rdfs:range :Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasPlayer
+:hasPlayer rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :playsFor .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasRival
+:hasRival rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:SymmetricProperty ;
+          rdfs:domain :Team ;
+          rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/isDraftedBy
+:isDraftedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playPosition
+:playPosition rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Player ;
+              rdfs:range :Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playsFor
+:playsFor rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Player ;
+          rdfs:range :Team .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/attendance
+:attendance rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasCapacity .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/championshipsWon
+:championshipsWon rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Team ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "Championship number" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasCapacity
+:hasCapacity rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Arena ;
+             rdfs:range xsd:int ;
+             rdfs:label "Capacity of the arena" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Player ;
+           rdfs:range xsd:double ;
+           rdfs:label "player height" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasJerseyNumber
+:hasJerseyNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Player ;
+                 rdfs:range xsd:int ;
+                 rdfs:label "jersey number" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playerName
+:playerName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Player ;
+            rdfs:range xsd:string ;
+            rdfs:label "player name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Arena
+:Arena rdf:type owl:Class ;
+       rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center
+:Center rdf:type owl:Class ;
+        rdfs:subClassOf :Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Coach
+:Coach rdf:type owl:Class ;
+       rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Conference
+:Conference rdf:type owl:Class ;
+            rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/EasternConferance
+:EasternConferance rdf:type owl:Class ;
+                   rdfs:subClassOf :Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/EasternConferenceTeam
+:EasternConferenceTeam rdf:type owl:Class ;
+                       rdfs:subClassOf :Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Forward
+:Forward rdf:type owl:Class ;
+         rdfs:subClassOf :Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Game
+:Game rdf:type owl:Class ;
+      rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Guard
+:Guard rdf:type owl:Class ;
+       rdfs:subClassOf :Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NBA-Member
+:NBA-Member rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Player
+:Player rdf:type owl:Class ;
+        rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Team
+:Team rdf:type owl:Class ;
+      rdfs:subClassOf :NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/WesternConferance
+:WesternConferance rdf:type owl:Class ;
+                   rdfs:subClassOf :Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/WesternConferenceTeam
+:WesternConferenceTeam rdf:type owl:Class ;
+                       rdfs:subClassOf :Team .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/ChaseCenter
+:ChaseCenter rdf:type owl:NamedIndividual ,
+                      :Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/GoldenState
+:GoldenState rdf:type owl:NamedIndividual ,
+                      :Team ;
+             :hasHomeArena :ChaseCenter .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/LebronJames
+:LebronJames rdf:type owl:NamedIndividual ,
+                      :Forward ,
+                      :Player .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/StephanCurry
+:StephanCurry rdf:type owl:NamedIndividual ,
+                       :Guard ,
+                       :Player ;
+              :playsFor :GoldenState .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
