@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NBA Knowledge Graph Ontology – Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --border:    #30363d;
+      --accent:    #f7931a;
+      --accent2:   #e05c3a;
+      --text:      #e6edf3;
+      --muted:     #8b949e;
+      --code-bg:   #1c2128;
+      --tag-cls:   #3b82f6;
+      --tag-prop:  #22c55e;
+      --tag-inst:  #a855f7;
+      --tag-dtype: #f59e0b;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.65;}
+
+    /* ── Layout ────────────────────────────────────── */
+    .layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh;}
+
+    /* ── Sidebar ───────────────────────────────────── */
+    nav{background:var(--surface);border-right:1px solid var(--border);padding:24px 0;position:sticky;top:0;height:100vh;overflow-y:auto;}
+    nav .logo{padding:0 20px 20px;border-bottom:1px solid var(--border);margin-bottom:12px;}
+    nav .logo h1{font-size:15px;font-weight:600;color:var(--accent);letter-spacing:.02em;}
+    nav .logo small{color:var(--muted);font-size:11px;font-family:'IBM Plex Mono',monospace;}
+    nav ul{list-style:none;}
+    nav ul li a{display:block;padding:6px 20px;color:var(--muted);text-decoration:none;font-size:13px;transition:color .15s,background .15s;border-left:2px solid transparent;}
+    nav ul li a:hover,nav ul li a.active{color:var(--text);background:rgba(247,147,26,.07);border-left-color:var(--accent);}
+    nav .section-label{padding:14px 20px 4px;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+
+    /* ── Main ──────────────────────────────────────── */
+    main{padding:48px 60px;max-width:960px;}
+    h2{font-size:22px;font-weight:600;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    h2:first-of-type{margin-top:0;}
+    h3{font-size:15px;font-weight:600;color:var(--accent);margin:28px 0 10px;}
+    p{color:#cdd5de;margin-bottom:12px;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    /* ── Header card ───────────────────────────────── */
+    .header-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:28px 32px;margin-bottom:40px;position:relative;overflow:hidden;}
+    .header-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));}
+    .header-card h1{font-size:26px;font-weight:600;margin-bottom:6px;}
+    .header-card .uri{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);word-break:break-all;}
+    .meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;}
+    .meta-item{background:var(--code-bg);border-radius:6px;padding:10px 14px;}
+    .meta-item .label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:3px;}
+    .meta-item .value{font-size:13px;font-weight:600;}
+
+    /* ── Pill tags ─────────────────────────────────── */
+    .tag{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.03em;margin:2px;}
+    .tag-cls{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.3);}
+    .tag-prop{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.3);}
+    .tag-inst{background:rgba(168,85,247,.15);color:#d8b4fe;border:1px solid rgba(168,85,247,.3);}
+    .tag-dtype{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.3);}
+
+    /* ── Cards ─────────────────────────────────────── */
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:16px;overflow:hidden;}
+    .card-header{padding:14px 20px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}
+    .card-header:hover{background:rgba(255,255,255,.03);}
+    .card-header .name{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;}
+    .card-header .uri-small{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-left:10px;}
+    .card-body{padding:16px 20px;border-top:1px solid var(--border);}
+    .card-body table{width:100%;border-collapse:collapse;}
+    .card-body td{padding:6px 10px;font-size:13px;vertical-align:top;border-bottom:1px solid rgba(48,54,61,.5);}
+    .card-body td:first-child{color:var(--muted);white-space:nowrap;width:160px;}
+    .card-body td code{font-family:'IBM Plex Mono',monospace;font-size:12px;background:var(--code-bg);padding:1px 5px;border-radius:3px;}
+
+    /* ── Prefix table ──────────────────────────────── */
+    .prefix-table{width:100%;border-collapse:collapse;margin-bottom:24px;}
+    .prefix-table th{text-align:left;padding:8px 14px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border-bottom:1px solid var(--border);}
+    .prefix-table td{padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:12px;border-bottom:1px solid rgba(48,54,61,.4);}
+    .prefix-table tr:hover td{background:rgba(255,255,255,.02);}
+
+    /* ── SPARQL block ──────────────────────────────── */
+    .sparql-block{background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:16px 20px;margin:16px 0;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.7;overflow-x:auto;}
+    .sparql-block .kw{color:#ff7b72;}
+    .sparql-block .var{color:#79c0ff;}
+    .sparql-block .uri{color:#a5f3fc;}
+    .sparql-block .str{color:#a5d6ff;}
+    .sparql-block .comment{color:var(--muted);font-style:italic;}
+
+    /* ── Stats bar ─────────────────────────────────── */
+    .stats-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;}
+    .stat-box{flex:1;min-width:120px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 20px;text-align:center;}
+    .stat-box .num{font-size:32px;font-weight:600;color:var(--accent);font-family:'IBM Plex Mono',monospace;}
+    .stat-box .lbl{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em;}
+
+    /* ── Arrow toggle ──────────────────────────────── */
+    .arrow{color:var(--muted);font-size:12px;transition:transform .2s;}
+    .card.open .arrow{transform:rotate(90deg);}
+    .card-body{display:none;}
+    .card.open .card-body{display:block;}
+
+    /* ── Section anchor ────────────────────────────── */
+    section{scroll-margin-top:24px;}
+    .badge{display:inline-block;padding:1px 7px;border-radius:4px;font-size:11px;font-weight:600;margin-left:6px;}
+    .badge-sup{background:rgba(34,197,94,.15);color:#86efac;}
+    .badge-func{background:rgba(245,158,11,.15);color:#fcd34d;}
+    .badge-sym{background:rgba(168,85,247,.15);color:#d8b4fe;}
+    .badge-inv{background:rgba(239,68,68,.15);color:#fca5a5;}
+  </style>
+</head>
+<body>
+<div class="layout">
+
+<!-- ─── Sidebar ──────────────────────────────────────── -->
+<nav>
+  <div class="logo">
+    <h1>NBA Knowledge Graph</h1>
+    <small>Ontology Documentation v5.0</small>
+  </div>
+  <ul>
+    <li><a href="#overview" class="active">Overview</a></li>
+    <li><a href="#namespaces">Namespaces</a></li>
+    <li><a href="#statistics">Statistics</a></li>
+  </ul>
+  <div class="section-label">Schema (TBox)</div>
+  <ul>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#object-properties">Object Properties</a></li>
+    <li><a href="#datatype-properties">Datatype Properties</a></li>
+  </ul>
+  <div class="section-label">Instances (ABox)</div>
+  <ul>
+    <li><a href="#individuals">Named Individuals</a></li>
+    <li><a href="#teams">Teams</a></li>
+    <li><a href="#coaches">Coaches</a></li>
+    <li><a href="#players-sample">Players (Sample)</a></li>
+  </ul>
+  <div class="section-label">Usage</div>
+  <ul>
+    <li><a href="#competency">Competency Questions</a></li>
+    <li><a href="#sparql">SPARQL Examples</a></li>
+  </ul>
+</nav>
+
+<!-- ─── Main content ─────────────────────────────────── -->
+<main>
+
+  <!-- Overview -->
+  <section id="overview">
+    <div class="header-card">
+      <h1>NBA Knowledge Graph Ontology</h1>
+      <div class="uri">http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10</div>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="label">Version</div>
+          <div class="value">5.0 (Phase 2)</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Language</div>
+          <div class="value">OWL 2 / Turtle</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">License</div>
+          <div class="value">MIT</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Authors</div>
+          <div class="value">hevalsogut et al.</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Created</div>
+          <div class="value">2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Doc Generator</div>
+          <div class="value">Widoco-compatible</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Description</h2>
+    <p>This ontology models the professional NBA basketball domain as a formal OWL-based knowledge graph. It captures structural and relational knowledge about <strong>players</strong>, <strong>coaches</strong>, <strong>teams</strong>, <strong>arenas</strong>, and <strong>conferences</strong>, enabling machine-readable reasoning and SPARQL querying over sports data.</p>
+    <p>The ontology was developed using a neurosymbolic approach that combines LLM-based triple extraction from Wikipedia biographies with structured validation from the official NBA API, grounding the knowledge graph in verified factual data and minimising hallucinations.</p>
+    <p>Tools used: <strong>Protégé</strong> (modelling), <strong>RDFLib/Python</strong> (population), <strong>Meta-Llama-3-8B</strong> via Hugging Face (NLP extraction), <strong>SHACL</strong> (validation).</p>
+  </section>
+
+  <!-- Namespaces -->
+  <section id="namespaces">
+    <h2>Namespaces &amp; Prefixes</h2>
+    <table class="prefix-table">
+      <tr><th>Prefix</th><th>Namespace URI</th></tr>
+      <tr><td>nba:</td><td>http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/</td></tr>
+      <tr><td>owl:</td><td>http://www.w3.org/2002/07/owl#</td></tr>
+      <tr><td>rdf:</td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td></tr>
+      <tr><td>rdfs:</td><td>http://www.w3.org/2000/01/rdf-schema#</td></tr>
+      <tr><td>xsd:</td><td>http://www.w3.org/2001/XMLSchema#</td></tr>
+    </table>
+  </section>
+
+  <!-- Statistics -->
+  <section id="statistics">
+    <h2>Ontology Statistics</h2>
+    <div class="stats-row">
+      <div class="stat-box"><div class="num">15</div><div class="lbl">Classes</div></div>
+      <div class="stat-box"><div class="num">8</div><div class="lbl">Object Properties</div></div>
+      <div class="stat-box"><div class="num">6</div><div class="lbl">Datatype Properties</div></div>
+      <div class="stat-box"><div class="num">30</div><div class="lbl">Teams</div></div>
+      <div class="stat-box"><div class="num">28</div><div class="lbl">Coaches</div></div>
+      <div class="stat-box"><div class="num">500+</div><div class="lbl">Players</div></div>
+    </div>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes">
+    <h2>Classes <span class="tag tag-cls">TBox</span></h2>
+
+    <!-- NBA-Member -->
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:NBA-Member</span><span class="uri-small">Root Class</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>Description</td><td>Top-level class for all entities within the NBA domain. All domain classes are subclasses of this root.</td></tr>
+          <tr><td>Subclasses</td><td>
+            <span class="tag tag-cls">nba:Player</span>
+            <span class="tag tag-cls">nba:Coach</span>
+            <span class="tag tag-cls">nba:Team</span>
+            <span class="tag tag-cls">nba:Arena</span>
+            <span class="tag tag-cls">nba:Conference</span>
+            <span class="tag tag-cls">nba:Position</span>
+            <span class="tag tag-cls">nba:Game</span>
+          </td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Player -->
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Player</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Description</td><td>Represents a professional NBA basketball player. Instances carry data properties for jersey number, height, name, and object properties linking to their team and position.</td></tr>
+          <tr><td>Data Properties</td><td><code>nba:playerName</code>, <code>nba:hasHeight</code>, <code>nba:hasJerseyNumber</code></td></tr>
+          <tr><td>Object Properties</td><td><code>nba:playsFor</code>, <code>nba:playPosition</code>, <code>nba:isDraftedBy</code></td></tr>
+          <tr><td>Instance count</td><td>500+ (ABox)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Coach -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Coach</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Coach</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Description</td><td>Represents a head coach of an NBA team. Each coach is linked to exactly one team via <code>nba:coaches</code>.</td></tr>
+          <tr><td>Object Properties</td><td><code>nba:coaches</code></td></tr>
+          <tr><td>Data Properties</td><td><code>nba:playerName</code></td></tr>
+          <tr><td>Instance count</td><td>30 (one per franchise)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Team</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Subclasses</td><td><span class="tag tag-cls">nba:EasternConferenceTeam</span> <span class="tag tag-cls">nba:WesternConferenceTeam</span></td></tr>
+          <tr><td>Description</td><td>An NBA franchise. Links to its home arena, conference, and has a rivalry relationship with other teams.</td></tr>
+          <tr><td>Object Properties</td><td><code>nba:belongsTo</code>, <code>nba:hasHomeArena</code>, <code>nba:hasRival</code></td></tr>
+          <tr><td>Data Properties</td><td><code>nba:playerName</code>, <code>nba:championshipsWon</code></td></tr>
+          <tr><td>Instance count</td><td>31 (30 franchises + <code>nba:GoldenState</code> legacy individual)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- EasternConferenceTeam -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:EasternConferenceTeam</span><span class="uri-small">subClassOf nba:Team</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:EasternConferenceTeam</code></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Description</td><td>Structural subclass grouping all Eastern Conference franchises.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- WesternConferenceTeam -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:WesternConferenceTeam</span><span class="uri-small">subClassOf nba:Team</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:WesternConferenceTeam</code></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Description</td><td>Structural subclass grouping all Western Conference franchises.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Arena -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Arena</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Arena</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Description</td><td>The home venue of an NBA team. Stores capacity data. One arena per team via <code>nba:hasHomeArena</code> (functional property).</td></tr>
+          <tr><td>Data Properties</td><td><code>nba:hasCapacity</code>, <code>nba:attendance</code></td></tr>
+          <tr><td>Instance count</td><td>31 (one per franchise + <code>nba:ChaseCenter</code> as named individual)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Conference</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Conference</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Subclasses</td><td><span class="tag tag-cls">nba:EasternConferance</span> <span class="tag tag-cls">nba:WesternConferance</span></td></tr>
+          <tr><td>Description</td><td>One of the two NBA conferences (Eastern / Western). Teams are linked to their conference via <code>nba:belongsTo</code>.</td></tr>
+          <tr><td>Subclasses</td><td><span class="tag tag-cls">nba:EasternConferance</span> <span class="tag tag-cls">nba:WesternConferance</span> <em style="font-size:11px;color:var(--muted);">(⚠ "Conferance" is a typo in the source TTL — preserved for fidelity)</em></td></tr>
+          <tr><td>Instances</td><td><code>nba:Eastern_Conference</code> (type: EasternConferance), <code>nba:Western_Conference</code> (type: WesternConferance)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Position -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Position</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Position</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>Subclasses</td><td><span class="tag tag-cls">nba:Guard</span> <span class="tag tag-cls">nba:Forward</span> <span class="tag tag-cls">nba:Center</span></td></tr>
+          <tr><td>Description</td><td>Represents the playing position of a player on the court. Instances are class-level (Guard, Forward, Center), not value-level.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Game -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:Game</span><span class="uri-small">subClassOf nba:NBA-Member</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:Game</code></td></tr>
+          <tr><td>Type</td><td><span class="tag tag-cls">owl:Class</span></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:NBA-Member</code></td></tr>
+          <tr><td>Description</td><td>Reserved for future extension modelling individual game events and match results.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- EasternConferance -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:EasternConferance</span><span class="uri-small">subClassOf nba:Conference</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:EasternConferance</code></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:Conference</code></td></tr>
+          <tr><td>Note</td><td>Class name has a spelling error in source TTL ("Conferance" instead of "Conference"). Preserved as-is.</td></tr>
+          <tr><td>Instance</td><td><code>nba:Eastern_Conference</code></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- WesternConferance -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:WesternConferance</span><span class="uri-small">subClassOf nba:Conference</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>URI</td><td><code>nba:WesternConferance</code></td></tr>
+          <tr><td>SubClassOf</td><td><code>nba:Conference</code></td></tr>
+          <tr><td>Note</td><td>Same spelling error as EasternConferance. Both should be corrected to "Conference" in the next ontology revision.</td></tr>
+          <tr><td>Instance</td><td><code>nba:Western_Conference</code></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Object Properties -->
+  <section id="object-properties">
+    <h2>Object Properties <span class="tag tag-prop">TBox</span></h2>
+
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:playsFor</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Inverse of</td><td><code>nba:hasPlayer</code> <span class="badge badge-inv">inverse</span></td></tr>
+          <tr><td>Description</td><td>Links a player to the team they currently play for.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasPlayer</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Inverse of</td><td><code>nba:playsFor</code></td></tr>
+          <tr><td>Description</td><td>Inverse of <code>playsFor</code>. Enables querying all players on a team.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:coaches</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Coach</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Description</td><td>Links a head coach to the team they manage.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasHomeArena</span><span class="badge badge-func">functional</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Arena</code></td></tr>
+          <tr><td>Type</td><td><code>owl:FunctionalProperty</code></td></tr>
+          <tr><td>Description</td><td>Associates a team with its unique home arena. Declared functional — each team has at most one home arena.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:belongsTo</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Conference</code></td></tr>
+          <tr><td>Description</td><td>Links a team to its conference (Eastern or Western).</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:playPosition</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Position</code></td></tr>
+          <tr><td>Description</td><td>Links a player to their court position class (Guard, Forward, or Center).</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasRival</span><span class="badge badge-sym">symmetric</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Domain</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Range</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Type</td><td><code>owl:SymmetricProperty</code></td></tr>
+          <tr><td>Description</td><td>Captures historic or geographic rivalry between teams. Symmetric: if A rivals B then B rivals A.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:isDraftedBy</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Description</td><td>Links a player to the team that originally drafted them. Enables historic draft lineage queries.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datatype Properties -->
+  <section id="datatype-properties">
+    <h2>Datatype Properties <span class="tag tag-dtype">TBox</span></h2>
+
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:playerName</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>rdfs:label</td><td>"player name"</td></tr>
+          <tr><td>Domain</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Range</td><td><code>xsd:string</code></td></tr>
+          <tr><td>Description</td><td>The full name of the player, coach, or team. Reused across entity types for uniformity.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasHeight</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>rdfs:label</td><td>"player height"</td></tr>
+          <tr><td>Domain</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Range</td><td><code>xsd:double</code></td></tr>
+          <tr><td>Description</td><td>Height of the player in metres (e.g. 2.03 for Aaron Gordon). Values validated via NBA API.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasJerseyNumber</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>rdfs:label</td><td>"jersey number"</td></tr>
+          <tr><td>Domain</td><td><code>nba:Player</code></td></tr>
+          <tr><td>Range</td><td><code>xsd:int</code></td></tr>
+          <tr><td>Description</td><td>The player's jersey/shirt number as a non-negative integer.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:hasCapacity</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>rdfs:label</td><td>"Capacity of the arena"</td></tr>
+          <tr><td>Domain</td><td><code>nba:Arena</code></td></tr>
+          <tr><td>Range</td><td><code>xsd:int</code></td></tr>
+          <tr><td>Description</td><td>Maximum seating capacity of the arena.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:attendance</span><span class="badge badge-sup">subPropertyOf hasCapacity</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>SubPropertyOf</td><td><code>nba:hasCapacity</code></td></tr>
+          <tr><td>Description</td><td>Actual game attendance, as a subproperty of capacity. Enables attendance vs capacity comparisons.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">nba:championshipsWon</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>rdfs:label</td><td>"Championship number"</td></tr>
+          <tr><td>Domain</td><td><code>nba:Team</code></td></tr>
+          <tr><td>Range</td><td><code>xsd:int</code></td></tr>
+          <tr><td>Description</td><td>Total number of NBA championships won by the team in their history.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individuals -->
+  <section id="individuals">
+    <h2>Named Individuals <span class="tag tag-inst">ABox</span></h2>
+    <p>The ontology contains 560+ named individuals. Key instances are grouped below.</p>
+  </section>
+
+  <!-- Teams -->
+  <section id="teams">
+    <h3>Teams</h3>
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">All 30 NBA Franchises</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td><strong>Eastern Conference (15)</strong></td><td>
+            Atlanta Hawks · Boston Celtics · Brooklyn Nets · Charlotte Hornets · Chicago Bulls ·
+            Cleveland Cavaliers · Detroit Pistons · Indiana Pacers · Miami Heat · Milwaukee Bucks ·
+            New York Knicks · Orlando Magic · Philadelphia 76ers · Toronto Raptors · Washington Wizards
+          </td></tr>
+          <tr><td><strong>Western Conference (15)</strong></td><td>
+            Dallas Mavericks · Denver Nuggets · Golden State Warriors · Houston Rockets ·
+            Los Angeles Clippers · Los Angeles Lakers · Memphis Grizzlies · Minnesota Timberwolves ·
+            New Orleans Pelicans · Oklahoma City Thunder · Phoenix Suns · Portland Trail Blazers ·
+            Sacramento Kings · San Antonio Spurs · Utah Jazz
+          </td></tr>
+          <tr><td>Pattern</td><td>Each team: <code>a nba:Team, owl:NamedIndividual</code> with <code>nba:belongsTo</code>, <code>nba:hasHomeArena</code>, <code>nba:playerName</code></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches -->
+  <section id="coaches">
+    <h3>Head Coaches</h3>
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">Current Head Coaches (30 franchises)</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td>Brian Keefe</td><td>→ Washington Wizards</td></tr>
+          <tr><td>Charles Lee</td><td>→ Charlotte Hornets</td></tr>
+          <tr><td>Chauncey Billups</td><td>→ Portland Trail Blazers</td></tr>
+          <tr><td>Chris Finch</td><td>→ Minnesota Timberwolves</td></tr>
+          <tr><td>Darko Rajakovic</td><td>→ Toronto Raptors</td></tr>
+          <tr><td>David Adelman</td><td>→ Denver Nuggets</td></tr>
+          <tr><td>Doug Christie</td><td>→ Sacramento Kings</td></tr>
+          <tr><td>Erik Spoelstra</td><td>→ Miami Heat</td></tr>
+          <tr><td>Ime Udoka</td><td>→ Houston Rockets</td></tr>
+          <tr><td>J.B. Bickerstaff</td><td>→ Detroit Pistons</td></tr>
+          <tr><td>James Borrego</td><td>→ New Orleans Pelicans</td></tr>
+          <tr><td>Jason Kidd</td><td>→ Dallas Mavericks</td></tr>
+          <tr><td>JJ Redick</td><td>→ Los Angeles Lakers</td></tr>
+          <tr><td>Joe Mazzulla</td><td>→ Boston Celtics</td></tr>
+          <tr><td>Jordan Ott</td><td>→ Phoenix Suns</td></tr>
+          <tr><td>Jordi Fernandez</td><td>→ Brooklyn Nets</td></tr>
+          <tr><td>Kenny Atkinson</td><td>→ Cleveland Cavaliers</td></tr>
+          <tr><td>Mark Daigneault</td><td>→ Oklahoma City Thunder</td></tr>
+          <tr><td>Mike Brown</td><td>→ New York Knicks</td></tr>
+          <tr><td>Mitch Johnson</td><td>→ San Antonio Spurs</td></tr>
+          <tr><td>Nick Nurse</td><td>→ Philadelphia 76ers</td></tr>
+          <tr><td>Quin Snyder</td><td>→ Atlanta Hawks</td></tr>
+          <tr><td>Rick Carlisle</td><td>→ Indiana Pacers</td></tr>
+          <tr><td>Steve Kerr</td><td>→ Golden State Warriors</td></tr>
+          <tr><td>Taylor Jenkins</td><td>→ Milwaukee Bucks</td></tr>
+          <tr><td>Tuomas Iisalo</td><td>→ Memphis Grizzlies</td></tr>
+          <tr><td>Tyronn Lue</td><td>→ Los Angeles Clippers</td></tr>
+          <tr><td>Will Hardy</td><td>→ Utah Jazz</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Players sample -->
+  <section id="players-sample">
+    <h3>Players (Sample from ABox)</h3>
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header">
+        <span><span class="name">Sample Player Individuals</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr><td><strong>Player</strong></td><td><strong>Height (m)</strong></td><td><strong>Jersey</strong></td><td><strong>Position</strong></td><td><strong>Team</strong></td></tr>
+          <tr><td>Aaron Gordon</td><td>2.03</td><td>#32</td><td>Forward</td><td>Denver Nuggets</td></tr>
+          <tr><td>Aaron Holiday</td><td>1.83</td><td>#0</td><td>Guard</td><td>Houston Rockets</td></tr>
+          <tr><td>Aaron Nesmith</td><td>1.96</td><td>#23</td><td>Guard</td><td>Indiana Pacers</td></tr>
+          <tr><td>Aaron Wiggins</td><td>1.96</td><td>#21</td><td>Guard</td><td>Oklahoma City Thunder</td></tr>
+          <tr><td>A.J. Lawson</td><td>1.98</td><td>#0</td><td>Guard</td><td>Toronto Raptors</td></tr>
+          <tr><td>LeBron James</td><td>—</td><td>—</td><td>Forward</td><td>—</td></tr>
+          <tr><td>Stephen Curry</td><td>—</td><td>—</td><td>Guard</td><td>Golden State</td></tr>
+          <tr><td colspan="5"><em>…500+ total player instances in the ABox</em></td></tr>
+          <tr><td colspan="5" style="color:var(--muted);font-size:12px;">⚠ <strong>Note:</strong> <code>nba:LebronJames</code> and <code>nba:StephanCurry</code> exist as individuals but lack height/jersey data. <code>nba:StephanCurry</code> links to <code>nba:GoldenState</code> (a legacy duplicate of <code>nba:Golden_State_Warriors</code>). These are known inconsistencies in the current TTL that should be cleaned up.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competency Questions -->
+  <section id="competency">
+    <h2>Competency Questions</h2>
+    <p>The ontology is designed to answer the following competency questions via SPARQL:</p>
+    <div class="card open" onclick="toggleCard(this)">
+      <div class="card-header"><span class="name">CQ1 – Player Team &amp; Position</span><span class="arrow">▶</span></div>
+      <div class="card-body"><p><em>"What is the current professional team and playing position of a specific player?"</em></p></div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span class="name">CQ2 – Team Coach</span><span class="arrow">▶</span></div>
+      <div class="card-body"><p><em>"Who is the head coach responsible for a specific NBA organization?"</em></p></div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span class="name">CQ3 – Aggregate Statistics</span><span class="arrow">▶</span></div>
+      <div class="card-body"><p><em>"What is the average height of players in the Western Conference?"</em></p></div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span class="name">CQ4 – Arena &amp; Capacity</span><span class="arrow">▶</span></div>
+      <div class="card-body"><p><em>"Where is the home arena of a given team and what is its seating capacity?"</em></p></div>
+    </div>
+  </section>
+
+  <!-- SPARQL -->
+  <section id="sparql">
+    <h2>SPARQL Query Examples</h2>
+
+    <h3>CQ1 – Player team and position</h3>
+    <div class="sparql-block">
+<span class="kw">PREFIX</span> nba: <span class="uri">&lt;http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/&gt;</span>
+<span class="kw">SELECT</span> <span class="var">?player ?team ?position</span>
+<span class="kw">WHERE</span> {
+  <span class="var">?player</span> a nba:<span class="uri">Player</span> ;
+           nba:<span class="uri">playsFor</span>    <span class="var">?team</span> ;
+           nba:<span class="uri">playPosition</span> <span class="var">?position</span> .
+  <span class="kw">FILTER</span>(<span class="kw">CONTAINS</span>(<span class="kw">STR</span>(<span class="var">?player</span>), <span class="str">"Aaron_Gordon"</span>))
+}</div>
+
+    <h3>CQ2 – Head coach of a team</h3>
+    <div class="sparql-block">
+<span class="kw">PREFIX</span> nba: <span class="uri">&lt;http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/&gt;</span>
+<span class="kw">SELECT</span> <span class="var">?coach ?coachName</span>
+<span class="kw">WHERE</span> {
+  <span class="var">?coach</span> a nba:<span class="uri">Coach</span> ;
+          nba:<span class="uri">coaches</span>    nba:<span class="uri">Boston_Celtics</span> ;
+          nba:<span class="uri">playerName</span> <span class="var">?coachName</span> .
+}</div>
+
+    <h3>CQ3 – Average height in Western Conference</h3>
+    <div class="sparql-block">
+<span class="kw">PREFIX</span> nba: <span class="uri">&lt;http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/&gt;</span>
+<span class="kw">SELECT</span> (<span class="kw">AVG</span>(<span class="var">?height</span>) <span class="kw">AS</span> <span class="var">?avgHeight</span>)
+<span class="kw">WHERE</span> {
+  <span class="var">?player</span> a nba:<span class="uri">Player</span> ;
+           nba:<span class="uri">hasHeight</span>  <span class="var">?height</span> ;
+           nba:<span class="uri">playsFor</span>   <span class="var">?team</span> .
+  <span class="var">?team</span>   nba:<span class="uri">belongsTo</span>  nba:<span class="uri">Western_Conference</span> .
+}</div>
+
+    <h3>CQ4 – Arena and capacity</h3>
+    <div class="sparql-block">
+<span class="kw">PREFIX</span> nba: <span class="uri">&lt;http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/&gt;</span>
+<span class="kw">SELECT</span> <span class="var">?arena ?capacity</span>
+<span class="kw">WHERE</span> {
+  nba:<span class="uri">Golden_State_Warriors</span>  nba:<span class="uri">hasHomeArena</span> <span class="var">?arena</span> .
+  <span class="kw">OPTIONAL</span> { <span class="var">?arena</span> nba:<span class="uri">hasCapacity</span> <span class="var">?capacity</span> }
+}</div>
+  </section>
+
+</main>
+</div>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle('open');
+}
+// open all cards on page load for initial view
+document.querySelectorAll('.card').forEach(c => c.classList.add('open'));
+
+// highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks  = document.querySelectorAll('nav a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+}, { passive: true });
+</script>
+</body>
+</html>
