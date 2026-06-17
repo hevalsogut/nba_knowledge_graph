@@ -1,0 +1,558 @@
+@prefix nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10> a owl:Ontology .
+
+nba:A.J._Lawson a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Aaron_Gordon a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "32"^^xsd:int ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Aaron_Holiday a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Aaron_Nesmith a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Indiana_Pacers .
+
+nba:Aaron_Wiggins a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "21"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Brian_Keefe a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Washington_Wizards ;
+    nba:playerName "Brian Keefe" .
+
+nba:Center a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:Charles_Lee a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Charlotte_Hornets ;
+    nba:playerName "Charles Lee" .
+
+nba:Chauncey_Billups a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Portland_Trail_Blazers ;
+    nba:playerName "Chauncey Billups" .
+
+nba:Chicago_Bulls a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Chicago_Bulls_Arena ;
+    nba:playerName "Chicago Bulls" .
+
+nba:Chris_Finch a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Minnesota_Timberwolves ;
+    nba:playerName "Chris Finch" .
+
+nba:Darko_Rajakovic a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Toronto_Raptors ;
+    nba:playerName "Darko Rajakovic" .
+
+nba:David_Adelman a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Denver_Nuggets ;
+    nba:playerName "David Adelman" .
+
+nba:Doug_Christie a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Sacramento_Kings ;
+    nba:playerName "Doug Christie" .
+
+nba:EasternConferenceTeam a owl:Class ;
+    rdfs:subClassOf nba:Team .
+
+nba:Erik_Spoelstra a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Miami_Heat ;
+    nba:playerName "Erik Spoelstra" .
+
+nba:Game a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Ime_Udoka a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Houston_Rockets ;
+    nba:playerName "Ime Udoka" .
+
+nba:J.B._Bickerstaff a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Detroit_Pistons ;
+    nba:playerName "J.B. Bickerstaff" .
+
+nba:JJ_Redick a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Los_Angeles_Lakers ;
+    nba:playerName "JJ Redick" .
+
+nba:James_Borrego a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:New_Orleans_Pelicans ;
+    nba:playerName "James Borrego" .
+
+nba:Jason_Kidd a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Dallas_Mavericks ;
+    nba:playerName "Jason Kidd" .
+
+nba:Joe_Mazzulla a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Boston_Celtics ;
+    nba:playerName "Joe Mazzulla" .
+
+nba:Jordan_Ott a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Phoenix_Suns ;
+    nba:playerName "Jordan Ott" .
+
+nba:Jordi_Fernandez a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Brooklyn_Nets ;
+    nba:playerName "Jordi Fernandez" .
+
+nba:Kenny_Atkinson a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Cleveland_Cavaliers ;
+    nba:playerName "Kenny Atkinson" .
+
+nba:LebronJames a nba:Forward,
+        nba:Player,
+        owl:NamedIndividual .
+
+nba:Mark_Daigneault a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Oklahoma_City_Thunder ;
+    nba:playerName "Mark Daigneault" .
+
+nba:Mike_Brown a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:New_York_Knicks ;
+    nba:playerName "Mike Brown" .
+
+nba:Mitch_Johnson a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:San_Antonio_Spurs ;
+    nba:playerName "Mitch Johnson" .
+
+nba:Nick_Nurse a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Philadelphia_76ers ;
+    nba:playerName "Nick Nurse" .
+
+nba:Orlando_Magic a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Orlando_Magic_Arena ;
+    nba:playerName "Orlando Magic" .
+
+nba:Quin_Snyder a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Atlanta_Hawks ;
+    nba:playerName "Quin Snyder" .
+
+nba:Rick_Carlisle a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Indiana_Pacers ;
+    nba:playerName "Rick Carlisle" .
+
+nba:StephanCurry a nba:Guard,
+        nba:Player,
+        owl:NamedIndividual ;
+    nba:playsFor nba:GoldenState .
+
+nba:Steve_Kerr a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Golden_State_Warriors ;
+    nba:playerName "Steve Kerr" .
+
+nba:Taylor_Jenkins a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Milwaukee_Bucks ;
+    nba:playerName "Taylor Jenkins" .
+
+nba:Tuomas_Iisalo a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Memphis_Grizzlies ;
+    nba:playerName "Tuomas Iisalo" .
+
+nba:Tyronn_Lue a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Los_Angeles_Clippers ;
+    nba:playerName "Tyronn Lue" .
+
+nba:WesternConferenceTeam a owl:Class ;
+    rdfs:subClassOf nba:Team .
+
+nba:Will_Hardy a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Utah_Jazz ;
+    nba:playerName "Will Hardy" .
+
+nba:attendance a owl:DatatypeProperty ;
+    rdfs:subPropertyOf nba:hasCapacity .
+
+nba:belongsTo a owl:ObjectProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Conference ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:championshipsWon a owl:DatatypeProperty ;
+    rdfs:label "Championship number" ;
+    rdfs:domain nba:Team ;
+    rdfs:range xsd:int .
+
+nba:coaches a owl:ObjectProperty ;
+    rdfs:domain nba:Coach ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:hasHeight a owl:DatatypeProperty ;
+    rdfs:label "player height" ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:double .
+
+nba:hasHomeArena a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Arena ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:hasJerseyNumber a owl:DatatypeProperty ;
+    rdfs:label "jersey number" ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:int .
+
+nba:hasPlayer a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:inverseOf nba:playsFor .
+
+nba:hasRival a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:isDraftedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:playPosition a owl:ObjectProperty ;
+    rdfs:domain nba:Player ;
+    rdfs:range nba:Position ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:playerName a owl:DatatypeProperty ;
+    rdfs:label "player name" ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:string .
+
+nba:Atlanta_Hawks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Atlanta_Hawks_Arena ;
+    nba:playerName "Atlanta Hawks" .
+
+nba:Atlanta_Hawks_Arena a nba:Arena .
+
+nba:Boston_Celtics a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Boston_Celtics_Arena ;
+    nba:playerName "Boston Celtics" .
+
+nba:Boston_Celtics_Arena a nba:Arena .
+
+nba:Brooklyn_Nets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Brooklyn_Nets_Arena ;
+    nba:playerName "Brooklyn Nets" .
+
+nba:Brooklyn_Nets_Arena a nba:Arena .
+
+nba:Charlotte_Hornets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Charlotte_Hornets_Arena ;
+    nba:playerName "Charlotte Hornets" .
+
+nba:Charlotte_Hornets_Arena a nba:Arena .
+
+nba:ChaseCenter a nba:Arena,
+        owl:NamedIndividual .
+
+nba:Chicago_Bulls_Arena a nba:Arena .
+
+nba:Cleveland_Cavaliers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Cleveland_Cavaliers_Arena ;
+    nba:playerName "Cleveland Cavaliers" .
+
+nba:Cleveland_Cavaliers_Arena a nba:Arena .
+
+nba:Dallas_Mavericks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Dallas_Mavericks_Arena ;
+    nba:playerName "Dallas Mavericks" .
+
+nba:Dallas_Mavericks_Arena a nba:Arena .
+
+nba:Denver_Nuggets_Arena a nba:Arena .
+
+nba:Detroit_Pistons a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Detroit_Pistons_Arena ;
+    nba:playerName "Detroit Pistons" .
+
+nba:Detroit_Pistons_Arena a nba:Arena .
+
+nba:EasternConferance a owl:Class ;
+    rdfs:subClassOf nba:Conference .
+
+nba:GoldenState a nba:Team,
+        owl:NamedIndividual ;
+    nba:hasHomeArena nba:ChaseCenter .
+
+nba:Golden_State_Warriors a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Golden_State_Warriors_Arena ;
+    nba:playerName "Golden State Warriors" .
+
+nba:Golden_State_Warriors_Arena a nba:Arena .
+
+nba:Houston_Rockets_Arena a nba:Arena .
+
+nba:Indiana_Pacers_Arena a nba:Arena .
+
+nba:Los_Angeles_Clippers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Los_Angeles_Clippers_Arena ;
+    nba:playerName "Los Angeles Clippers" .
+
+nba:Los_Angeles_Clippers_Arena a nba:Arena .
+
+nba:Los_Angeles_Lakers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Los_Angeles_Lakers_Arena ;
+    nba:playerName "Los Angeles Lakers" .
+
+nba:Los_Angeles_Lakers_Arena a nba:Arena .
+
+nba:Memphis_Grizzlies a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Memphis_Grizzlies_Arena ;
+    nba:playerName "Memphis Grizzlies" .
+
+nba:Memphis_Grizzlies_Arena a nba:Arena .
+
+nba:Miami_Heat a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Miami_Heat_Arena ;
+    nba:playerName "Miami Heat" .
+
+nba:Miami_Heat_Arena a nba:Arena .
+
+nba:Milwaukee_Bucks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Milwaukee_Bucks_Arena ;
+    nba:playerName "Milwaukee Bucks" .
+
+nba:Milwaukee_Bucks_Arena a nba:Arena .
+
+nba:Minnesota_Timberwolves a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Minnesota_Timberwolves_Arena ;
+    nba:playerName "Minnesota Timberwolves" .
+
+nba:Minnesota_Timberwolves_Arena a nba:Arena .
+
+nba:New_Orleans_Pelicans a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:New_Orleans_Pelicans_Arena ;
+    nba:playerName "New Orleans Pelicans" .
+
+nba:New_Orleans_Pelicans_Arena a nba:Arena .
+
+nba:New_York_Knicks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:New_York_Knicks_Arena ;
+    nba:playerName "New York Knicks" .
+
+nba:New_York_Knicks_Arena a nba:Arena .
+
+nba:Oklahoma_City_Thunder_Arena a nba:Arena .
+
+nba:Orlando_Magic_Arena a nba:Arena .
+
+nba:Philadelphia_76ers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Philadelphia_76ers_Arena ;
+    nba:playerName "Philadelphia 76ers" .
+
+nba:Philadelphia_76ers_Arena a nba:Arena .
+
+nba:Phoenix_Suns a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Phoenix_Suns_Arena ;
+    nba:playerName "Phoenix Suns" .
+
+nba:Phoenix_Suns_Arena a nba:Arena .
+
+nba:Portland_Trail_Blazers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Portland_Trail_Blazers_Arena ;
+    nba:playerName "Portland Trail Blazers" .
+
+nba:Portland_Trail_Blazers_Arena a nba:Arena .
+
+nba:Sacramento_Kings a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Sacramento_Kings_Arena ;
+    nba:playerName "Sacramento Kings" .
+
+nba:Sacramento_Kings_Arena a nba:Arena .
+
+nba:San_Antonio_Spurs a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:San_Antonio_Spurs_Arena ;
+    nba:playerName "San Antonio Spurs" .
+
+nba:San_Antonio_Spurs_Arena a nba:Arena .
+
+nba:Toronto_Raptors_Arena a nba:Arena .
+
+nba:Utah_Jazz a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Utah_Jazz_Arena ;
+    nba:playerName "Utah Jazz" .
+
+nba:Utah_Jazz_Arena a nba:Arena .
+
+nba:Washington_Wizards a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Washington_Wizards_Arena ;
+    nba:playerName "Washington Wizards" .
+
+nba:Washington_Wizards_Arena a nba:Arena .
+
+nba:WesternConferance a owl:Class ;
+    rdfs:subClassOf nba:Conference .
+
+nba:hasCapacity a owl:DatatypeProperty ;
+    rdfs:label "Capacity of the arena" ;
+    rdfs:domain nba:Arena ;
+    rdfs:range xsd:int .
+
+nba:playsFor a owl:ObjectProperty ;
+    rdfs:domain nba:Player ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:Denver_Nuggets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Denver_Nuggets_Arena ;
+    nba:playerName "Denver Nuggets" .
+
+nba:Forward a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:Houston_Rockets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Houston_Rockets_Arena ;
+    nba:playerName "Houston Rockets" .
+
+nba:Indiana_Pacers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Indiana_Pacers_Arena ;
+    nba:playerName "Indiana Pacers" .
+
+nba:Oklahoma_City_Thunder a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Oklahoma_City_Thunder_Arena ;
+    nba:playerName "Oklahoma City Thunder" .
+
+nba:Toronto_Raptors a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Toronto_Raptors_Arena ;
+    nba:playerName "Toronto Raptors" .
+
+nba:Conference a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Position a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Guard a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:NBA-Member a owl:Class .
+
+owl:topObjectProperty rdfs:domain nba:Player ;
+    rdfs:range nba:Team .
+
+nba:Player a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Eastern_Conference a nba:EasternConferance,
+        owl:NamedIndividual .
+
+nba:Western_Conference a nba:WesternConferance,
+        owl:NamedIndividual .
+
+nba:Coach a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Arena a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Team a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+

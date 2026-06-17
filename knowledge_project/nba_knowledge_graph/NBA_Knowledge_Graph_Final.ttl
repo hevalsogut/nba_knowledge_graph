@@ -1,0 +1,1373 @@
+@prefix : <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10> a owl:Ontology .
+
+:A.J._Lawson a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Raptors_905,
+        :Toronto_Raptors .
+
+:AJ_Johnson a :Player ;
+    :playsFor : .
+
+:Aaron_Gordon a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "32"^^xsd:int ;
+    :playsFor :Denver_Nuggets,
+        :Orlando_Magic .
+
+:Aaron_Holiday a :Player ;
+    :hasHeight 1.83e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Houston_Rockets,
+        :Indiana_Pacers,
+        :Phoenix_Suns,
+        :Washington_Wizards .
+
+:Aaron_Nesmith a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "23"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Indiana_Pacers .
+
+:Aaron_Wiggins a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "21"^^xsd:int ;
+    :playsFor :Oklahoma_City_Thunder .
+
+:Adem_Bona a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "30"^^xsd:int ;
+    :playsFor :Philadelphia_76ers .
+
+:Adou_Thiero a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers .
+
+:Ajay_Mitchell a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playsFor :New_York_Knicks,
+        :Oklahoma_City_Thunder .
+
+:Al_Horford a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Boston_Celtics,
+        :Golden_State_Warriors,
+        :Oklahoma_City_Thunder,
+        :Philadelphia_76ers .
+
+:Alex_Antetokounmpo a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "29"^^xsd:int ;
+    :playsFor :Milwaukee_Bucks,
+        :Wisconsin_Herd .
+
+:Alex_Caruso a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Lakers,
+        :Oklahoma_City_Thunder .
+
+:Alex_Morales a :Player ;
+    :playsFor <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Prince_George's_Community_College>,
+        :Wagner_College .
+
+:Alex_Sarr a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :None_\(Washington_Wizards_is_the_only_NBA_team_mentioned\),
+        :Washington_Wizards .
+
+:Alperen_Sengun a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "28"^^xsd:int ;
+    :playsFor :Houston_Rockets .
+
+:Amen_Thompson a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playsFor :Houston_Rockets,
+        :Not_mentioned_in_the_text .
+
+:Amir_Coffey a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :Los_Angeles_Clippers .
+
+:Andre_Drummond a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :Chicago_Bulls,
+        :Cleveland_Cavaliers,
+        :Detroit_Pistons,
+        :Los_Angeles_Lakers,
+        :Philadelphia_76ers .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andre_Jackson_Jr.> a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "44"^^xsd:int ;
+    :playsFor :Milwaukee_Bucks .
+
+:Andrew_Nembhard a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :Indiana_Pacers .
+
+:Andrew_Wiggins a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "22"^^xsd:int ;
+    :playsFor :Cleveland_Cavaliers,
+        :Golden_State,
+        :Miami_Heat,
+        :Minnesota_Timberwolves .
+
+:Anthony_Black a :Player ;
+    :playPosition :None ;
+    :playsFor :None .
+
+:Ben_Saraf a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "77"^^xsd:int ;
+    :playsFor :Brooklyn_Nets .
+
+:Bilal_Coulibaly a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Indiana_Pacers,
+        :Washington_Wizards .
+
+:Bismack_Biyombo a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "18"^^xsd:int ;
+    :playsFor :Charlotte_Hornets,
+        :Memphis_Gr,
+        :Orlando_Magic,
+        :Phoenix_Suns,
+        :San_Antonio_Spurs,
+        :Toronto_Raptors .
+
+:Blake_Wesley a :Player ;
+    :playsFor :None_\(born_2003\) .
+
+:Bobby_Portis a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Milwaukee_Bucks .
+
+:Bogdan_Bogdanović a :Player ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Small_forward/Shooting_guard> ;
+    :playsFor :Fenerbahçe,
+        :Sacramento_Kings .
+
+:Bones_Hyland a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Denver_Nuggets,
+        :Minnesota_Timberwolves .
+
+:Bradley_Beal a :Player ;
+    :playsFor :Los_Angeles_Clippers,
+        :Phoenix_Suns,
+        :Washington_Wizards .
+
+:Branden_Carlson a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "15"^^xsd:int ;
+    :playsFor :Oklahoma_City_Blue,
+        :Oklahoma_City_Thunder .
+
+:Brandin_Podziemski a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :Illinois_Fighting_Illini,
+        :Santa_Clara_Broncos .
+
+:Brandon_Clarke a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "15"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies,
+        :Oklahoma_City_Thunder .
+
+:Brandon_Ingram a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :New_Orleans_Pelicans,
+        :Toronto_Raptors .
+
+:Brandon_Miller a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Small_Forward/Shooting_Guard> ;
+    :playsFor :University_of_Alabama .
+
+:Brandon_Williams a :Player ;
+    :playPosition : ;
+    :playsFor : .
+
+:Brian_Keefe a :Coach ;
+    :coaches :Washington_Wizards .
+
+:Brice_Sensabaugh a :Player ;
+    :playsFor :Utah_Jazz .
+
+:CJ_McCollum a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :New_Orleans_Pelicans,
+        :Portland_Trail_Blazers,
+        :Washington_Wizards .
+
+:Cam_Spencer a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies .
+
+:Cam_Whitmore a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playsFor :Houston_Rockets,
+        :Washington_Wizards .
+
+:Caris_LeVert a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Brooklyn_Nets,
+        :Cleveland_Cavaliers,
+        :Detroit_Pistons,
+        :Indiana_Pacers .
+
+:Cason_Wallace a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "22"^^xsd:int ;
+    :playsFor :Cason_David_Wallace,
+        :National_Basketball_Association_\(NBA\) .
+
+:Cedric_Coward a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "23"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Guard/Forward> ;
+    :playsFor :Eastern_Washington_Eagles,
+        :Washington_State_Cougars,
+        :Willamette_Bearcats .
+
+:Charles_Bassey a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "28"^^xsd:int ;
+    :playsFor :Golden_State_Warriors,
+        :Philadelphia_76ers .
+
+:Charles_Lee a :Coach ;
+    :coaches :Charlotte_Hornets .
+
+:Chauncey_Billups a :Coach ;
+    :coaches :Portland_Trail_Blazers .
+
+:Chaz_Lanier a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :Detroit_Pistons .
+
+:Chet_Holmgren a :Player ;
+    :hasHeight 2.16e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playPosition :center,
+        :power_forward ;
+    :playsFor :Oklahoma_City_Thunder .
+
+:Chris_Finch a :Coach ;
+    :coaches :Minnesota_Timberwolves .
+
+:Chris_Mañon a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "30"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers .
+
+:Christian_Braun a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playPosition :shooting_guard ;
+    :playsFor :Denver_Nuggets .
+
+:Christian_Koloko a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :College_Park_Skyhawks .
+
+:Chucky_Hepburn a :Player ;
+    :hasHeight 1.83e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playsFor :NBA_G_League,
+        :University_of_Louisville,
+        <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/University_of_Wisconsin–Madison> .
+
+:Clint_Capela a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "30"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Houston_Rockets .
+
+:Coby_White a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Charlotte_Hornets,
+        :Chicago_Bulls .
+
+:DaRon_Holmes_II a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "14"^^xsd:int ;
+    :playsFor :Denver_Nuggets .
+
+:Daeqwon_Plowden a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "29"^^xsd:int ;
+    :playsFor :Sacramento_Kings,
+        :Stockton_Kings .
+
+:Dalano_Banton a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Toronto_Raptors .
+
+:Dalton_Knecht a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers .
+
+:Damian_Lillard a :Player ;
+    :playsFor :Milwaukee_Bucks,
+        :Portland_Trail_Blazers .
+
+:Daniel_Gafford a :Player ;
+    :playsFor :Chicago_Bulls,
+        :Dallas_Mavericks .
+
+:Danny_Wolf a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :Brooklyn_Nets .
+
+:Darius_Garland a :Player ;
+    :playsFor :Los_Angeles_Clippers .
+
+:Darko_Rajakovic a :Coach ;
+    :coaches :Toronto_Raptors .
+
+:David_Adelman a :Coach ;
+    :coaches :Denver_Nuggets .
+
+:David_Roddy a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Denver_Nuggets,
+        :Grand_Rapids_Gold,
+        :Memphis_Grizzlies,
+        :Philadelphia_76ers,
+        :Phoenix_Suns .
+
+:Davion_Mitchell a :Player ;
+    :hasHeight 1.83e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playsFor :Miami_Heat,
+        :Sacramento_Kings .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Aaron_Fox> a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Sacramento_Kings,
+        :San_Antonio_Spurs .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Andre_Hunter> a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "15"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Cleveland_Cavaliers,
+        :Los_Angeles_Lakers,
+        :New_Orleans_Pelicans,
+        :Sacramento_Kings .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Anthony_Melton> a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Golden_State_Warriors,
+        :Houston_Rockets,
+        :Memphis_Grizzlies,
+        :Philadelphia_76ers,
+        :Phoenix_Suns .
+
+:Deandre_Ayton a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "5"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :Phoenix_Suns .
+
+:Dillon_Brooks a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Houston_Rockets,
+        :Memphis_Grizzlies,
+        :Phoenix_Suns .
+
+:Dillon_Jones a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "33"^^xsd:int ;
+    :playsFor :New_York_Knicks,
+        :Westchester_Knicks .
+
+:Domantas_Sabonis a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :Indiana_Pacers,
+        :Oklahoma_City_Thunder,
+        :Orlando_Magic,
+        :Sacramento_Kings .
+
+:Dominick_Barlow a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playsFor :Philadelphia_76ers .
+
+:Donovan_Clingan a :Player ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Portland_Trail_Blazers .
+
+:Donovan_Mitchell a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playsFor :Cleveland_Cavaliers .
+
+:Donte_DiVincenzo a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Golden_State_Warriors,
+        :Milwaukee_Bucks,
+        :Minnesota_Timberwolves,
+        :New_York_Knicks,
+        :Sacramento_Kings .
+
+:Dorian_Finney-Smith a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :Dallas_Mavericks,
+        :Houston_Rockets,
+        :Los_Angeles_Lakers .
+
+:Doug_Christie a :Coach ;
+    :coaches :Sacramento_Kings .
+
+:Doug_McDermott a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Dallas_Mavericks,
+        :Indiana_Pacers,
+        :New_York_Knicks,
+        :Oklahoma_City_Thunder,
+        :Sacramento_Kings .
+
+:Drake_Powell a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Brooklyn_Nets .
+
+:Draymond_Green a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "23"^^xsd:int ;
+    :playPosition :power_forward ;
+    :playsFor :Golden_State_Warriors .
+
+:Drew_Eubanks a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "19"^^xsd:int ;
+    :playsFor :Sacramento_Kings,
+        :San_Antonio_Spurs .
+
+:Drew_Timme a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "17"^^xsd:int ;
+    :playsFor :Coachella_Valley_Lakers,
+        :Los_Angeles_Lakers .
+
+:Dru_Smith a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "12"^^xsd:int ;
+    :playsFor :Miami_Heat .
+
+:Duncan_Robinson a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "55"^^xsd:int ;
+    :playsFor :Detroit_Pistons,
+        :Miami_Heat .
+
+:Dwight_Powell a :Player ;
+    :playsFor :Dallas_Mavericks .
+
+:Dylan_Cardwell a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "32"^^xsd:int ;
+    :playsFor :Sacramento_Kings .
+
+:Dylan_Harper a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :San_Antonio_Spurs .
+
+:EasternConferance a owl:Class ;
+    rdfs:subClassOf :Conference .
+
+:EasternConferenceTeam a owl:Class ;
+    rdfs:subClassOf :Team .
+
+:Erik_Spoelstra a :Coach ;
+    :coaches :Miami_Heat .
+
+:GG_Jackson a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies .
+
+:Game a owl:Class ;
+    rdfs:subClassOf :NBA-Member .
+
+:Gary_Payton_II a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Golden_State_Warriors .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gary_Trent_Jr.> a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "5"^^xsd:int ;
+    :playsFor :Dallas_Mavericks,
+        :Milwaukee_Bucks,
+        :Minnesota_Timberwolves,
+        :Portland_Trail_Blazers,
+        :Toronto_Raptors .
+
+:Giannis_Antetokounmpo a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "34"^^xsd:int ;
+    :playsFor :Bucks,
+        :Milwaukee_Bucks .
+
+:Gradey_Dick a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(not_mentioned)> ;
+    :playsFor :Toronto_Raptors .
+
+:Grayson_Allen a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies,
+        :Milwaukee_Bucks,
+        :Phoenix_Suns,
+        :Utah_Jazz .
+
+:Guerschon_Yabusele a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "28"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Chicago_Bulls,
+        :Philadelphia_76ers .
+
+:Gui_Santos a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "15"^^xsd:int ;
+    :playsFor :Golden_State_Warriors .
+
+:Harrison_Barnes a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "40"^^xsd:int ;
+    :playsFor :Golden_State_Warriors,
+        :San_Antonio_Spurs .
+
+:Harrison_Ingram a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "55"^^xsd:int ;
+    :playsFor :Austin_Spurs,
+        :San_Antonio_Spurs .
+
+:Hayden_Gray a :Player ;
+    :playsFor :Boston_Celtics,
+        :Utah_Jazz .
+
+:Haywood_Highsmith a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playsFor :Miami_Heat,
+        :Philadelphia_76ers,
+        :Phoenix_Suns .
+
+:Herbert_Jones a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans .
+
+:Hunter_Dickinson a :Player ;
+    :hasHeight 2.16e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans .
+
+:Ime_Udoka a :Coach ;
+    :coaches :Houston_Rockets .
+
+:J.B._Bickerstaff a :Coach ;
+    :coaches :Detroit_Pistons .
+
+:JD_Davison a :Player ;
+    :hasHeight 1.85e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Houston_Rockets .
+
+:JJ_Redick a :Coach ;
+    :coaches :Los_Angeles_Lakers .
+
+:Ja_Morant a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "12"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jabari_Smith_Jr.> a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "10"^^xsd:int ;
+    :playsFor :Houston_Rockets .
+
+:Jabari_Walker a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "33"^^xsd:int ;
+    :playsFor :Philadelphia_76ers,
+        :Portland_Trail_Blazers .
+
+:Jaden_Hardy a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Washington_Wizards .
+
+:Jaden_McDaniels a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Minnesota_Timberwolves .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jae'Sean_Tate> a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Houston_Rockets .
+
+:Jahmir_Young a :Player ;
+    :hasHeight 1.83e+00 ;
+    :hasJerseyNumber "17"^^xsd:int ;
+    :playsFor :Miami_Heat .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaime_Jaquez_Jr.> a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :Miami_Heat .
+
+:Jake_LaRavia a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "12"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :Memphis_Grizzlies,
+        :Minnesota_Timberwolves .
+
+:Jakob_Poeltl a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "19"^^xsd:int ;
+    :playsFor :San_Antonio_Spurs,
+        :Toronto_Raptors .
+
+:Jalen_Brunson a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :Dallas_Mavericks,
+        :New_York_Knicks .
+
+:Jalen_Duren a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Detroit_Pistons .
+
+:Jalen_Green a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Houston_Rockets,
+        :Phoenix_Suns .
+
+:Jalen_Pickett a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playsFor :Amateur_Athletic_Union_\(AAU\),
+        :National_Collegiate_Athletic_Association_\(NCAA\) .
+
+:Jalen_Slawson a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "18"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :National_Basketball_Association_\(NBA\) .
+
+:Jalen_Smith a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Indiana_Pacers,
+        :Phoenix_Suns .
+
+:Jalen_Suggs a :Player ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Orlando_Magic .
+
+:James_Borrego a :Coach ;
+    :coaches :New_Orleans_Pelicans .
+
+:Jason_Kidd a :Coach ;
+    :coaches :Dallas_Mavericks .
+
+:Javon_Small a :Player ;
+    :hasHeight 1.85e+00 ;
+    :hasJerseyNumber "10"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Javon_Unique_Small .
+
+:Javonte_Green a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "31"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Chicago_Bulls,
+        :Cleveland_Cavaliers,
+        :Detroit_Pistons,
+        :New_Orleans_Pelicans .
+
+:Jaxson_Hayes a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :New_Orleans_Pelicans .
+
+:Jay_Huff a :Player ;
+    :hasHeight 2.16e+00 ;
+    :hasJerseyNumber "32"^^xsd:int ;
+    :playsFor :Denver_Nuggets,
+        :Indiana_Pacers,
+        :Los_Angeles_Lakers,
+        :Memphis_Grizzlies,
+        :Washington_Wizards .
+
+:Jaylen_Brown a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playPosition :Shooting_Guard,
+        :Small_Forward ;
+    :playsFor :Boston_Celtics .
+
+:Jaylen_Clark a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "22"^^xsd:int ;
+    :playsFor :Minnesota_Timberwolves .
+
+:Jaylen_Wells a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Memphis_Grizzlies .
+
+:Jaylin_Williams a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "6"^^xsd:int ;
+    :playsFor :Denver_Nuggets,
+        :Oklahoma_City_Thunder .
+
+:Jaylon_Tyson a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :Cleveland_Cavaliers .
+
+:Jayson_Kent a :Player .
+
+:Jayson_Tatum a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Boston_Celtics .
+
+:Jeff_Green a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "32"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Orlando_Magic .
+
+:Jerami_Grant a :Player ;
+    :playsFor :Denver_Nuggets,
+        :Detroit_Pistons,
+        :Oklahoma_City_Thunder,
+        :Philadelphia_76ers,
+        :Portland_Trail_Blazers .
+
+:Jeremiah_Fears a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans .
+
+:Joe_Mazzulla a :Coach ;
+    :coaches :Boston_Celtics .
+
+:John_Poulakidas a :Player ;
+    :playsFor :Dallas_Mavericks,
+        :Texas_Legends .
+
+:John_Tonje a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Maine_Celtics .
+
+:Jonas_Valančiūnas a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "17"^^xsd:int ;
+    :playsFor :,
+        :Denver_Nuggets,
+        :Memphis_Grizzlies,
+        :New_Orleans_Pelicans,
+        :Toronto_Raptors,
+        :Washington_Wizards .
+
+:Jonathan_Isaac a :Player ;
+    :playsFor :Orlando_Magic .
+
+:Jonathan_Kuminga a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :Golden_State_Warriors .
+
+:Jonathan_Mogbo a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Toronto_Raptors .
+
+:Jordan_Clarkson a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :Cleveland_Cavaliers,
+        :Los_Angeles_Lakers,
+        :New_York_Knicks,
+        :Utah_Jazz .
+
+:Jordan_Goodwin a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "23"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Phoenix_Suns .
+
+:Jordan_Hawkins a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans .
+
+:Jordan_McLaughlin a :Player ;
+    :hasHeight 1.8e+00 ;
+    :hasJerseyNumber "0"^^xsd:int ;
+    :playsFor :San_Antonio_Spurs .
+
+:Jordan_Ott a :Coach ;
+    :coaches :Phoenix_Suns .
+
+:Jordan_Poole a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Golden_State_Warriors,
+        :New_Orleans_Pelicans,
+        :Washington_Wizards .
+
+:Jordan_Walsh a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "27"^^xsd:int ;
+    :playsFor :Boston_Celtics .
+
+:Jordi_Fernandez a :Coach ;
+    :coaches :Brooklyn_Nets .
+
+:Josh_Giddey a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Oklahoma_City_Thunder .
+
+:Josh_Hart a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :New_Orleans_Pelicans,
+        :New_York_Knicks,
+        :Portland_Trail_Blazers .
+
+:Kasparas_Jakučionis a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :FC_Barcelona,
+        :Perlas_Vilnius .
+
+:Kawhi_Leonard a :Player ;
+    :playsFor :Indiana_Pacers,
+        :Los_Angeles_Clippers,
+        :San_Antonio_Spurs .
+
+:Keaton_Wallace a :Player ;
+    :playsFor :Atlanta_Hawks .
+
+:Keegan_Murray a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "13"^^xsd:int ;
+    :playsFor :Iowa_Hawkeyes,
+        :Sacramento_Kings .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kel'el_Ware> a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playsFor :Miami_Heat .
+
+:Keldon_Johnson a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :San_Antonio_Spurs .
+
+:Kelly_Olynyk a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Dallas_Mavericks,
+        :Detroit_Pistons,
+        :Houston_Rockets,
+        :Miami_Heat,
+        :New_Orleans_Pelicans .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kelly_Oubre_Jr.> a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :,
+        :Atlanta_Hawks,
+        :Golden_State_Warriors,
+        :Philadelphia_76ers,
+        :Phoenix_Suns,
+        :Washington_Wizards .
+
+:Kenny_Atkinson a :Coach ;
+    :coaches :Cleveland_Cavaliers .
+
+:Kenrich_Williams a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "34"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans,
+        :Oklahoma_City_Thunder .
+
+:Kentavious_Caldwell-Pope a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "3"^^xsd:int ;
+    :playsFor :Denver_Nuggets,
+        :Detroit_Pistons,
+        :Los_Angeles_Lakers,
+        :Memphis_Gr,
+        :Orlando_Magic,
+        :Washington_Wizards .
+
+:Keshon_Gilbert a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :College_Park_Skyhawks .
+
+:Kevin_Durant a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playsFor :Houston_Rockets .
+
+:Kevin_Huerter a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "27"^^xsd:int ;
+    :playsFor :Detroit_Pistons .
+
+:Kevin_Love a :Player ;
+    :playsFor :Cleveland_Cavaliers,
+        :Memphis_Grizzlies,
+        :Minnesota_Timberwolves,
+        :Utah_Jazz .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kevin_McCullar_Jr.> a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :New_York_Knicks,
+        :Westchester_Knicks .
+
+:Kris_Dunn a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :Chicago_Bulls,
+        :Los_Angeles_Clippers,
+        :Minnesota_Timberwolves .
+
+:Kris_Murray a :Player ;
+    :playsFor :Portland_Trail_Blazers,
+        :Sacramento_Kings .
+
+:Kyle_Filipowski a :Player ;
+    :playsFor :Utah_Jazz .
+
+:Kyle_Kuzma a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "18"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers,
+        :Milwaukee_Bucks,
+        :Washington_Wizards .
+
+:Kyle_Lowry a :Player ;
+    :hasHeight 1.83e+00 ;
+    :hasJerseyNumber "7"^^xsd:int ;
+    :playsFor :Philadelphia_76ers,
+        :Toronto_Raptors .
+
+:Kyrie_Irving a :Player ;
+    :playsFor :Boston_Celtics,
+        :Brooklyn_Nets,
+        :Cleveland_Cavaliers,
+        :Dallas_Mavericks .
+
+:LaMelo_Ball a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "1"^^xsd:int ;
+    :playsFor :Charlotte_Hornets,
+        :Illawarra_Hawks .
+
+:Lachlan_Olbrich a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "47"^^xsd:int ;
+    :playsFor :Illawarra_Hawks,
+        :Southern_Tigers,
+        :West_Adelaide_Bearcats .
+
+:Landry_Shamet a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "44"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :Los_Angeles_Clippers,
+        :New_York_Knicks,
+        :Phoenix_Suns,
+        :Washington_Wizards .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Larry_Nance_Jr.> a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "22"^^xsd:int ;
+    :playsFor :Atlanta_Hawks,
+        :Cleveland_Cavaliers,
+        :Los_Angeles_Lakers,
+        :New_Orleans_Pelicans,
+        :Portland_Trail_Blazers .
+
+:Lauri_Markkanen a :Player ;
+    :playsFor :Chicago_Bulls,
+        :Cleveland_Cavaliers,
+        :Minnesota_Timberwolves,
+        :Utah_Jazz .
+
+:LeBron_James a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "23"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers .
+
+:Leaky_Black a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "12"^^xsd:int ;
+    :playsFor :Capital_City_Go-Go,
+        :Charlotte_Hornets,
+        :Washington_Wizards .
+
+:LebronJames a :Forward,
+        :Player,
+        owl:NamedIndividual .
+
+:Leonard_Miller a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :McGill_Redbirds .
+
+:Liam_McNeeley a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "33"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(Not_mentioned_in_the_text)> ;
+    :playsFor :Charlotte_Hornets .
+
+:Marcus_Sasser a :Player ;
+    :hasHeight 1.85e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playsFor :Detroit_Pistons .
+
+:Marcus_Smart a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "36"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Los_Angeles_Lakers,
+        :Memphis_Grizzlies,
+        :Washington_Wizards .
+
+:Mark_Daigneault a :Coach ;
+    :coaches :Oklahoma_City_Thunder .
+
+:Marvin_Bagley_III a :Player ;
+    :playsFor :Dallas_Mavericks,
+        :Detroit_Pistons,
+        :Memphis_Grizzlies,
+        :Sacramento_Kings,
+        :Washington_Wizards .
+
+:Mason_Plumlee a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "45"^^xsd:int ;
+    :playPosition :center ;
+    :playsFor :Brooklyn_Nets,
+        :San_Antonio_Spurs .
+
+:Matisse_Thybulle a :Player ;
+    :playsFor :Philadelphia_76ers,
+        :Portland_Trail_Blazers .
+
+:Max_Christie a :Player ;
+    :playsFor :Dallas_Mavericks .
+
+:Max_Shulga a :Player ;
+    :hasHeight 1.93e+00 ;
+    :hasJerseyNumber "44"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Orlando_Magic .
+
+:Max_Strus a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "2"^^xsd:int ;
+    :playsFor :Chicago_Bulls,
+        :Cleveland_Cavaliers,
+        :Miami_Heat .
+
+:Maxi_Kleber a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "14"^^xsd:int ;
+    :playsFor :Dallas_Mavericks,
+        :Los_Angeles_Lakers .
+
+:Maxime_Raynaud a :Player ;
+    :hasHeight 2.16e+00 ;
+    :hasJerseyNumber "42"^^xsd:int ;
+    :playsFor :Sacramento_Kings .
+
+:Micah_Peavy a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "14"^^xsd:int ;
+    :playsFor :New_Orleans_Pelicans,
+        :Washington_Wizards .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Michael_Porter_Jr.> a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "17"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :Denver_Nuggets .
+
+:Mikal_Bridges a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "25"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :New_York_Knicks,
+        :Philadelphia_76ers,
+        :Phoenix_Suns .
+
+:Mike_Brown a :Coach ;
+    :coaches :New_York_Knicks .
+
+:Mitch_Johnson a :Coach ;
+    :coaches :San_Antonio_Spurs .
+
+:Neemias_Queta a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "88"^^xsd:int ;
+    :playPosition :Center ;
+    :playsFor :Boston_Celtics .
+
+:Nic_Claxton a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "33"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :Brooklyn_Nets .
+
+:Nick_Nurse a :Coach ;
+    :coaches :Philadelphia_76ers .
+
+:Nick_Richards a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "13"^^xsd:int ;
+    :playsFor :Chicago_Bulls .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Smith_Jr.> a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :Los_Angeles_Lakers .
+
+:Nickeil_Alexander-Walker a :Player ;
+    :playsFor :Atlanta_Hawks,
+        :Minnesota_Timberwolves,
+        :New_Orleans_Pelicans,
+        :Utah_Jazz .
+
+:Nicolas_Batum a :Player ;
+    :playPosition : ;
+    :playsFor :Le_Mans_Sarthe,
+        :Los_Angeles_Clippers .
+
+:Nikola_Jokić a :Player ;
+    :hasHeight 2.11e+00 ;
+    :hasJerseyNumber "15"^^xsd:int ;
+    :playPosition :center ;
+    :playsFor :Denver_Nuggets .
+
+:Nikola_Jović a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "5"^^xsd:int ;
+    :playsFor :Miami_Heat .
+
+:Nikola_Topić a :Player ;
+    :hasHeight 1.98e+00 ;
+    :hasJerseyNumber "44"^^xsd:int ;
+    :playPosition :point_guard ;
+    :playsFor :Oklahoma_City_Thunder .
+
+:Nikola_Vučević a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "4"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Chicago_Bulls,
+        :Los_Angeles_Lakers,
+        :Orlando_Magic,
+        :Philadelphia_76ers .
+
+:Nique_Clifford a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "5"^^xsd:int ;
+    :playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/(no_specific_position_mentioned)> ;
+    :playsFor :Sacramento_Kings .
+
+:Noa_Essengue a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :Chicago_Bulls .
+
+:Noah_Clowney a :Player ;
+    :hasHeight 2.08e+00 ;
+    :hasJerseyNumber "21"^^xsd:int ;
+    :playPosition :Power_Forward ;
+    :playsFor :Brooklyn_Nets .
+
+:Noah_Penda a :Player ;
+    :playsFor :Orlando_Magic .
+
+:Nolan_Traore a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "88"^^xsd:int ;
+    :playsFor :Brooklyn_Nets .
+
+:Norchad_Omier a :Player ;
+    :playsFor :Los_Angeles_Clippers .
+
+:Norman_Powell a :Player ;
+    :hasHeight 1.91e+00 ;
+    :hasJerseyNumber "24"^^xsd:int ;
+    :playsFor :Miami_Heat,
+        :Milwaukee_Bucks,
+        :Toronto_Raptors .
+
+:PJ_Hall a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "16"^^xsd:int ;
+    :playsFor :Charlotte_Hornets,
+        :Greensboro_Swarm .
+
+:Pat_Connaughton a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "21"^^xsd:int ;
+    :playsFor :Brooklyn_Nets,
+        :Charlotte_Hornets,
+        :Milwaukee_Bucks,
+        :Portland_Trail_Blazers .
+
+:Pat_Spencer a :Player ;
+    :hasHeight 1.88e+00 ;
+    :hasJerseyNumber "61"^^xsd:int ;
+    :playPosition : ;
+    :playsFor :Golden_State_Warriors .
+
+:Paul_George a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :Indiana_Pacers,
+        :Los_Angeles_Clippers,
+        :Oklahoma_City_Thunder,
+        :Philadelphia_76ers .
+
+:Payton_Pritchard a :Player ;
+    :hasHeight 1.85e+00 ;
+    :hasJerseyNumber "11"^^xsd:int ;
+    :playsFor :Boston_Celtics,
+        :Celtics .
+
+:Payton_Sandfort a :Player ;
+    :hasHeight 2.01e+00 ;
+    :hasJerseyNumber "14"^^xsd:int ;
+    :playsFor :Oklahoma_City_Blue,
+        :Oklahoma_City_Thunder .
+
+:Pelle_Larsson a :Player ;
+    :hasHeight 1.96e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :Arizona_Wildcats,
+        :Miami_Heat,
+        :Utah_Utes .
+
+:Pete_Nance a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "35"^^xsd:int ;
+    :playsFor :Cleveland_Cavaliers,
+        :Milwaukee_Bucks,
+        :Philadelphia_76ers .
+
+:Peyton_Watson a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "8"^^xsd:int ;
+    :playsFor :College_basketball_team .
+
+:Precious_Achiuwa a :Player ;
+    :hasHeight 2.03e+00 ;
+    :hasJerseyNumber "9"^^xsd:int ;
+    :playsFor :Miami_Heat,
+        :New_York_Knicks,
+        :Sacramento_Kings,
+        :Toronto_Raptors .
+
+:Quin_Snyder a :Coach ;
+    :coaches :Atlanta_Hawks .
+
+:Quinten_Post a :Player ;
+    :hasHeight 2.13e+00 ;
+    :hasJerseyNumber "21"^^xsd:int ;
+    :playsFor :Golden_State_Warriors .
+
+:Rasheer_Fleming a :Player ;
+    :hasHeight 2.06e+00 ;
+    :hasJerseyNumber "20"^^xsd:int ;
+    :playsFor :Minnesota_Timberwolves,
+        :Phoenix_Suns .
+
+:RayJ_Dennis a :Player ;
+    :playsFor 

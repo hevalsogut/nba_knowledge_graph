@@ -1,0 +1,6 @@
+@prefix nba: <http://www.semanticweb.org/nba-ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nba:Stephen_Curry nba:hasHeight "1.88"^^xsd:float ;
+    nba:playsFor nba:Golden_State_Warriors .
+
