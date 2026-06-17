@@ -1,7 +1,9 @@
+import os
+from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
 
-# Token'ının 'hf_' ile başladığından emin ol
-HF_TOKEN = "YOUR_HF_TOKEN_HERE"
+load_dotenv()
+HF_TOKEN = os.getenv("HF_TOKEN")
 client = InferenceClient(token=HF_TOKEN)
 
 def extract_nba_triples(text):

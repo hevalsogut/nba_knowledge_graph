@@ -1,6 +1,7 @@
 import os
 import time
 import re
+from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
 from nba_api.stats.static import teams
 from nba_api.stats.endpoints import commonteamroster
@@ -9,7 +10,8 @@ from rdflib import Graph, URIRef, Literal, Namespace, RDF, OWL, XSD
 # ==========================================
 # 1. SETTINGS & CONFIGURATION
 # ==========================================
-HF_TOKEN = "YOUR_HF_TOKEN_HERE"
+load_dotenv()
+HF_TOKEN = os.getenv("HF_TOKEN")
 client = InferenceClient(token=HF_TOKEN)
 
 NBA_URI = "http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/"

@@ -2,13 +2,15 @@ import os
 import time
 import re
 from huggingface_hub import InferenceClient
+from dotenv import load_dotenv
 from rdflib import Graph, URIRef, Literal, Namespace, RDF, XSD
 from rdflib.namespace import OWL
 
 # ==========================================
 # 1. SETTINGS & CONFIGURATION
 # ==========================================
-HF_TOKEN = "YOUR_HF_TOKEN_HERE" # Enter your Hugging Face token here
+load_dotenv()
+HF_TOKEN = os.getenv("HF_TOKEN") # Enter your Hugging Face token here
 client = InferenceClient(token=HF_TOKEN)
 
 # Namespace URI MUST exactly match your Protégé ontology
