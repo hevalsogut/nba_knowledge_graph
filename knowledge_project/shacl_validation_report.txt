@@ -1,0 +1,1175 @@
+CONFORMS: True
+
+Validation Report
+Conforms: True
+Results (195):
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Aaron_Fox>
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Andre_Hunter>
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Anthony_Melton>
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jae'Sean_Tate>
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kel'el_Ware>
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:AJ_Johnson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Adem_Bona
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Adou_Thiero
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Ajay_Mitchell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Al_Horford
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Alex_Antetokounmpo
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Alex_Caruso
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Alex_Sarr
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Alperen_Sengun
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Amen_Thompson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Amir_Coffey
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Andre_Drummond
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Andre_Jackson_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Andrew_Nembhard
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Andrew_Wiggins
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Anthony_Black
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Ben_Saraf
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Bilal_Coulibaly
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Bismack_Biyombo
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Blake_Wesley
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Bobby_Portis
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Bones_Hyland
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Bradley_Beal
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Branden_Carlson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Brandin_Podziemski
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Brandon_Clarke
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Brandon_Ingram
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Brandon_Williams
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Brice_Sensabaugh
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:CJ_McCollum
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Cam_Spencer
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Cam_Whitmore
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Caris_LeVert
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Cason_Wallace
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Charles_Bassey
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Chaz_Lanier
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Chris_Mañon
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Christian_Koloko
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Chucky_Hepburn
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Clint_Capela
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Coby_White
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:DaRon_Holmes_II
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Daeqwon_Plowden
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dalano_Banton
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dalton_Knecht
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Damian_Lillard
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Daniel_Gafford
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Danny_Wolf
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Darius_Garland
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:David_Roddy
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Davion_Mitchell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Deandre_Ayton
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dillon_Brooks
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dillon_Jones
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Domantas_Sabonis
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dominick_Barlow
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Donovan_Clingan
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Donovan_Mitchell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Donte_DiVincenzo
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dorian_Finney-Smith
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Doug_McDermott
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Drake_Powell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Drew_Eubanks
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Drew_Timme
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dru_Smith
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Duncan_Robinson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dwight_Powell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dylan_Cardwell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Dylan_Harper
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:GG_Jackson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Gary_Payton_II
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Gary_Trent_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Giannis_Antetokounmpo
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Gradey_Dick
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Grayson_Allen
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Guerschon_Yabusele
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Gui_Santos
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Harrison_Barnes
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Harrison_Ingram
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Haywood_Highsmith
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Herbert_Jones
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Hunter_Dickinson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:JD_Davison
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Ja_Morant
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jabari_Smith_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jabari_Walker
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaden_Hardy
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaden_McDaniels
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jahmir_Young
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaime_Jaquez_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jake_LaRavia
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jakob_Poeltl
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Brunson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Duren
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Green
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Pickett
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Slawson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Smith
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jalen_Suggs
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Javon_Small
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Javonte_Green
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaxson_Hayes
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jay_Huff
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaylen_Clark
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaylen_Wells
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaylin_Williams
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jaylon_Tyson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jayson_Tatum
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jeff_Green
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jerami_Grant
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jeremiah_Fears
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:John_Tonje
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jonas_Valančiūnas
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jonathan_Isaac
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jonathan_Kuminga
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jonathan_Mogbo
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_Clarkson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_Goodwin
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_Hawkins
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_McLaughlin
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_Poole
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Jordan_Walsh
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Josh_Giddey
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Josh_Hart
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kasparas_Jakučionis
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kawhi_Leonard
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Keaton_Wallace
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Keegan_Murray
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Keldon_Johnson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kelly_Olynyk
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kelly_Oubre_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kenrich_Williams
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kentavious_Caldwell-Pope
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kevin_Durant
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kevin_Huerter
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kevin_Love
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kevin_McCullar_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kris_Dunn
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kris_Murray
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kyle_Filipowski
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kyle_Kuzma
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kyle_Lowry
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Kyrie_Irving
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:LaMelo_Ball
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Lachlan_Olbrich
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Landry_Shamet
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Larry_Nance_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Lauri_Markkanen
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:LeBron_James
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Leaky_Black
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Leonard_Miller
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Liam_McNeeley
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Marcus_Sasser
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Marcus_Smart
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Marvin_Bagley_III
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Matisse_Thybulle
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Max_Christie
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Max_Shulga
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Max_Strus
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Maxi_Kleber
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Maxime_Raynaud
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Micah_Peavy
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Michael_Porter_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Mikal_Bridges
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nic_Claxton
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nick_Richards
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nick_Smith_Jr.
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nickeil_Alexander-Walker
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nicolas_Batum
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nikola_Jović
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nikola_Vučević
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nique_Clifford
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Noa_Essengue
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Noah_Penda
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Nolan_Traore
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Norman_Powell
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:PJ_Hall
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Pat_Connaughton
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Pat_Spencer
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Paul_George
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Payton_Pritchard
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Payton_Sandfort
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Pelle_Larsson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Pete_Nance
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Peyton_Watson
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Precious_Achiuwa
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Quinten_Post
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Rasheer_Fleming
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:RayJ_Dennis
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:message Literal("Player is missing a playPosition value (data-completeness warning, not a hard violation).") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path nba:playPosition ; sh:severity sh:Warning ]
+	Focus Node: nba:Stephen_Curry
+	Result Path: nba:playPosition
+	Message: Player is missing a playPosition value (data-completeness warning, not a hard violation).

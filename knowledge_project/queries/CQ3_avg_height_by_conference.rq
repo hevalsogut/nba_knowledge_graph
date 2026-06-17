@@ -1,0 +1,19 @@
+PREFIX nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/>
+
+# CQ3 (generalized) - Average height AND player count per Conference,
+# in a single query, instead of being hardcoded to Western Conference only.
+# Demonstrates GROUP BY + AVG + COUNT together, as required by the audit.
+#
+# Note: correctness of this aggregate depends on each Player having
+# exactly one playsFor triple (see merge_and_clean_pipeline.py's
+# dedupe_plays_for step) -- duplicate historical teams would otherwise
+# double-count a player's height across conferences.
+SELECT ?conference (AVG(?height) AS ?avgHeight) (COUNT(DISTINCT ?player) AS ?playerCount)
+WHERE {
+  ?player a nba:Player ;
+          nba:hasHeight ?height ;
+          nba:playsFor  ?team .
+  ?team   nba:belongsTo ?conference .
+}
+GROUP BY ?conference
+ORDER BY DESC(?avgHeight)

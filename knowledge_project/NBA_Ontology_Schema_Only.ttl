@@ -1,0 +1,3689 @@
+@prefix : <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10#> .
+@prefix nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10#> .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/belongsTo
+nba:belongsTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain nba:Team ;
+              rdfs:range nba:Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/coaches
+nba:coaches rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain nba:Coach ;
+            rdfs:range nba:Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasHomeArena
+nba:hasHomeArena rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain nba:Team ;
+                 rdfs:range nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasPlayer
+nba:hasPlayer rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf nba:playsFor .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasRival
+nba:hasRival rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:SymmetricProperty ;
+             rdfs:domain nba:Team ;
+             rdfs:range nba:Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/isDraftedBy
+nba:isDraftedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playPosition
+nba:playPosition rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain nba:Player ;
+                 rdfs:range nba:Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playsFor
+nba:playsFor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain nba:Player ;
+             rdfs:range nba:Team .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/attendance
+nba:attendance rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf nba:hasCapacity .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/championshipsWon
+nba:championshipsWon rdf:type owl:DatatypeProperty ;
+                     rdfs:domain nba:Team ;
+                     rdfs:range xsd:int ;
+                     rdfs:label "Championship number" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasCapacity
+nba:hasCapacity rdf:type owl:DatatypeProperty ;
+                rdfs:domain nba:Arena ;
+                rdfs:range xsd:int ;
+                rdfs:label "Capacity of the arena" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasHeight
+nba:hasHeight rdf:type owl:DatatypeProperty ;
+              rdfs:domain nba:Player ;
+              rdfs:range xsd:double ;
+              rdfs:label "player height" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/hasJerseyNumber
+nba:hasJerseyNumber rdf:type owl:DatatypeProperty ;
+                    rdfs:domain nba:Player ;
+                    rdfs:range xsd:int ;
+                    rdfs:label "jersey number" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/playerName
+nba:playerName rdf:type owl:DatatypeProperty ;
+               rdfs:domain nba:Player ;
+               rdfs:range xsd:string ;
+               rdfs:label "player name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Arena
+nba:Arena rdf:type owl:Class ;
+          rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center
+nba:Center rdf:type owl:Class ;
+           rdfs:subClassOf nba:Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Coach
+nba:Coach rdf:type owl:Class ;
+          rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Conference
+nba:Conference rdf:type owl:Class ;
+               rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/EasternConferance
+nba:EasternConferance rdf:type owl:Class ;
+                      rdfs:subClassOf nba:Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/EasternConferenceTeam
+nba:EasternConferenceTeam rdf:type owl:Class ;
+                          rdfs:subClassOf nba:Team .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Forward
+nba:Forward rdf:type owl:Class ;
+            rdfs:subClassOf nba:Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Game
+nba:Game rdf:type owl:Class ;
+         rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Guard
+nba:Guard rdf:type owl:Class ;
+          rdfs:subClassOf nba:Position .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NBA-Member
+nba:NBA-Member rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Player
+nba:Player rdf:type owl:Class ;
+           rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Position
+nba:Position rdf:type owl:Class ;
+             rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Team
+nba:Team rdf:type owl:Class ;
+         rdfs:subClassOf nba:NBA-Member .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/WesternConferance
+nba:WesternConferance rdf:type owl:Class ;
+                      rdfs:subClassOf nba:Conference .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/WesternConferenceTeam
+nba:WesternConferenceTeam rdf:type owl:Class ;
+                          rdfs:subClassOf nba:Team .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/A.J._Lawson
+nba:A.J._Lawson rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Raptors_905 ,
+                             nba:Toronto_Raptors ;
+                nba:hasHeight "1.98"^^xsd:double ;
+                nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/AJ_Johnson
+nba:AJ_Johnson rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/AJ_Johnson_(basketball)> .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Aaron_Gordon
+nba:Aaron_Gordon rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Denver_Nuggets ;
+                 nba:hasHeight "2.03"^^xsd:double ;
+                 nba:hasJerseyNumber "32"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Aaron_Holiday
+nba:Aaron_Holiday rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Houston_Rockets ;
+                  nba:hasHeight "1.83"^^xsd:double ;
+                  nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Aaron_Nesmith
+nba:Aaron_Nesmith rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Indiana_Pacers ;
+                  nba:hasHeight "1.96"^^xsd:double ;
+                  nba:hasJerseyNumber "23"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Aaron_Wiggins
+nba:Aaron_Wiggins rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Oklahoma_City_Thunder ;
+                  nba:hasHeight "1.96"^^xsd:double ;
+                  nba:hasJerseyNumber "21"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ace_Bailey
+nba:Ace_Bailey rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Toronto_Maple_Leafs ,
+                            nba:Toronto_St._Patricks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Adem_Bona
+nba:Adem_Bona rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Philadelphia_76ers ;
+              nba:hasHeight "2.08"^^xsd:double ;
+              nba:hasJerseyNumber "30"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Adou_Thiero
+nba:Adou_Thiero rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Los_Angeles_Lakers ;
+                nba:hasHeight "2.01"^^xsd:double ;
+                nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ajay_Mitchell
+nba:Ajay_Mitchell rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Oklahoma_City_Thunder ;
+                  nba:hasHeight "1.93"^^xsd:double ;
+                  nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Al_Horford
+nba:Al_Horford rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Golden_State_Warriors ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alex_Antetokounmpo
+nba:Alex_Antetokounmpo rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playsFor nba:Milwaukee_Bucks ;
+                       nba:hasHeight "2.03"^^xsd:double ;
+                       nba:hasJerseyNumber "29"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alex_Caruso
+nba:Alex_Caruso rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Oklahoma_City_Thunder ;
+                nba:hasHeight "1.96"^^xsd:double ;
+                nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alex_Morales
+nba:Alex_Morales rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Orlando_Magic ,
+                              nba:Osceola_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alex_Sarr
+nba:Alex_Sarr rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alijah_Martin
+nba:Alijah_Martin rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Raptors_905 ,
+                               nba:Toronto_Raptors ;
+                  nba:hasHeight "1.88"^^xsd:double ;
+                  nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Alperen_Sengun
+nba:Alperen_Sengun rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Houston_Rockets ;
+                   nba:hasHeight "2.11"^^xsd:double ;
+                   nba:hasJerseyNumber "28"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Amari_Williams
+nba:Amari_Williams rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Boston_Celtics ;
+                   nba:hasHeight "2.11"^^xsd:double ;
+                   nba:hasJerseyNumber "77"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Amen_Thompson
+nba:Amen_Thompson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Houston_Rockets ;
+                  nba:hasHeight "2.01"^^xsd:double ;
+                  nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Amir_Coffey
+nba:Amir_Coffey rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Phoenix_Suns ;
+                nba:hasHeight "2.01"^^xsd:double ;
+                nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andre_Drummond
+nba:Andre_Drummond rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:Center ;
+                   nba:playsFor nba:Cleveland_Cavaliers ,
+                                nba:Detroit_Pistons ,
+                                nba:Los_Angeles_Lakers ,
+                                nba:Philadelphia_76ers ;
+                   nba:hasHeight "2.11"^^xsd:double ;
+                   nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andre_Jackson_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andre_Jackson_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Milwaukee_Bucks ;
+                                                                                            nba:hasHeight "1.98"^^xsd:double ;
+                                                                                            nba:hasJerseyNumber "44"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andrew_Nembhard
+nba:Andrew_Nembhard rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Indiana_Pacers ;
+                    nba:hasHeight "1.93"^^xsd:double ;
+                    nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andrew_Wiggins
+nba:Andrew_Wiggins rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Miami_Heat ;
+                   nba:hasHeight "1.98"^^xsd:double ;
+                   nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Anfernee_Simons
+nba:Anfernee_Simons rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Boston_Celtics ,
+                                 nba:Chicago_Bulls ;
+                    nba:hasHeight "1.91"^^xsd:double ;
+                    nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Anthony_Davis
+nba:Anthony_Davis rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition nba:center ,
+                                   nba:power_forward ;
+                  nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Antonio_Reeves
+nba:Antonio_Reeves rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Charlotte_Hornets ,
+                                nba:Greensboro_Swarm ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ariel_Hukporti
+nba:Ariel_Hukporti rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:New_York_Knicks ;
+                   nba:hasHeight "2.13"^^xsd:double ;
+                   nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Asa_Newell
+nba:Asa_Newell rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Atlanta_Hawks ;
+               nba:hasHeight "2.08"^^xsd:double ;
+               nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Atlanta_Hawks
+nba:Atlanta_Hawks rdf:type owl:NamedIndividual ,
+                           nba:Team ;
+                  nba:belongsTo nba:Eastern_Conference ;
+                  nba:hasHomeArena nba:Atlanta_Hawks_Arena ;
+                  nba:playerName "Atlanta Hawks" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Atlanta_Hawks_Arena
+nba:Atlanta_Hawks_Arena rdf:type owl:NamedIndividual ,
+                                 nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ausar_Thompson
+nba:Ausar_Thompson rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Detroit_Pistons ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Austin_Reaves
+nba:Austin_Reaves rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Los_Angeles_Lakers ;
+                  nba:hasHeight "1.96"^^xsd:double ;
+                  nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Basketball_Loewen_Braunschweig
+nba:Basketball_Loewen_Braunschweig rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bismack_Biyombo
+nba:Bismack_Biyombo rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Charlotte_Bobcats ,
+                                 nba:San_Antonio_Spurs ,
+                                 nba:Toronto_Raptors ;
+                    nba:hasHeight "2.03"^^xsd:double ;
+                    nba:hasJerseyNumber "18"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Blake_Hinson
+nba:Blake_Hinson rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bobby_Portis
+nba:Bobby_Portis rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Milwaukee_Bucks ;
+                 nba:hasHeight "2.06"^^xsd:double ;
+                 nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bones_Hyland
+nba:Bones_Hyland rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Minnesota_Timberwolves ;
+                 nba:hasHeight "1.88"^^xsd:double ;
+                 nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Boston_Celtics
+nba:Boston_Celtics rdf:type owl:NamedIndividual ,
+                            nba:Team ;
+                   nba:belongsTo nba:Eastern_Conference ;
+                   nba:hasHomeArena nba:Boston_Celtics_Arena ;
+                   nba:playerName "Boston Celtics" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Boston_Celtics_Arena
+nba:Boston_Celtics_Arena rdf:type owl:NamedIndividual ,
+                                  nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bradley_Beal
+nba:Bradley_Beal rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Clippers ,
+                              nba:Phoenix_Suns ,
+                              nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brand_of_Sacrifice
+nba:Brand_of_Sacrifice rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Branden_Carlson
+nba:Branden_Carlson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Oklahoma_City_Thunder ;
+                    nba:hasHeight "2.13"^^xsd:double ;
+                    nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brandin_Podziemski
+nba:Brandin_Podziemski rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playPosition nba:Guard ;
+                       nba:playsFor nba:Golden_State_Warriors ;
+                       nba:hasHeight "1.93"^^xsd:double ;
+                       nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brandon_Clarke
+nba:Brandon_Clarke rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brandon_Ingram
+nba:Brandon_Ingram rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Toronto_Raptors ;
+                   nba:hasHeight "2.03"^^xsd:double ;
+                   nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brian_Keefe
+nba:Brian_Keefe rdf:type owl:NamedIndividual ,
+                         nba:Coach ;
+                nba:coaches nba:Washington_Wizards ;
+                nba:playerName "Brian Keefe" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brice_Sensabaugh
+nba:Brice_Sensabaugh rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bronny_James
+nba:Bronny_James rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Lakers ;
+                 nba:hasHeight "1.88"^^xsd:double ;
+                 nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brook_Lopez
+nba:Brook_Lopez rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Brooklyn_Nets ,
+                             nba:Los_Angeles_Clippers ,
+                             nba:Milwaukee_Bucks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brooklyn_Nets
+nba:Brooklyn_Nets rdf:type owl:NamedIndividual ,
+                           nba:Team ;
+                  nba:belongsTo nba:Eastern_Conference ;
+                  nba:hasHomeArena nba:Brooklyn_Nets_Arena ;
+                  nba:playerName "Brooklyn Nets" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brooklyn_Nets_Arena
+nba:Brooklyn_Nets_Arena rdf:type owl:NamedIndividual ,
+                                 nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Brooks_Barnhizer
+nba:Brooks_Barnhizer rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Oklahoma_City_Thunder ;
+                     nba:hasHeight "1.96"^^xsd:double ;
+                     nba:hasJerseyNumber "23"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Bryce_McGowens
+nba:Bryce_McGowens rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:New_Orleans_Pelicans ;
+                   nba:hasHeight "1.98"^^xsd:double ;
+                   nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/CJ_McCollum
+nba:CJ_McCollum rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Atlanta_Hawks ;
+                nba:hasHeight "1.91"^^xsd:double ;
+                nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Cason_Wallace
+nba:Cason_Wallace rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Oklahoma_City_Thunder ;
+                  nba:hasHeight "1.91"^^xsd:double ;
+                  nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Cedric_Coward
+nba:Cedric_Coward rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center
+nba:Center rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chaney_Johnson
+nba:Chaney_Johnson rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Brooklyn_Nets ,
+                                nba:National_Basketball_Association ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Charles_Bassey
+nba:Charles_Bassey rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Golden_State_Warriors ;
+                   nba:hasHeight "2.08"^^xsd:double ;
+                   nba:hasJerseyNumber "28"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Charles_Lee
+nba:Charles_Lee rdf:type owl:NamedIndividual ,
+                         nba:Coach ;
+                nba:coaches nba:Charlotte_Hornets ;
+                nba:playerName "Charles Lee" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Charlotte_Bobcats
+nba:Charlotte_Bobcats rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Charlotte_Hornets
+nba:Charlotte_Hornets rdf:type owl:NamedIndividual ,
+                               nba:Team ;
+                      nba:belongsTo nba:Eastern_Conference ;
+                      nba:hasHomeArena nba:Charlotte_Hornets_Arena ;
+                      nba:playerName "Charlotte Hornets" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Charlotte_Hornets_Arena
+nba:Charlotte_Hornets_Arena rdf:type owl:NamedIndividual ,
+                                     nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/ChaseCenter
+nba:ChaseCenter rdf:type owl:NamedIndividual ,
+                         nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chauncey_Billups
+nba:Chauncey_Billups rdf:type owl:NamedIndividual ,
+                              nba:Coach ;
+                     nba:coaches nba:Portland_Trail_Blazers ;
+                     nba:playerName "Chauncey Billups" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chaz_Lanier
+nba:Chaz_Lanier rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Detroit_Pistons ;
+                nba:hasHeight "1.91"^^xsd:double ;
+                nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chet_Holmgren
+nba:Chet_Holmgren rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition nba:center ,
+                                   nba:power_forward ;
+                  nba:playsFor nba:Oklahoma_City_Thunder ;
+                  nba:hasHeight "2.16"^^xsd:double ;
+                  nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chicago_Bulls
+nba:Chicago_Bulls rdf:type owl:NamedIndividual ,
+                           nba:Team ;
+                  nba:belongsTo nba:Eastern_Conference ;
+                  nba:hasHomeArena nba:Chicago_Bulls_Arena ;
+                  nba:playerName "Chicago Bulls" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chicago_Bulls_Arena
+nba:Chicago_Bulls_Arena rdf:type owl:NamedIndividual ,
+                                 nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chris_Finch
+nba:Chris_Finch rdf:type owl:NamedIndividual ,
+                         nba:Coach ;
+                nba:coaches nba:Minnesota_Timberwolves ;
+                nba:playerName "Chris Finch" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chris_Mañon
+nba:Chris_Mañon rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Los_Angeles_Lakers ;
+                nba:hasHeight "1.93"^^xsd:double ;
+                nba:hasJerseyNumber "30"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chris_Youngblood
+nba:Chris_Youngblood rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Devastation_Inc.> ,
+                                  nba:Global_Wrestling_Federation ,
+                                  nba:United_States_Wrestling_Association ,
+                                  nba:World_Class_Championship_Wrestling ,
+                                  nba:World_Wrestling_Council ;
+                     nba:hasHeight "1.93"^^xsd:double ;
+                     nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Christian_Braun
+nba:Christian_Braun rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playPosition nba:Shooting_Guard ;
+                    nba:playsFor nba:Denver_Nuggets ;
+                    nba:hasHeight "1.98"^^xsd:double ;
+                    nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Christian_Koloko
+nba:Christian_Koloko rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Atlanta_Hawks ;
+                     nba:hasHeight "2.11"^^xsd:double ;
+                     nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Chucky_Hepburn
+nba:Chucky_Hepburn rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Raptors_905 ,
+                                nba:Toronto_Raptors ;
+                   nba:hasHeight "1.83"^^xsd:double ;
+                   nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Cleveland_Cavaliers
+nba:Cleveland_Cavaliers rdf:type owl:NamedIndividual ,
+                                 nba:Team ;
+                        nba:belongsTo nba:Eastern_Conference ;
+                        nba:hasHomeArena nba:Cleveland_Cavaliers_Arena ;
+                        nba:playerName "Cleveland Cavaliers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Cleveland_Cavaliers_Arena
+nba:Cleveland_Cavaliers_Arena rdf:type owl:NamedIndividual ,
+                                       nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Clint_Capela
+nba:Clint_Capela rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center/Key_Defensive_Player> ;
+                 nba:playsFor nba:Houston_Rockets ;
+                 nba:hasHeight "2.08"^^xsd:double ;
+                 nba:hasJerseyNumber "30"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Coachella_Valley_Lakers
+nba:Coachella_Valley_Lakers rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Coby_White
+nba:Coby_White rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playPosition nba:combo_guard ;
+               nba:playsFor nba:Charlotte_Hornets ;
+               nba:hasHeight "1.93"^^xsd:double ;
+               nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Cody_Williams
+nba:Cody_Williams rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Colin_Castleton
+nba:Colin_Castleton rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Orlando_Magic ,
+                                 nba:Osceola_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/College_Park_Skyhawks
+nba:College_Park_Skyhawks rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Collin_Gillespie
+nba:Collin_Gillespie rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Phoenix_Suns ;
+                     nba:hasHeight "1.85"^^xsd:double ;
+                     nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Collin_Murray-Boyles
+nba:Collin_Murray-Boyles rdf:type owl:NamedIndividual ,
+                                  nba:Player ;
+                         nba:playsFor nba:Toronto_Raptors ;
+                         nba:hasHeight "2.01"^^xsd:double ;
+                         nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/DaRon_Holmes_II
+nba:DaRon_Holmes_II rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Denver_Nuggets ;
+                    nba:hasHeight "2.06"^^xsd:double ;
+                    nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dallas_Mavericks
+nba:Dallas_Mavericks rdf:type owl:NamedIndividual ,
+                              nba:Team ;
+                     nba:belongsTo nba:Western_Conference ;
+                     nba:hasHomeArena nba:Dallas_Mavericks_Arena ;
+                     nba:playerName "Dallas Mavericks" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dallas_Mavericks_Arena
+nba:Dallas_Mavericks_Arena rdf:type owl:NamedIndividual ,
+                                    nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Darko_Rajakovic
+nba:Darko_Rajakovic rdf:type owl:NamedIndividual ,
+                             nba:Coach ;
+                    nba:coaches nba:Toronto_Raptors ;
+                    nba:playerName "Darko Rajakovic" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/David_Adelman
+nba:David_Adelman rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:Denver_Nuggets ;
+                  nba:playerName "David Adelman" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/David_Jones_Garcia
+nba:David_Jones_Garcia rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playsFor nba:San_Antonio_Spurs ;
+                       nba:hasHeight "1.93"^^xsd:double ;
+                       nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/David_Roddy
+nba:David_Roddy rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Atlanta_Hawks ,
+                             nba:Denver_Nuggets ,
+                             nba:Grand_Rapids_Gold ,
+                             nba:Memphis_Grizzlies ,
+                             nba:Philadelphia_76ers ,
+                             nba:Phoenix_Suns ;
+                nba:hasHeight "1.96"^^xsd:double ;
+                nba:hasJerseyNumber "45"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Davion_Mitchell
+nba:Davion_Mitchell rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Miami_Heat ;
+                    nba:hasHeight "1.83"^^xsd:double ;
+                    nba:hasJerseyNumber "45"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/DeAndre_Jordan
+nba:DeAndre_Jordan rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Dallas_Mavericks ,
+                                nba:Los_Angeles_Clippers ,
+                                nba:New_Orleans_Pelicans ,
+                                nba:New_York_Knicks ;
+                   nba:hasHeight "2.11"^^xsd:double ;
+                   nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/DeMar_DeRozan
+nba:DeMar_DeRozan rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Sacramento_Kings ;
+                  nba:hasHeight "1.98"^^xsd:double ;
+                  nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dean_Wade
+nba:Dean_Wade rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Cleveland_Cavaliers ;
+              nba:hasHeight "2.06"^^xsd:double ;
+              nba:hasJerseyNumber "32"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Deandre_Ayton
+nba:Deandre_Ayton rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Los_Angeles_Lakers ;
+                  nba:hasHeight "2.13"^^xsd:double ;
+                  nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dejounte_Murray
+nba:Dejounte_Murray rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Atlanta_Hawks ,
+                                 nba:New_Orleans_Pelicans ,
+                                 nba:San_Antonio_Spurs ;
+                    nba:hasHeight "1.93"^^xsd:double ;
+                    nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Delaware_Blue_Coats
+nba:Delaware_Blue_Coats rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Deni_Avdija
+nba:Deni_Avdija rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playPosition nba:small_forward ;
+                nba:playsFor nba:Portland_Trail_Blazers ;
+                nba:hasHeight "2.03"^^xsd:double ;
+                nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dennis_Schröder
+nba:Dennis_Schröder rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Atlanta_Hawks ,
+                                 nba:Basketball_Loewen_Braunschweig ,
+                                 nba:Cleveland_Cavaliers ;
+                    nba:hasHeight "1.85"^^xsd:double ;
+                    nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Denver_Nuggets
+nba:Denver_Nuggets rdf:type owl:NamedIndividual ,
+                            nba:Team ;
+                   nba:belongsTo nba:Western_Conference ;
+                   nba:hasHomeArena nba:Denver_Nuggets_Arena ;
+                   nba:playerName "Denver Nuggets" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Denver_Nuggets_Arena
+nba:Denver_Nuggets_Arena rdf:type owl:NamedIndividual ,
+                                  nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dereck_Lively_II
+nba:Dereck_Lively_II rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Dallas_Mavericks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Derik_Queen
+nba:Derik_Queen rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:New_Orleans_Pelicans ;
+                nba:hasHeight "2.06"^^xsd:double ;
+                nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Derrick_Jones_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Derrick_Jones_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Derrick_White
+nba:Derrick_White rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Boston_Celtics ;
+                  nba:hasHeight "1.93"^^xsd:double ;
+                  nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Detroit_Pistons
+nba:Detroit_Pistons rdf:type owl:NamedIndividual ,
+                             nba:Team ;
+                    nba:belongsTo nba:Eastern_Conference ;
+                    nba:hasHomeArena nba:Detroit_Pistons_Arena ;
+                    nba:playerName "Detroit Pistons" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Detroit_Pistons_Arena
+nba:Detroit_Pistons_Arena rdf:type owl:NamedIndividual ,
+                                   nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Devastation_Inc.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Devastation_Inc.> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dorian_Finney-Smith
+nba:Dorian_Finney-Smith rdf:type owl:NamedIndividual ,
+                                 nba:Player ;
+                        nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)> ;
+                        nba:playsFor nba:Houston_Rockets ,
+                                     <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_previous_teams)> ;
+                        nba:hasHeight "2.01"^^xsd:double ;
+                        nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Doug_Christie
+nba:Doug_Christie rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:Sacramento_Kings ;
+                  nba:playerName "Doug Christie" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Doug_McDermott
+nba:Doug_McDermott rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:small_forward ;
+                   nba:playsFor nba:Sacramento_Kings ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Drake_Powell
+nba:Drake_Powell rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ;
+                 nba:hasHeight "1.96"^^xsd:double ;
+                 nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Draymond_Green
+nba:Draymond_Green rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:Power_Forward ;
+                   nba:playsFor nba:Golden_State_Warriors ;
+                   nba:hasHeight "1.98"^^xsd:double ;
+                   nba:hasJerseyNumber "23"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Drew_Eubanks
+nba:Drew_Eubanks rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Sacramento_Kings ;
+                 nba:hasHeight "2.08"^^xsd:double ;
+                 nba:hasJerseyNumber "19"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Drew_Timme
+nba:Drew_Timme rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Coachella_Valley_Lakers ,
+                            nba:Los_Angeles_Lakers ;
+               nba:hasHeight "2.06"^^xsd:double ;
+               nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dru_Smith
+nba:Dru_Smith rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Miami_Heat ;
+              nba:hasHeight "1.88"^^xsd:double ;
+              nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Duncan_Robinson
+nba:Duncan_Robinson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Detroit_Pistons ;
+                    nba:hasHeight "2.01"^^xsd:double ;
+                    nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dwight_Powell
+nba:Dwight_Powell rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Dallas_Mavericks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dylan_Cardwell
+nba:Dylan_Cardwell rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Sacramento_Kings ;
+                   nba:hasHeight "2.08"^^xsd:double ;
+                   nba:hasJerseyNumber "32"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dylan_Harper
+nba:Dylan_Harper rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:San_Antonio_Spurs ;
+                 nba:hasHeight "1.96"^^xsd:double ;
+                 nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Dyson_Daniels
+nba:Dyson_Daniels rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)> ;
+                  nba:playsFor nba:Atlanta_Hawks ,
+                               <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_previous_teams)> ;
+                  nba:hasHeight "2.01"^^xsd:double ;
+                  nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/E.J._Liddell
+nba:E.J._Liddell rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ,
+                              nba:Long_Island_Nets ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Eastern_Conference
+nba:Eastern_Conference rdf:type owl:NamedIndividual ,
+                                nba:EasternConferance .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Egor_Dëmin
+nba:Egor_Dëmin rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Brooklyn_Nets ,
+                            nba:Russian_national_team ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Elijah_Harkless
+nba:Elijah_Harkless rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Enrique_Freeman
+nba:Enrique_Freeman rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Minnesota_Timberwolves ;
+                    nba:hasHeight "2.06"^^xsd:double ;
+                    nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Erik_Spoelstra
+nba:Erik_Spoelstra rdf:type owl:NamedIndividual ,
+                            nba:Coach ;
+                   nba:coaches nba:Miami_Heat ;
+                   nba:playerName "Erik Spoelstra" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ethan_Thompson
+nba:Ethan_Thompson rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Indiana_Pacers ,
+                                nba:National_Basketball_Association ;
+                   nba:hasHeight "1.93"^^xsd:double ;
+                   nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/GG_Jackson
+nba:GG_Jackson rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gary_Trent_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gary_Trent_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                  nba:Player ;
+                                                                                         nba:playsFor nba:Milwaukee_Bucks ;
+                                                                                         nba:hasHeight "1.96"^^xsd:double ;
+                                                                                         nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Giannis_Antetokounmpo
+nba:Giannis_Antetokounmpo rdf:type owl:NamedIndividual ,
+                                   nba:Player ;
+                          nba:playPosition nba:Power_Forward ;
+                          nba:playsFor nba:Milwaukee_Bucks ;
+                          nba:hasHeight "2.11"^^xsd:double ;
+                          nba:hasJerseyNumber "34"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Global_Wrestling_Federation
+nba:Global_Wrestling_Federation rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Goga_Bitadze
+nba:Goga_Bitadze rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:center ,
+                                  nba:power_forward ;
+                 nba:playsFor nba:Orlando_Magic ,
+                              <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team_before_NBA)> .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/GoldenState
+nba:GoldenState rdf:type owl:NamedIndividual ,
+                         nba:Team ;
+                nba:hasHomeArena nba:ChaseCenter .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Golden_State_Warriors
+nba:Golden_State_Warriors rdf:type owl:NamedIndividual ,
+                                   nba:Team ;
+                          nba:belongsTo nba:Western_Conference ;
+                          nba:hasHomeArena nba:Golden_State_Warriors_Arena ;
+                          nba:playerName "Golden State Warriors" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Golden_State_Warriors_Arena
+nba:Golden_State_Warriors_Arena rdf:type owl:NamedIndividual ,
+                                         nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gradey_Dick
+nba:Gradey_Dick rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Toronto_Raptors ;
+                nba:hasHeight "2.01"^^xsd:double ;
+                nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Grand_Rapids_Gold
+nba:Grand_Rapids_Gold rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Grant_Williams
+nba:Grant_Williams rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Boston_Celtics ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Grayson_Allen
+nba:Grayson_Allen rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Phoenix_Suns ;
+                  nba:hasHeight "1.91"^^xsd:double ;
+                  nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Greek_national_team
+nba:Greek_national_team rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Greensboro_Swarm
+nba:Greensboro_Swarm rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Guard
+nba:Guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Guerschon_Yabusele
+nba:Guerschon_Yabusele rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playPosition nba:power_forward ;
+                       nba:playsFor nba:Chicago_Bulls ;
+                       nba:hasHeight "2.01"^^xsd:double ;
+                       nba:hasJerseyNumber "28"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gui_Santos
+nba:Gui_Santos rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Golden_State_Warriors ,
+                            nba:Minas ;
+               nba:hasHeight "2.01"^^xsd:double ;
+               nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Harrison_Barnes
+nba:Harrison_Barnes rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:San_Antonio_Spurs ;
+                    nba:hasHeight "2.01"^^xsd:double ;
+                    nba:hasJerseyNumber "40"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Harrison_Ingram
+nba:Harrison_Ingram rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:San_Antonio_Spurs ;
+                    nba:hasHeight "1.96"^^xsd:double ;
+                    nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Hayden_Gray
+nba:Hayden_Gray rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Haywood_Highsmith
+nba:Haywood_Highsmith rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:Phoenix_Suns ;
+                      nba:hasHeight "1.96"^^xsd:double ;
+                      nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Houston_Rockets
+nba:Houston_Rockets rdf:type owl:NamedIndividual ,
+                             nba:Team ;
+                    nba:belongsTo nba:Western_Conference ;
+                    nba:hasHomeArena nba:Houston_Rockets_Arena ;
+                    nba:playerName "Houston Rockets" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Houston_Rockets_Arena
+nba:Houston_Rockets_Arena rdf:type owl:NamedIndividual ,
+                                   nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Hunter_Dickinson
+nba:Hunter_Dickinson rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:New_Orleans_Pelicans ;
+                     nba:hasHeight "2.16"^^xsd:double ;
+                     nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ime_Udoka
+nba:Ime_Udoka rdf:type owl:NamedIndividual ,
+                       nba:Coach ;
+              nba:coaches nba:Houston_Rockets ;
+              nba:playerName "Ime Udoka" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Immanuel_Quickley
+nba:Immanuel_Quickley rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playPosition nba:Point_Guard ;
+                      nba:playsFor nba:Toronto_Raptors ;
+                      nba:hasHeight "1.88"^^xsd:double ;
+                      nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Indiana_Pacers
+nba:Indiana_Pacers rdf:type owl:NamedIndividual ,
+                            nba:Team ;
+                   nba:belongsTo nba:Eastern_Conference ;
+                   nba:hasHomeArena nba:Indiana_Pacers_Arena ;
+                   nba:playerName "Indiana Pacers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Indiana_Pacers_Arena
+nba:Indiana_Pacers_Arena rdf:type owl:NamedIndividual ,
+                                  nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Iowa_Wolves
+nba:Iowa_Wolves rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaac_Okoro
+nba:Isaac_Okoro rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playPosition nba:small_forward ;
+                nba:playsFor nba:Chicago_Bulls ;
+                nba:hasHeight "1.93"^^xsd:double ;
+                nba:hasJerseyNumber "35"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Collier
+nba:Isaiah_Collier rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Crawford
+nba:Isaiah_Crawford rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playPosition nba:Small_Forward ;
+                    nba:playsFor nba:Houston_Rockets ,
+                                 nba:Rio_Grande_Valley_Vipers ;
+                    nba:hasHeight "1.98"^^xsd:double ;
+                    nba:hasJerseyNumber "27"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Hartenstein
+nba:Isaiah_Hartenstein rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playPosition nba:center ;
+                       nba:playsFor nba:Oklahoma_City_Thunder ;
+                       nba:hasHeight "2.13"^^xsd:double ;
+                       nba:hasJerseyNumber "55"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Joe
+nba:Isaiah_Joe rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Oklahoma_City_Thunder ;
+               nba:hasHeight "1.93"^^xsd:double ;
+               nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Livers
+nba:Isaiah_Livers rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Phoenix_Suns ;
+                  nba:hasHeight "1.98"^^xsd:double ;
+                  nba:hasJerseyNumber "18"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Stevens
+nba:Isaiah_Stevens rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Sacramento_Kings ,
+                                nba:Stockton_Kings ;
+                   nba:hasHeight "1.8"^^xsd:double ;
+                   nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Isaiah_Stewart
+nba:Isaiah_Stewart rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:center ,
+                                    nba:power_forward ;
+                   nba:playsFor nba:Detroit_Pistons ;
+                   nba:hasHeight "2.03"^^xsd:double ;
+                   nba:hasJerseyNumber "28"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ivica_Zubac
+nba:Ivica_Zubac rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Indiana_Pacers ,
+                             nba:Los_Angeles_Clippers ;
+                nba:hasHeight "2.13"^^xsd:double ;
+                nba:hasJerseyNumber "40"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/J.B._Bickerstaff
+nba:J.B._Bickerstaff rdf:type owl:NamedIndividual ,
+                              nba:Coach ;
+                     nba:coaches nba:Detroit_Pistons ;
+                     nba:playerName "J.B. Bickerstaff" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/JJ_Redick
+nba:JJ_Redick rdf:type owl:NamedIndividual ,
+                       nba:Coach ;
+              nba:coaches nba:Los_Angeles_Lakers ;
+              nba:playerName "JJ Redick" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jabari_Smith_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jabari_Smith_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                    nba:Player ;
+                                                                                           nba:playsFor nba:Houston_Rockets ;
+                                                                                           nba:hasHeight "2.11"^^xsd:double ;
+                                                                                           nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jabari_Walker
+nba:Jabari_Walker rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Philadelphia_76ers ;
+                  nba:hasHeight "2.01"^^xsd:double ;
+                  nba:hasJerseyNumber "33"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaden_Hardy
+nba:Jaden_Hardy rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaden_McDaniels
+nba:Jaden_McDaniels rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Minnesota_Timberwolves ;
+                    nba:hasHeight "2.06"^^xsd:double ;
+                    nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jahmai_Mashack
+nba:Jahmai_Mashack rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Memphis_Grizzlies ,
+                                nba:Memphis_Hustle .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jahmir_Young
+nba:Jahmir_Young rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Miami_Heat ;
+                 nba:hasHeight "1.83"^^xsd:double ;
+                 nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaime_Jaquez_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaime_Jaquez_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                    nba:Player ;
+                                                                                           nba:playsFor nba:Miami_Heat ;
+                                                                                           nba:hasHeight "1.98"^^xsd:double ;
+                                                                                           nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jake_LaRavia
+nba:Jake_LaRavia rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Lakers ;
+                 nba:hasHeight "2.01"^^xsd:double ;
+                 nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jakob_Poeltl
+nba:Jakob_Poeltl rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Toronto_Raptors ;
+                 nba:hasHeight "2.13"^^xsd:double ;
+                 nba:hasJerseyNumber "19"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Brunson
+nba:Jalen_Brunson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Dallas_Mavericks ,
+                               nba:New_York_Knicks ;
+                  nba:hasHeight "1.88"^^xsd:double ;
+                  nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Duren
+nba:Jalen_Duren rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playPosition nba:center ;
+                nba:playsFor nba:Detroit_Pistons ;
+                nba:hasHeight "2.08"^^xsd:double ;
+                nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Green
+nba:Jalen_Green rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Phoenix_Suns ;
+                nba:hasHeight "1.93"^^xsd:double ;
+                nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Johnson
+nba:Jalen_Johnson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Atlanta_Hawks ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Pickett
+nba:Jalen_Pickett rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Denver_Nuggets ;
+                  nba:hasHeight "1.88"^^xsd:double ;
+                  nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Slawson
+nba:Jalen_Slawson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Indiana_Pacers ;
+                  nba:hasHeight "2.01"^^xsd:double ;
+                  nba:hasJerseyNumber "18"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Smith
+nba:Jalen_Smith rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Chicago_Bulls ,
+                             nba:Indiana_Pacers ,
+                             nba:Phoenix_Suns ;
+                nba:hasHeight "2.03"^^xsd:double ;
+                nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Suggs
+nba:Jalen_Suggs rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Williams
+nba:Jalen_Williams rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:Guard ;
+                   nba:playsFor nba:Oklahoma_City_Thunder ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jalen_Wilson
+nba:Jalen_Wilson rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamahl_Mosley
+nba:Jamahl_Mosley rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:New_Orleans_Pelicans ;
+                  nba:playerName "Jamahl Mosley" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamal_Cain
+nba:Jamal_Cain rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamal_Murray
+nba:Jamal_Murray rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Denver_Nuggets ;
+                 nba:hasHeight "1.93"^^xsd:double ;
+                 nba:hasJerseyNumber "27"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamal_Shead
+nba:Jamal_Shead rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Toronto_Raptors ;
+                nba:hasHeight "1.85"^^xsd:double ;
+                nba:hasJerseyNumber "23"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamaree_Bouyea
+nba:Jamaree_Bouyea rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Phoenix_Suns ;
+                   nba:hasHeight "1.88"^^xsd:double ;
+                   nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/James_Harden
+nba:James_Harden rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:Shooting_Guard ;
+                 nba:playsFor nba:Cleveland_Cavaliers ;
+                 nba:hasHeight "1.96"^^xsd:double ;
+                 nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamir_Watkins
+nba:Jamir_Watkins rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jamison_Battle
+nba:Jamison_Battle rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Toronto_Raptors ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "77"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Japan_national_team
+nba:Japan_national_team rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jarace_Walker
+nba:Jarace_Walker rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Indiana_Pacers ;
+                  nba:hasHeight "2.01"^^xsd:double ;
+                  nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jared_McCain
+nba:Jared_McCain rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Oklahoma_City_Thunder ;
+                 nba:hasHeight "1.91"^^xsd:double ;
+                 nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaren_Jackson_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaren_Jackson_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jarred_Vanderbilt
+nba:Jarred_Vanderbilt rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:Los_Angeles_Lakers ;
+                      nba:hasHeight "2.03"^^xsd:double ;
+                      nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jarrett_Allen
+nba:Jarrett_Allen rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Cleveland_Cavaliers ;
+                  nba:hasHeight "2.06"^^xsd:double ;
+                  nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jase_Richardson
+nba:Jase_Richardson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Javon_Small
+nba:Javon_Small rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Memphis_Grizzlies ,
+                             nba:Memphis_Hustle .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Javonte_Green
+nba:Javonte_Green rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Detroit_Pistons ;
+                  nba:hasHeight "1.96"^^xsd:double ;
+                  nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaxson_Hayes
+nba:Jaxson_Hayes rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Lakers ;
+                 nba:hasHeight "2.13"^^xsd:double ;
+                 nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaylen_Brown
+nba:Jaylen_Brown rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:shooting_guard ,
+                                  nba:small_forward ;
+                 nba:playsFor nba:Boston_Celtics ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaylen_Clark
+nba:Jaylen_Clark rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Minnesota_Timberwolves ;
+                 nba:hasHeight "1.96"^^xsd:double ;
+                 nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jericho_Sims
+nba:Jericho_Sims rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Milwaukee_Bucks ;
+                 nba:hasHeight "2.08"^^xsd:double ;
+                 nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jett_Howard
+nba:Jett_Howard rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jevon_Carter
+nba:Jevon_Carter rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:Point_Guard ;
+                 nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jimmy_Butler
+nba:Jimmy_Butler rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Golden_State_Warriors .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jimmy_Butler_III
+nba:Jimmy_Butler_III rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Golden_State_Warriors ;
+                     nba:hasHeight "1.98"^^xsd:double ;
+                     nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Joan_Beringer
+nba:Joan_Beringer rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Minnesota_Timberwolves ;
+                  nba:hasHeight "2.11"^^xsd:double ;
+                  nba:hasJerseyNumber "19"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jock_Landale
+nba:Jock_Landale rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Atlanta_Hawks ;
+                 nba:hasHeight "2.11"^^xsd:double ;
+                 nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Joe_Ingles
+nba:Joe_Ingles rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playPosition nba:small_forward ;
+               nba:playsFor nba:Minnesota_Timberwolves ,
+                            nba:Utah_Jazz ,
+                            <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)> ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Joe_Mazzulla
+nba:Joe_Mazzulla rdf:type owl:NamedIndividual ,
+                          nba:Coach ;
+                 nba:coaches nba:Boston_Celtics ;
+                 nba:playerName "Joe Mazzulla" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Joel_Embiid
+nba:Joel_Embiid rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playPosition nba:center ;
+                nba:playsFor nba:Philadelphia_76ers ;
+                nba:hasHeight "2.13"^^xsd:double ;
+                nba:hasJerseyNumber "21"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/John_Konchar
+nba:John_Konchar rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/John_Poulakidas
+nba:John_Poulakidas rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Dallas_Mavericks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/John_Tonje
+nba:John_Tonje rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Boston_Celtics ,
+                            nba:Maine_Celtics ;
+               nba:hasHeight "1.93"^^xsd:double ;
+               nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Johni_Broome
+nba:Johni_Broome rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Philadelphia_76ers ;
+                 nba:hasHeight "2.06"^^xsd:double ;
+                 nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Johnny_Furphy
+nba:Johnny_Furphy rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Indiana_Pacers ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jonas_Valančiūnas
+nba:Jonas_Valančiūnas rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:Denver_Nuggets ,
+                                   nba:Memphis_Grizzlies ,
+                                   nba:New_Orleans_Pelicans ,
+                                   nba:Sacramento_Kings ,
+                                   nba:Washington_Wizards ;
+                      nba:hasHeight "2.11"^^xsd:double ;
+                      nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jonathan_Isaac
+nba:Jonathan_Isaac rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition nba:combo_forward ;
+                   nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jordan_Ott
+nba:Jordan_Ott rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:Phoenix_Suns ;
+               nba:playerName "Jordan Ott" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jordi_Fernandez
+nba:Jordi_Fernandez rdf:type owl:NamedIndividual ,
+                             nba:Coach ;
+                    nba:coaches nba:Brooklyn_Nets ;
+                    nba:playerName "Jordi Fernandez" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Julian_Reese
+nba:Julian_Reese rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Julian_Strawther
+nba:Julian_Strawther rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Denver_Nuggets ;
+                     nba:hasHeight "1.98"^^xsd:double ;
+                     nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Julius_Randle
+nba:Julius_Randle rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Minnesota_Timberwolves ;
+                  nba:hasHeight "2.06"^^xsd:double ;
+                  nba:hasJerseyNumber "30"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Justin_Champagnie
+nba:Justin_Champagnie rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jusuf_Nurkić
+nba:Jusuf_Nurkić rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/KJ_Simpson
+nba:KJ_Simpson rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Denver_Nuggets ,
+                            nba:Grand_Rapids_Gold ;
+               nba:hasHeight "1.88"^^xsd:double ;
+               nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kam_Jones
+nba:Kam_Jones rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Indiana_Pacers ;
+              nba:hasHeight "1.93"^^xsd:double ;
+              nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Karl-Anthony_Towns
+nba:Karl-Anthony_Towns rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playsFor nba:New_York_Knicks ;
+                       nba:hasHeight "2.13"^^xsd:double ;
+                       nba:hasJerseyNumber "32"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Karlo_Matković
+nba:Karlo_Matković rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:New_Orleans_Pelicans ;
+                   nba:hasHeight "2.08"^^xsd:double ;
+                   nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kasparas_Jakučionis
+nba:Kasparas_Jakučionis rdf:type owl:NamedIndividual ,
+                                 nba:Player ;
+                        nba:playsFor nba:Miami_Heat ;
+                        nba:hasHeight "1.96"^^xsd:double ;
+                        nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kawhi_Leonard
+nba:Kawhi_Leonard rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Keaton_Wallace
+nba:Keaton_Wallace rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Atlanta_Hawks ;
+                   nba:hasHeight "1.91"^^xsd:double ;
+                   nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Keegan_Murray
+nba:Keegan_Murray rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Sacramento_Kings ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "13"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Keldon_Johnson
+nba:Keldon_Johnson rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:San_Antonio_Spurs ;
+                   nba:hasHeight "1.98"^^xsd:double ;
+                   nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kelly_Olynyk
+nba:Kelly_Olynyk rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Detroit_Pistons ,
+                              nba:Houston_Rockets ,
+                              nba:Miami ,
+                              nba:New_Orleans_Pelicans ,
+                              nba:San_Antonio_Spurs ,
+                              nba:Toronto_Raptors ,
+                              nba:Utah_Jazz ;
+                 nba:hasHeight "2.13"^^xsd:double ;
+                 nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kenny_Atkinson
+nba:Kenny_Atkinson rdf:type owl:NamedIndividual ,
+                            nba:Coach ;
+                   nba:coaches nba:Cleveland_Cavaliers ;
+                   nba:playerName "Kenny Atkinson" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Klay_Thompson
+nba:Klay_Thompson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Dallas_Mavericks ,
+                               nba:Golden_State_Warriors .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kobe_Brown
+nba:Kobe_Brown rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Indiana_Pacers ;
+               nba:hasHeight "2.01"^^xsd:double ;
+               nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kobe_Sanders
+nba:Kobe_Sanders rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Koby_Brea
+nba:Koby_Brea rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Phoenix_Suns ;
+              nba:hasHeight "1.96"^^xsd:double ;
+              nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kon_Knueppel
+nba:Kon_Knueppel rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Charlotte_Hornets ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kris_Dunn
+nba:Kris_Dunn rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kris_Murray
+nba:Kris_Murray rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Portland_Trail_Blazers ;
+                nba:hasHeight "2.03"^^xsd:double ;
+                nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kristaps_Porziņģis
+nba:Kristaps_Porziņģis rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playPosition nba:center ,
+                                        nba:power_forward ;
+                       nba:playsFor nba:Golden_State_Warriors ;
+                       nba:hasHeight "2.18"^^xsd:double ;
+                       nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyle_Anderson
+nba:Kyle_Anderson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Brand_of_Sacrifice ,
+                               nba:Six ,
+                               nba:The_Afterimage ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyle_Filipowski
+nba:Kyle_Filipowski rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyle_Kuzma
+nba:Kyle_Kuzma rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Milwaukee_Bucks ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "18"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyle_Lowry
+nba:Kyle_Lowry rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playPosition nba:Starting_Point_Guard ;
+               nba:playsFor nba:Philadelphia_76ers ;
+               nba:hasHeight "1.83"^^xsd:double ;
+               nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyrie_Irving
+nba:Kyrie_Irving rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Boston_Celtics ,
+                              nba:Brooklyn_Nets ,
+                              nba:Cleveland_Cavaliers ,
+                              nba:Dallas_Mavericks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kyshawn_George
+nba:Kyshawn_George rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/LaMelo_Ball
+nba:LaMelo_Ball rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Charlotte_Hornets ;
+                nba:hasHeight "2.01"^^xsd:double ;
+                nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Lachlan_Olbrich
+nba:Lachlan_Olbrich rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Chicago_Bulls ,
+                                 nba:Windy_City_Bulls ;
+                    nba:hasHeight "2.03"^^xsd:double ;
+                    nba:hasJerseyNumber "47"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/LebronJames
+nba:LebronJames rdf:type owl:NamedIndividual ,
+                         nba:Forward ,
+                         nba:Player .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Long_Island_Nets
+nba:Long_Island_Nets rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Los_Angeles_Clippers
+nba:Los_Angeles_Clippers rdf:type owl:NamedIndividual ,
+                                  nba:Team ;
+                         nba:belongsTo nba:Western_Conference ;
+                         nba:hasHomeArena nba:Los_Angeles_Clippers_Arena ;
+                         nba:playerName "Los Angeles Clippers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Los_Angeles_Clippers_Arena
+nba:Los_Angeles_Clippers_Arena rdf:type owl:NamedIndividual ,
+                                        nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Los_Angeles_Lakers
+nba:Los_Angeles_Lakers rdf:type owl:NamedIndividual ,
+                                nba:Team ;
+                       nba:belongsTo nba:Western_Conference ;
+                       nba:hasHomeArena nba:Los_Angeles_Lakers_Arena ;
+                       nba:playerName "Los Angeles Lakers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Los_Angeles_Lakers_Arena
+nba:Los_Angeles_Lakers_Arena rdf:type owl:NamedIndividual ,
+                                      nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Maine_Celtics
+nba:Maine_Celtics rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Malevy_Leons
+nba:Malevy_Leons rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Golden_State_Warriors ,
+                              nba:Santa_Cruz_Warriors ;
+                 nba:hasHeight "2.06"^^xsd:double ;
+                 nba:hasJerseyNumber "33"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Malik_Monk
+nba:Malik_Monk rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Charlotte_Hornets ,
+                            nba:Los_Angeles_Lakers ,
+                            nba:Sacramento_Kings ;
+               nba:hasHeight "1.91"^^xsd:double ;
+               nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/MarJon_Beauchamp
+nba:MarJon_Beauchamp rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Philadelphia_76ers ;
+                     nba:hasHeight "2.01"^^xsd:double ;
+                     nba:hasJerseyNumber "16"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Marcus_Sasser
+nba:Marcus_Sasser rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Detroit_Pistons ;
+                  nba:hasHeight "1.85"^^xsd:double ;
+                  nba:hasJerseyNumber "25"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Marcus_Smart
+nba:Marcus_Smart rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:Point_Guard ;
+                 nba:playsFor nba:Los_Angeles_Lakers ;
+                 nba:hasHeight "1.91"^^xsd:double ;
+                 nba:hasJerseyNumber "36"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Mark_Daigneault
+nba:Mark_Daigneault rdf:type owl:NamedIndividual ,
+                             nba:Coach ;
+                    nba:coaches nba:Oklahoma_City_Thunder ;
+                    nba:playerName "Mark Daigneault" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Mark_Williams
+nba:Mark_Williams rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)> ;
+                  nba:playsFor <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team)> ;
+                  nba:hasHeight "2.16"^^xsd:double ;
+                  nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Marvin_Bagley_III
+nba:Marvin_Bagley_III rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:Dallas_Mavericks ,
+                                   nba:Detroit_Pistons ,
+                                   nba:Memphis_Grizzlies ,
+                                   nba:Sacramento_Kings ,
+                                   nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Mason_Plumlee
+nba:Mason_Plumlee rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition nba:center ;
+                  nba:playsFor nba:San_Antonio_Spurs ;
+                  nba:hasHeight "2.13"^^xsd:double ;
+                  nba:hasJerseyNumber "45"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Matas_Buzelis
+nba:Matas_Buzelis rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Chicago_Bulls ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Matisse_Thybulle
+nba:Matisse_Thybulle rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Philadelphia_76ers ,
+                                  nba:Portland_Trail_Blazers ,
+                                  <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)> ;
+                     nba:hasHeight "1.96"^^xsd:double ;
+                     nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Max_Christie
+nba:Max_Christie rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Dallas_Mavericks .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Max_Shulga
+nba:Max_Shulga rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Boston_Celtics ;
+               nba:hasHeight "1.93"^^xsd:double ;
+               nba:hasJerseyNumber "44"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Max_Strus
+nba:Max_Strus rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Cleveland_Cavaliers ;
+              nba:hasHeight "1.96"^^xsd:double ;
+              nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Maxi_Kleber
+nba:Maxi_Kleber rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Dallas_Mavericks ,
+                             nba:Los_Angeles_Lakers ;
+                nba:hasHeight "2.08"^^xsd:double ;
+                nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Maxime_Raynaud
+nba:Maxime_Raynaud rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL.> ;
+                   nba:playsFor <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sacramento_Kings.> ;
+                   nba:hasHeight "2.16"^^xsd:double ;
+                   nba:hasJerseyNumber "42"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Memphis_Grizzlies
+nba:Memphis_Grizzlies rdf:type owl:NamedIndividual ,
+                               nba:Team ;
+                      nba:belongsTo nba:Western_Conference ;
+                      nba:hasHomeArena nba:Memphis_Grizzlies_Arena ;
+                      nba:playerName "Memphis Grizzlies" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Memphis_Grizzlies_Arena
+nba:Memphis_Grizzlies_Arena rdf:type owl:NamedIndividual ,
+                                     nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Memphis_Hustle
+nba:Memphis_Hustle rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Miami
+nba:Miami rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Miami_Heat
+nba:Miami_Heat rdf:type owl:NamedIndividual ,
+                        nba:Team ;
+               nba:belongsTo nba:Eastern_Conference ;
+               nba:hasHomeArena nba:Miami_Heat_Arena ;
+               nba:playerName "Miami Heat" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Miami_Heat_Arena
+nba:Miami_Heat_Arena rdf:type owl:NamedIndividual ,
+                              nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Micah_Peavy
+nba:Micah_Peavy rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:New_Orleans_Pelicans ;
+                nba:hasHeight "2.01"^^xsd:double ;
+                nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Micah_Potter
+nba:Micah_Potter rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Indiana_Pacers ;
+                 nba:hasHeight "2.06"^^xsd:double ;
+                 nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Mike_Brown
+nba:Mike_Brown rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:New_York_Knicks ;
+               nba:playerName "Mike Brown" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Milwaukee_Bucks
+nba:Milwaukee_Bucks rdf:type owl:NamedIndividual ,
+                             nba:Team ;
+                    nba:belongsTo nba:Eastern_Conference ;
+                    nba:hasHomeArena nba:Milwaukee_Bucks_Arena ;
+                    nba:playerName "Milwaukee Bucks" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Milwaukee_Bucks_Arena
+nba:Milwaukee_Bucks_Arena rdf:type owl:NamedIndividual ,
+                                   nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Minas
+nba:Minas rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Minnesota_Timberwolves
+nba:Minnesota_Timberwolves rdf:type owl:NamedIndividual ,
+                                    nba:Team ;
+                           nba:belongsTo nba:Western_Conference ;
+                           nba:hasHomeArena nba:Minnesota_Timberwolves_Arena ;
+                           nba:playerName "Minnesota Timberwolves" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Minnesota_Timberwolves_Arena
+nba:Minnesota_Timberwolves_Arena rdf:type owl:NamedIndividual ,
+                                          nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Mitch_Johnson
+nba:Mitch_Johnson rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:San_Antonio_Spurs ;
+                  nba:playerName "Mitch Johnson" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NBA_G_League_Ignite
+nba:NBA_G_League_Ignite rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL.> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association
+nba:National_Basketball_Association rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Naz_Reid
+nba:Naz_Reid rdf:type owl:NamedIndividual ,
+                      nba:Player ;
+             nba:playsFor nba:Minnesota_Timberwolves ;
+             nba:hasHeight "2.06"^^xsd:double ;
+             nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Neemias_Queta
+nba:Neemias_Queta rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playPosition nba:center ;
+                  nba:playsFor nba:Boston_Celtics ;
+                  nba:hasHeight "2.13"^^xsd:double ;
+                  nba:hasJerseyNumber "88"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/New_Orleans_Pelicans
+nba:New_Orleans_Pelicans rdf:type owl:NamedIndividual ,
+                                  nba:Team ;
+                         nba:belongsTo nba:Western_Conference ;
+                         nba:hasHomeArena nba:New_Orleans_Pelicans_Arena ;
+                         nba:playerName "New Orleans Pelicans" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/New_Orleans_Pelicans_Arena
+nba:New_Orleans_Pelicans_Arena rdf:type owl:NamedIndividual ,
+                                        nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/New_York_Knicks
+nba:New_York_Knicks rdf:type owl:NamedIndividual ,
+                             nba:Team ;
+                    nba:belongsTo nba:Eastern_Conference ;
+                    nba:hasHomeArena nba:New_York_Knicks_Arena ;
+                    nba:playerName "New York Knicks" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/New_York_Knicks_Arena
+nba:New_York_Knicks_Arena rdf:type owl:NamedIndividual ,
+                                   nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nic_Claxton
+nba:Nic_Claxton rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Brooklyn_Nets ;
+                nba:hasHeight "2.11"^^xsd:double ;
+                nba:hasJerseyNumber "33"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Nurse
+nba:Nick_Nurse rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:Philadelphia_76ers ;
+               nba:playerName "Nick Nurse" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Richards
+nba:Nick_Richards rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Chicago_Bulls ;
+                  nba:hasHeight "2.11"^^xsd:double ;
+                  nba:hasJerseyNumber "13"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Smith_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Smith_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                  nba:Player ;
+                                                                                         nba:playsFor nba:Los_Angeles_Lakers ;
+                                                                                         nba:hasHeight "1.88"^^xsd:double ;
+                                                                                         nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nickeil_Alexander-Walker
+nba:Nickeil_Alexander-Walker rdf:type owl:NamedIndividual ,
+                                      nba:Player ;
+                             nba:playPosition nba:guard ;
+                             nba:playsFor nba:Atlanta_Hawks ;
+                             nba:hasHeight "1.96"^^xsd:double ;
+                             nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nicolas_Batum
+nba:Nicolas_Batum rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Los_Angeles_Clippers ,
+                               <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)> .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nikola_Jokić
+nba:Nikola_Jokić rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:center ;
+                 nba:playsFor nba:Denver_Nuggets ;
+                 nba:hasHeight "2.11"^^xsd:double ;
+                 nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nikola_Jović
+nba:Nikola_Jović rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Miami_Heat ;
+                 nba:hasHeight "2.08"^^xsd:double ;
+                 nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nikola_Topić
+nba:Nikola_Topić rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:point_guard ;
+                 nba:playsFor nba:Oklahoma_City_Thunder ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "44"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nikola_Vučević
+nba:Nikola_Vučević rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Boston_Celtics ;
+                   nba:hasHeight "2.06"^^xsd:double ;
+                   nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nique_Clifford
+nba:Nique_Clifford rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Sacramento_Kings ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Noa_Essengue
+nba:Noa_Essengue rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Chicago_Bulls ;
+                 nba:hasHeight "2.03"^^xsd:double ;
+                 nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Noah_Clowney
+nba:Noah_Clowney rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ;
+                 nba:hasHeight "2.08"^^xsd:double ;
+                 nba:hasJerseyNumber "21"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Noah_Penda
+nba:Noah_Penda rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nolan_Traore
+nba:Nolan_Traore rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ;
+                 nba:hasHeight "1.91"^^xsd:double ;
+                 nba:hasJerseyNumber "88"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Oklahoma_City_Blue
+nba:Oklahoma_City_Blue rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Oklahoma_City_Thunder
+nba:Oklahoma_City_Thunder rdf:type owl:NamedIndividual ,
+                                   nba:Team ;
+                          nba:belongsTo nba:Western_Conference ;
+                          nba:hasHomeArena nba:Oklahoma_City_Thunder_Arena ;
+                          nba:playerName "Oklahoma City Thunder" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Oklahoma_City_Thunder_Arena
+nba:Oklahoma_City_Thunder_Arena rdf:type owl:NamedIndividual ,
+                                         nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Orlando_Magic
+nba:Orlando_Magic rdf:type owl:NamedIndividual ,
+                           nba:Team ;
+                  nba:belongsTo nba:Eastern_Conference ;
+                  nba:hasHomeArena nba:Orlando_Magic_Arena ;
+                  nba:playerName "Orlando Magic" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Orlando_Magic_Arena
+nba:Orlando_Magic_Arena rdf:type owl:NamedIndividual ,
+                                 nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Osceola_Magic
+nba:Osceola_Magic rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/PJ_Hall
+nba:PJ_Hall rdf:type owl:NamedIndividual ,
+                     nba:Player ;
+            nba:playPosition nba:center ;
+            nba:playsFor nba:Charlotte_Hornets ,
+                         <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)> ;
+            nba:hasHeight "2.03"^^xsd:double ;
+            nba:hasJerseyNumber "16"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Panathinaikos
+nba:Panathinaikos rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Pat_Spencer
+nba:Pat_Spencer rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Golden_State_Warriors ;
+                nba:hasHeight "1.88"^^xsd:double ;
+                nba:hasJerseyNumber "61"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Paul_George
+nba:Paul_George rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Philadelphia_76ers ;
+                nba:hasHeight "2.03"^^xsd:double ;
+                nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Payton_Pritchard
+nba:Payton_Pritchard rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Boston_Celtics ;
+                     nba:hasHeight "1.85"^^xsd:double ;
+                     nba:hasJerseyNumber "11"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Payton_Sandfort
+nba:Payton_Sandfort rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Oklahoma_City_Blue ,
+                                 nba:Oklahoma_City_Thunder ;
+                    nba:hasHeight "2.01"^^xsd:double ;
+                    nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Pelle_Larsson
+nba:Pelle_Larsson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Miami_Heat ;
+                  nba:hasHeight "1.96"^^xsd:double ;
+                  nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Pete_Nance
+nba:Pete_Nance rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Milwaukee_Bucks ;
+               nba:hasHeight "2.06"^^xsd:double ;
+               nba:hasJerseyNumber "35"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Peyton_Watson
+nba:Peyton_Watson rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Denver_Nuggets ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Philadelphia_76ers
+nba:Philadelphia_76ers rdf:type owl:NamedIndividual ,
+                                nba:Team ;
+                       nba:belongsTo nba:Eastern_Conference ;
+                       nba:hasHomeArena nba:Philadelphia_76ers_Arena ;
+                       nba:playerName "Philadelphia 76ers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Philadelphia_76ers_Arena
+nba:Philadelphia_76ers_Arena rdf:type owl:NamedIndividual ,
+                                      nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Phoenix_Suns
+nba:Phoenix_Suns rdf:type owl:NamedIndividual ,
+                          nba:Team ;
+                 nba:belongsTo nba:Western_Conference ;
+                 nba:hasHomeArena nba:Phoenix_Suns_Arena ;
+                 nba:playerName "Phoenix Suns" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Phoenix_Suns_Arena
+nba:Phoenix_Suns_Arena rdf:type owl:NamedIndividual ,
+                                nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Point_Guard
+nba:Point_Guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Portland_Trail_Blazers
+nba:Portland_Trail_Blazers rdf:type owl:NamedIndividual ,
+                                    nba:Team ;
+                           nba:belongsTo nba:Western_Conference ;
+                           nba:hasHomeArena nba:Portland_Trail_Blazers_Arena ;
+                           nba:playerName "Portland Trail Blazers" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Portland_Trail_Blazers_Arena
+nba:Portland_Trail_Blazers_Arena rdf:type owl:NamedIndividual ,
+                                          nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Power_Forward
+nba:Power_Forward rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Precious_Achiuwa
+nba:Precious_Achiuwa rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Sacramento_Kings ;
+                     nba:hasHeight "2.03"^^xsd:double ;
+                     nba:hasJerseyNumber "9"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Quentin_Grimes
+nba:Quentin_Grimes rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Philadelphia_76ers ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Quenton_Jackson
+nba:Quenton_Jackson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Indiana_Pacers ;
+                    nba:hasHeight "1.93"^^xsd:double ;
+                    nba:hasJerseyNumber "29"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Quin_Snyder
+nba:Quin_Snyder rdf:type owl:NamedIndividual ,
+                         nba:Coach ;
+                nba:coaches nba:Atlanta_Hawks ;
+                nba:playerName "Quin Snyder" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Quinten_Post
+nba:Quinten_Post rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:center ,
+                                  nba:power_forward ;
+                 nba:playsFor nba:Golden_State_Warriors ;
+                 nba:hasHeight "2.13"^^xsd:double ;
+                 nba:hasJerseyNumber "21"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Raptors_905
+nba:Raptors_905 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Rasheer_Fleming
+nba:Rasheer_Fleming rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Phoenix_Suns ;
+                    nba:hasHeight "2.06"^^xsd:double ;
+                    nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/RayJ_Dennis
+nba:RayJ_Dennis rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Atlanta_Hawks ,
+                             nba:College_Park_Skyhawks ;
+                nba:hasHeight "1.85"^^xsd:double ;
+                nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Rayan_Rupert
+nba:Rayan_Rupert rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Memphis_Grizzlies ,
+                              nba:Memphis_Hustle ,
+                              nba:Portland_Trail_Blazers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Rick_Carlisle
+nba:Rick_Carlisle rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:Indiana_Pacers ;
+                  nba:playerName "Rick Carlisle" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Rio_Grande_Valley_Vipers
+nba:Rio_Grande_Valley_Vipers rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Russian_national_team
+nba:Russian_national_team rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ryan_Rollins
+nba:Ryan_Rollins rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Milwaukee_Bucks ;
+                 nba:hasHeight "1.91"^^xsd:double ;
+                 nba:hasJerseyNumber "13"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sacramento_Kings
+nba:Sacramento_Kings rdf:type owl:NamedIndividual ,
+                              nba:Team ;
+                     nba:belongsTo nba:Western_Conference ;
+                     nba:hasHomeArena nba:Sacramento_Kings_Arena ;
+                     nba:playerName "Sacramento Kings" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sacramento_Kings.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sacramento_Kings.> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sacramento_Kings_Arena
+nba:Sacramento_Kings_Arena rdf:type owl:NamedIndividual ,
+                                    nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Saddiq_Bey
+nba:Saddiq_Bey rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:New_Orleans_Pelicans ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "41"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sam_Hauser
+nba:Sam_Hauser rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Boston_Celtics ;
+               nba:hasHeight "2.01"^^xsd:double ;
+               nba:hasJerseyNumber "30"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sam_Merrill
+nba:Sam_Merrill rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Cleveland_Cavaliers ,
+                             nba:Milwaukee_Bucks ;
+                nba:hasHeight "1.93"^^xsd:double ;
+                nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/San-en_NeoPhoenix
+nba:San-en_NeoPhoenix rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/San_Antonio_Spurs
+nba:San_Antonio_Spurs rdf:type owl:NamedIndividual ,
+                               nba:Team ;
+                      nba:belongsTo nba:Western_Conference ;
+                      nba:hasHomeArena nba:San_Antonio_Spurs_Arena ;
+                      nba:playerName "San Antonio Spurs" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/San_Antonio_Spurs_Arena
+nba:San_Antonio_Spurs_Arena rdf:type owl:NamedIndividual ,
+                                     nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/San_Diego_Clippers
+nba:San_Diego_Clippers rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sandro_Mamukelashvili
+nba:Sandro_Mamukelashvili rdf:type owl:NamedIndividual ,
+                                   nba:Player ;
+                          nba:playsFor nba:Toronto_Raptors ;
+                          nba:hasHeight "2.06"^^xsd:double ;
+                          nba:hasJerseyNumber "54"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Santa_Cruz_Warriors
+nba:Santa_Cruz_Warriors rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Santi_Aldama
+nba:Santi_Aldama rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Scoot_Henderson
+nba:Scoot_Henderson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Portland_Trail_Blazers ;
+                    nba:hasHeight "1.91"^^xsd:double ;
+                    nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Scottie_Barnes
+nba:Scottie_Barnes rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Toronto_Raptors ;
+                   nba:hasHeight "2.03"^^xsd:double ;
+                   nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Scotty_Pippen_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Scotty_Pippen_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sean_Pedulla
+nba:Sean_Pedulla rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Seth_Curry
+nba:Seth_Curry rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Golden_State_Warriors ;
+               nba:hasHeight "1.85"^^xsd:double ;
+               nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Shaedon_Sharpe
+nba:Shaedon_Sharpe rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Portland_Trail_Blazers ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Shai_Gilgeous-Alexander
+nba:Shai_Gilgeous-Alexander rdf:type owl:NamedIndividual ,
+                                     nba:Player ;
+                            nba:playsFor nba:Oklahoma_City_Thunder ;
+                            nba:hasHeight "1.98"^^xsd:double ;
+                            nba:hasJerseyNumber "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sharife_Cooper
+nba:Sharife_Cooper rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Shooting_Guard
+nba:Shooting_Guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sidy_Cissoko
+nba:Sidy_Cissoko rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:NBA_G_League_Ignite ,
+                              nba:Portland_Trail_Blazers ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "91"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Simone_Fontecchio
+nba:Simone_Fontecchio rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playPosition nba:small_forward ;
+                      nba:playsFor nba:Miami_Heat ;
+                      nba:hasHeight "2.01"^^xsd:double ;
+                      nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Sioux_Falls_Skyforce
+nba:Sioux_Falls_Skyforce rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Six
+nba:Six rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Small_Forward
+nba:Small_Forward rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Starting_Point_Guard
+nba:Starting_Point_Guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/StephanCurry
+nba:StephanCurry rdf:type owl:NamedIndividual ,
+                          nba:Guard ,
+                          nba:Player ;
+                 nba:playsFor nba:GoldenState .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Steve_Kerr
+nba:Steve_Kerr rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:Golden_State_Warriors ;
+               nba:playerName "Steve Kerr" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Stockton_Kings
+nba:Stockton_Kings rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Taj_Gibson
+nba:Taj_Gibson rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Charlotte_Hornets ,
+                            nba:Chicago_Bulls ,
+                            nba:Detroit_Pistons ,
+                            nba:Memphis_Grizzlies ,
+                            nba:Minnesota_Timberwolves ,
+                            nba:New_York_Knicks ,
+                            nba:Oklahoma_City_Thunder ,
+                            nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tari_Eason
+nba:Tari_Eason rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Houston_Rockets ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "17"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Taurean_Prince
+nba:Taurean_Prince rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Brooklyn_Nets ,
+                                nba:Cleveland_Cavaliers ,
+                                nba:Los_Angeles_Lakers ,
+                                nba:Milwaukee_Bucks ,
+                                nba:Minnesota_Timberwolves ;
+                   nba:hasHeight "1.98"^^xsd:double ;
+                   nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Taylor_Hendricks
+nba:Taylor_Hendricks rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Taylor_Jenkins
+nba:Taylor_Jenkins rdf:type owl:NamedIndividual ,
+                            nba:Coach ;
+                   nba:coaches nba:Milwaukee_Bucks ;
+                   nba:playerName "Taylor Jenkins" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Terance_Mann
+nba:Terance_Mann rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Brooklyn_Nets ;
+                 nba:hasHeight "1.98"^^xsd:double ;
+                 nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Terrence_Shannon_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Terrence_Shannon_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                        nba:Player ;
+                                                                                               nba:playsFor nba:Minnesota_Timberwolves ;
+                                                                                               nba:hasHeight "1.98"^^xsd:double ;
+                                                                                               nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Thanasis_Antetokounmpo
+nba:Thanasis_Antetokounmpo rdf:type owl:NamedIndividual ,
+                                    nba:Player ;
+                           nba:playPosition nba:power_forward ,
+                                            nba:small_forward ;
+                           nba:playsFor nba:Greek_national_team ,
+                                        nba:Milwaukee_Bucks ,
+                                        nba:Panathinaikos ;
+                           nba:hasHeight "2.01"^^xsd:double ;
+                           nba:hasJerseyNumber "43"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/The_Afterimage
+nba:The_Afterimage rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Thomas_Bryant
+nba:Thomas_Bryant rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Cleveland_Cavaliers ;
+                  nba:hasHeight "2.06"^^xsd:double ;
+                  nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Thomas_Sorber
+nba:Thomas_Sorber rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Oklahoma_City_Thunder ;
+                  nba:hasHeight "2.06"^^xsd:double ;
+                  nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tidjane_Salaün
+nba:Tidjane_Salaün rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Charlotte_Hornets ;
+                   nba:hasHeight "2.08"^^xsd:double ;
+                   nba:hasJerseyNumber "31"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tim_Hardaway_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tim_Hardaway_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                    nba:Player ;
+                                                                                           nba:playsFor nba:Atlanta_Hawks ,
+                                                                                                        nba:Dallas_Mavericks ,
+                                                                                                        nba:Denver_Nuggets ,
+                                                                                                        nba:Detroit_Pistons ,
+                                                                                                        nba:New_York_Knicks ;
+                                                                                           nba:hasHeight "1.96"^^xsd:double ;
+                                                                                           nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tobias_Harris
+nba:Tobias_Harris rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Detroit_Pistons ;
+                  nba:hasHeight "2.03"^^xsd:double ;
+                  nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tolu_Smith
+nba:Tolu_Smith rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Detroit_Pistons ;
+               nba:hasHeight "2.11"^^xsd:double ;
+               nba:hasJerseyNumber "35"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Toronto_Maple_Leafs
+nba:Toronto_Maple_Leafs rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Toronto_Raptors
+nba:Toronto_Raptors rdf:type owl:NamedIndividual ,
+                             nba:Team ;
+                    nba:belongsTo nba:Eastern_Conference ;
+                    nba:hasHomeArena nba:Toronto_Raptors_Arena ;
+                    nba:playerName "Toronto Raptors" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Toronto_Raptors_Arena
+nba:Toronto_Raptors_Arena rdf:type owl:NamedIndividual ,
+                                   nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Toronto_St._Patricks
+nba:Toronto_St._Patricks rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tosan_Evbuomwan
+nba:Tosan_Evbuomwan rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Charlotte_Hornets ,
+                                 nba:Greensboro_Swarm ;
+                    nba:hasHeight "2.03"^^xsd:double ;
+                    nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Toumani_Camara
+nba:Toumani_Camara rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Portland_Trail_Blazers ;
+                   nba:hasHeight "2.01"^^xsd:double ;
+                   nba:hasJerseyNumber "33"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tristen_Newton
+nba:Tristen_Newton rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playPosition <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)> ;
+                   nba:playsFor nba:Houston_Rockets ,
+                                nba:Minnesota_Timberwolves ,
+                                <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_other_teams)> ;
+                   nba:hasHeight "1.96"^^xsd:double ;
+                   nba:hasJerseyNumber "13"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tuomas_Iisalo
+nba:Tuomas_Iisalo rdf:type owl:NamedIndividual ,
+                           nba:Coach ;
+                  nba:coaches nba:Memphis_Grizzlies ;
+                  nba:playerName "Tuomas Iisalo" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/TyTy_Washington_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/TyTy_Washington_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                       nba:Player ;
+                                                                                              nba:playPosition nba:point_guard ;
+                                                                                              nba:playsFor nba:Los_Angeles_Clippers ,
+                                                                                                           nba:San_Diego_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ty_Jerome
+nba:Ty_Jerome rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Cleveland_Cavaliers ,
+                           nba:Golden_State_Warriors ,
+                           nba:Memphis_Grizzlies ,
+                           nba:Oklahoma_City_Thunder ,
+                           nba:Philadelphia_76ers ,
+                           nba:Phoenix_Suns .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyler_Herro
+nba:Tyler_Herro rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playPosition nba:point_guard ,
+                                 nba:shooting_guard ;
+                nba:playsFor nba:Miami_Heat ;
+                nba:hasHeight "1.96"^^xsd:double ;
+                nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyrese_Martin
+nba:Tyrese_Martin rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Delaware_Blue_Coats ,
+                               nba:Philadelphia_76ers ;
+                  nba:hasHeight "1.98"^^xsd:double ;
+                  nba:hasJerseyNumber "23"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyrese_Maxey
+nba:Tyrese_Maxey rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playPosition nba:Shooting_Guard ;
+                 nba:playsFor nba:Philadelphia_76ers ;
+                 nba:hasHeight "1.88"^^xsd:double ;
+                 nba:hasJerseyNumber "0"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyrese_Proctor
+nba:Tyrese_Proctor rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Cleveland_Cavaliers ;
+                   nba:hasHeight "1.93"^^xsd:double ;
+                   nba:hasJerseyNumber "24"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyronn_Lue
+nba:Tyronn_Lue rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:Los_Angeles_Clippers ;
+               nba:playerName "Tyronn Lue" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyson_Etienne
+nba:Tyson_Etienne rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Brooklyn_Nets ;
+                  nba:hasHeight "1.83"^^xsd:double ;
+                  nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Tyus_Jones
+nba:Tyus_Jones rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Denver_Nuggets ;
+               nba:hasHeight "1.83"^^xsd:double ;
+               nba:hasJerseyNumber "5"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/United_States_Wrestling_Association
+nba:United_States_Wrestling_Association rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Utah_Jazz
+nba:Utah_Jazz rdf:type owl:NamedIndividual ,
+                       nba:Team ;
+              nba:belongsTo nba:Western_Conference ;
+              nba:hasHomeArena nba:Utah_Jazz_Arena ;
+              nba:playerName "Utah Jazz" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Utah_Jazz_Arena
+nba:Utah_Jazz_Arena rdf:type owl:NamedIndividual ,
+                             nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/VJ_Edgecombe
+nba:VJ_Edgecombe rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Philadelphia_76ers ;
+                 nba:hasHeight "1.93"^^xsd:double ;
+                 nba:hasJerseyNumber "77"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Victor_Wembanyama
+nba:Victor_Wembanyama rdf:type owl:NamedIndividual ,
+                               nba:Player ;
+                      nba:playsFor nba:San_Antonio_Spurs ;
+                      nba:hasHeight "2.24"^^xsd:double ;
+                      nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Vladislav_Goldin
+nba:Vladislav_Goldin rdf:type owl:NamedIndividual ,
+                              nba:Player ;
+                     nba:playsFor nba:Miami_Heat ,
+                                  nba:Sioux_Falls_Skyforce ;
+                     nba:hasHeight "2.13"^^xsd:double ;
+                     nba:hasJerseyNumber "50"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Vít_Krejčí
+nba:Vít_Krejčí rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Portland_Trail_Blazers ;
+               nba:hasHeight "2.03"^^xsd:double ;
+               nba:hasJerseyNumber "27"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Walker_Kessler
+nba:Walker_Kessler rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Utah_Jazz .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Walter_Clayton_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Walter_Clayton_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                      nba:Player ;
+                                                                                             nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Washington_Wizards
+nba:Washington_Wizards rdf:type owl:NamedIndividual ,
+                                nba:Team ;
+                       nba:belongsTo nba:Eastern_Conference ;
+                       nba:hasHomeArena nba:Washington_Wizards_Arena ;
+                       nba:playerName "Washington Wizards" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Washington_Wizards_Arena
+nba:Washington_Wizards_Arena rdf:type owl:NamedIndividual ,
+                                      nba:Arena .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Wendell_Carter_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Wendell_Carter_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                      nba:Player ;
+                                                                                             nba:playsFor nba:Orlando_Magic .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Wendell_Moore_Jr.
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Wendell_Moore_Jr.> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Detroit_Pistons ;
+                                                                                            nba:hasHeight "1.96"^^xsd:double ;
+                                                                                            nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Western_Conference
+nba:Western_Conference rdf:type owl:NamedIndividual ,
+                                nba:WesternConferance .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Will_Hardy
+nba:Will_Hardy rdf:type owl:NamedIndividual ,
+                        nba:Coach ;
+               nba:coaches nba:Utah_Jazz ;
+               nba:playerName "Will Hardy" .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Will_Richard
+nba:Will_Richard rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Golden_State_Warriors ;
+                 nba:hasHeight "1.91"^^xsd:double ;
+                 nba:hasJerseyNumber "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Will_Riley
+nba:Will_Riley rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Washington_Wizards .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Windy_City_Bulls
+nba:Windy_City_Bulls rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/World_Class_Championship_Wrestling
+nba:World_Class_Championship_Wrestling rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/World_Wrestling_Council
+nba:World_Wrestling_Council rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Xavier_Tillman
+nba:Xavier_Tillman rdf:type owl:NamedIndividual ,
+                            nba:Player ;
+                   nba:playsFor nba:Charlotte_Hornets ;
+                   nba:hasHeight "2.03"^^xsd:double ;
+                   nba:hasJerseyNumber "26"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Yang_Hansen
+nba:Yang_Hansen rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Portland_Trail_Blazers ;
+                nba:hasHeight "2.16"^^xsd:double ;
+                nba:hasJerseyNumber "16"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Yanic_Konan_Niederhäuser
+nba:Yanic_Konan_Niederhäuser rdf:type owl:NamedIndividual ,
+                                      nba:Player ;
+                             nba:playsFor nba:Los_Angeles_Clippers .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Yokohama_B-Corsairs
+nba:Yokohama_B-Corsairs rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Yuki_Kawamura
+nba:Yuki_Kawamura rdf:type owl:NamedIndividual ,
+                           nba:Player ;
+                  nba:playsFor nba:Chicago_Bulls ,
+                               nba:Japan_national_team ,
+                               nba:San-en_NeoPhoenix ,
+                               nba:Windy_City_Bulls ,
+                               nba:Yokohama_B-Corsairs ;
+                  nba:hasHeight "1.7"^^xsd:double ;
+                  nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Yves_Missi
+nba:Yves_Missi rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:New_Orleans_Pelicans ;
+               nba:hasHeight "2.11"^^xsd:double ;
+               nba:hasJerseyNumber "21"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zaccharie_Risacher
+nba:Zaccharie_Risacher rdf:type owl:NamedIndividual ,
+                                nba:Player ;
+                       nba:playsFor nba:Atlanta_Hawks ;
+                       nba:hasHeight "2.03"^^xsd:double ;
+                       nba:hasJerseyNumber "10"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zach_Collins
+nba:Zach_Collins rdf:type owl:NamedIndividual ,
+                          nba:Player ;
+                 nba:playsFor nba:Chicago_Bulls ;
+                 nba:hasHeight "2.06"^^xsd:double ;
+                 nba:hasJerseyNumber "12"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zach_Edey
+nba:Zach_Edey rdf:type owl:NamedIndividual ,
+                       nba:Player ;
+              nba:playsFor nba:Memphis_Grizzlies .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zach_LaVine
+nba:Zach_LaVine rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Sacramento_Kings ;
+                nba:hasHeight "1.96"^^xsd:double ;
+                nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zeke_Nnaji
+nba:Zeke_Nnaji rdf:type owl:NamedIndividual ,
+                        nba:Player ;
+               nba:playsFor nba:Denver_Nuggets ;
+               nba:hasHeight "2.08"^^xsd:double ;
+               nba:hasJerseyNumber "22"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ziaire_Williams
+nba:Ziaire_Williams rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playsFor nba:Brooklyn_Nets ;
+                    nba:hasHeight "2.06"^^xsd:double ;
+                    nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zion_Williamson
+nba:Zion_Williamson rdf:type owl:NamedIndividual ,
+                             nba:Player ;
+                    nba:playPosition nba:Power_Forward ;
+                    nba:playsFor nba:New_Orleans_Pelicans ;
+                    nba:hasHeight "1.98"^^xsd:double ;
+                    nba:hasJerseyNumber "1"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Zyon_Pullin
+nba:Zyon_Pullin rdf:type owl:NamedIndividual ,
+                         nba:Player ;
+                nba:playsFor nba:Iowa_Wolves ,
+                             nba:Minnesota_Timberwolves ;
+                nba:hasHeight "1.93"^^xsd:double ;
+                nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/center
+nba:center rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/combo_forward
+nba:combo_forward rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/combo_guard
+nba:combo_guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/guard
+nba:guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/point_guard
+nba:point_guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/power_forward
+nba:power_forward rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/shooting_guard
+nba:shooting_guard rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/small_forward
+nba:small_forward rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/AJ_Johnson_(basketball)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/AJ_Johnson_(basketball)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center/Key_Defensive_Player
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Center/Key_Defensive_Player> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Day'Ron_Sharpe
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Day'Ron_Sharpe> rdf:type owl:NamedIndividual ,
+                                                                                                  nba:Player ;
+                                                                                         nba:playsFor nba:Brooklyn_Nets ;
+                                                                                         nba:hasHeight "2.08"^^xsd:double ;
+                                                                                         nba:hasJerseyNumber "20"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Aaron_Fox
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Aaron_Fox> rdf:type owl:NamedIndividual ,
+                                                                                                nba:Player ;
+                                                                                       nba:playsFor nba:San_Antonio_Spurs ;
+                                                                                       nba:hasHeight "1.91"^^xsd:double ;
+                                                                                       nba:hasJerseyNumber "4"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Andre_Hunter
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Andre_Hunter> rdf:type owl:NamedIndividual ,
+                                                                                                   nba:Player ;
+                                                                                          nba:playsFor nba:Sacramento_Kings ;
+                                                                                          nba:hasHeight "2.01"^^xsd:double ;
+                                                                                          nba:hasJerseyNumber "15"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Anthony_Melton
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Anthony_Melton> rdf:type owl:NamedIndividual ,
+                                                                                                     nba:Player ;
+                                                                                            nba:playsFor nba:Golden_State_Warriors ;
+                                                                                            nba:hasHeight "1.88"^^xsd:double ;
+                                                                                            nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ja'Kobe_Walter
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Ja'Kobe_Walter> rdf:type owl:NamedIndividual ,
+                                                                                                  nba:Player ;
+                                                                                         nba:playPosition nba:Shooting_Guard ;
+                                                                                         nba:playsFor nba:Toronto_Raptors ;
+                                                                                         nba:hasHeight "1.93"^^xsd:double ;
+                                                                                         nba:hasJerseyNumber "14"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jae'Sean_Tate
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jae'Sean_Tate> rdf:type owl:NamedIndividual ,
+                                                                                                 nba:Player ;
+                                                                                        nba:playsFor nba:Houston_Rockets ;
+                                                                                        nba:hasHeight "1.93"^^xsd:double ;
+                                                                                        nba:hasJerseyNumber "8"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kel'el_Ware
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kel'el_Ware> rdf:type owl:NamedIndividual ,
+                                                                                               nba:Player ;
+                                                                                      nba:playsFor nba:Miami_Heat ;
+                                                                                      nba:hasHeight "2.13"^^xsd:double ;
+                                                                                      nba:hasJerseyNumber "7"^^xsd:int .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_other_teams)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_other_teams)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_position)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_previous_teams)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_previous_teams)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team_before_NBA)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/NULL_(unknown_team_before_NBA)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/National_Basketball_Association_(NBA)> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

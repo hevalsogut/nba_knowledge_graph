@@ -1,0 +1,12 @@
+PREFIX nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/>
+
+# CQ2 - Identify the head coach responsible for a specific organization.
+# Parameterized via VALUES for consistency with CQ1's direct-binding pattern.
+SELECT ?coach ?coachName
+WHERE {
+  VALUES ?team { nba:Boston_Celtics }
+
+  ?coach a nba:Coach ;
+         nba:coaches    ?team ;
+         nba:playerName ?coachName .
+}

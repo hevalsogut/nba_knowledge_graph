@@ -1,0 +1,15 @@
+PREFIX nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/>
+
+# CQ1 - Determine the current team and position of a specific player.
+# Refactored: uses VALUES to bind the subject directly instead of a
+# full-graph scan with FILTER(CONTAINS(STR(?player), "...")), so the
+# engine can seek the player node instead of evaluating a string
+# predicate against every candidate.
+SELECT ?player ?team ?position
+WHERE {
+  VALUES ?player { nba:Aaron_Gordon }
+
+  ?player a nba:Player ;
+          nba:playsFor     ?team ;
+          nba:playPosition ?position .
+}

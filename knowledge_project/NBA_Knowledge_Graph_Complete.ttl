@@ -1,0 +1,1553 @@
+@prefix nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10> a owl:Ontology .
+
+nba:A.J._Lawson a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:AJ_Johnson a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Aaron_Gordon a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "32"^^xsd:int ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Aaron_Holiday a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Aaron_Nesmith a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Indiana_Pacers .
+
+nba:Aaron_Wiggins a nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "21"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Adem_Bona a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "30"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Adou_Thiero a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Ajay_Mitchell a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Al_Horford a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Alex_Antetokounmpo a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "29"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Alex_Caruso a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Alex_Sarr a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Washington_Wizards .
+
+nba:Alperen_Sengun a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "28"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Amen_Thompson a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Amir_Coffey a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Andre_Drummond a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Andre_Jackson_Jr.> a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "44"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Andrew_Nembhard a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Indiana_Pacers .
+
+nba:Andrew_Wiggins a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "22"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Anthony_Black a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:playsFor nba:Orlando_Magic .
+
+nba:Ben_Saraf a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "77"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Bilal_Coulibaly a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Washington_Wizards .
+
+nba:Bismack_Biyombo a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "18"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Blake_Wesley a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Bobby_Portis a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Bogdan_Bogdanović a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Bones_Hyland a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Minnesota_Timberwolves .
+
+nba:Bradley_Beal a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Branden_Carlson a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "15"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Brandin_Podziemski a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Brandon_Clarke a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "15"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Brandon_Ingram a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Brandon_Miller a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:Brandon_Williams a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Brian_Keefe a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Washington_Wizards ;
+    nba:playerName "Brian Keefe" .
+
+nba:Brice_Sensabaugh a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:playsFor nba:Utah_Jazz .
+
+nba:CJ_McCollum a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Cam_Spencer a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Cam_Whitmore a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Washington_Wizards .
+
+nba:Caris_LeVert a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Cason_Wallace a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "22"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Cedric_Coward a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Charles_Bassey a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "28"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Charles_Lee a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Charlotte_Hornets ;
+    nba:playerName "Charles Lee" .
+
+nba:Chauncey_Billups a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Portland_Trail_Blazers ;
+    nba:playerName "Chauncey Billups" .
+
+nba:Chaz_Lanier a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Chet_Holmgren a nba:Player ;
+    nba:hasHeight 2.16e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playPosition nba:Center ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Chris_Finch a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Minnesota_Timberwolves ;
+    nba:playerName "Chris Finch" .
+
+nba:Chris_Mañon a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "30"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Christian_Braun a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Christian_Koloko a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Chucky_Hepburn a nba:Player ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Clint_Capela a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "30"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Coby_White a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:DaRon_Holmes_II a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "14"^^xsd:int ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Daeqwon_Plowden a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "29"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Dalano_Banton a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Dalton_Knecht a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Damian_Lillard a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Daniel_Gafford a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Danny_Wolf a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Darius_Garland a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Darko_Rajakovic a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Toronto_Raptors ;
+    nba:playerName "Darko Rajakovic" .
+
+nba:David_Adelman a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Denver_Nuggets ;
+    nba:playerName "David Adelman" .
+
+nba:David_Roddy a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Davion_Mitchell a nba:Player ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Aaron_Fox> a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Andre_Hunter> a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "15"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/De'Anthony_Melton> a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Deandre_Ayton a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "5"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Dillon_Brooks a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Dillon_Jones a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "33"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Domantas_Sabonis a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Dominick_Barlow a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Donovan_Clingan a nba:Player ;
+    nba:hasHeight 2.18e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Donovan_Mitchell a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playsFor nba:Cleveland_Cavaliers .
+
+nba:Donte_DiVincenzo a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Minnesota_Timberwolves .
+
+nba:Dorian_Finney-Smith a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Doug_Christie a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Sacramento_Kings ;
+    nba:playerName "Doug Christie" .
+
+nba:Doug_McDermott a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Drake_Powell a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Draymond_Green a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Drew_Eubanks a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "19"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Drew_Timme a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "17"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Dru_Smith a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "12"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Duncan_Robinson a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "55"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Dwight_Powell a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Dylan_Cardwell a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "32"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Dylan_Harper a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:EasternConferenceTeam a owl:Class ;
+    rdfs:subClassOf nba:Team .
+
+nba:Erik_Spoelstra a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Miami_Heat ;
+    nba:playerName "Erik Spoelstra" .
+
+nba:GG_Jackson a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Game a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Gary_Payton_II a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Gary_Trent_Jr.> a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "5"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Giannis_Antetokounmpo a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "34"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Gradey_Dick a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Grayson_Allen a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Guerschon_Yabusele a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "28"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Gui_Santos a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "15"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Harrison_Barnes a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "40"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Harrison_Ingram a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "55"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Haywood_Highsmith a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Herbert_Jones a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+nba:Hunter_Dickinson a nba:Player ;
+    nba:hasHeight 2.16e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+nba:Ime_Udoka a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Houston_Rockets ;
+    nba:playerName "Ime Udoka" .
+
+nba:J.B._Bickerstaff a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Detroit_Pistons ;
+    nba:playerName "J.B. Bickerstaff" .
+
+nba:JD_Davison a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:JJ_Redick a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Los_Angeles_Lakers ;
+    nba:playerName "JJ Redick" .
+
+nba:Ja_Morant a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "12"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jabari_Smith_Jr.> a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "10"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Jabari_Walker a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "33"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Jaden_Hardy a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Washington_Wizards .
+
+nba:Jaden_McDaniels a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Minnesota_Timberwolves .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jae'Sean_Tate> a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Jahmir_Young a nba:Player ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "17"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Jaime_Jaquez_Jr.> a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Jake_LaRavia a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "12"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Jakob_Poeltl a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "19"^^xsd:int ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Jalen_Brunson a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Jalen_Duren a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Jalen_Green a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Jalen_Pickett a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Jalen_Slawson a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "18"^^xsd:int ;
+    nba:playsFor nba:Indiana_Pacers .
+
+nba:Jalen_Smith a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Jalen_Suggs a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playsFor nba:Orlando_Magic .
+
+nba:James_Borrego a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:New_Orleans_Pelicans ;
+    nba:playerName "James Borrego" .
+
+nba:Jason_Kidd a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Dallas_Mavericks ;
+    nba:playerName "Jason Kidd" .
+
+nba:Javon_Small a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:hasJerseyNumber "10"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Javonte_Green a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "31"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Jaxson_Hayes a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Jay_Huff a nba:Player ;
+    nba:hasHeight 2.16e+00 ;
+    nba:hasJerseyNumber "32"^^xsd:int ;
+    nba:playsFor nba:Indiana_Pacers .
+
+nba:Jaylen_Brown a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Jaylen_Clark a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "22"^^xsd:int ;
+    nba:playsFor nba:Minnesota_Timberwolves .
+
+nba:Jaylen_Wells a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Jaylin_Williams a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "6"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Jaylon_Tyson a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Cleveland_Cavaliers .
+
+nba:Jayson_Tatum a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Jeff_Green a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "32"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Jerami_Grant a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Jeremiah_Fears a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+nba:Joe_Mazzulla a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Boston_Celtics ;
+    nba:playerName "Joe Mazzulla" .
+
+nba:John_Tonje a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Jonas_Valančiūnas a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "17"^^xsd:int ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Jonathan_Isaac a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:playsFor nba:Orlando_Magic .
+
+nba:Jonathan_Kuminga a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Jonathan_Mogbo a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Toronto_Raptors .
+
+nba:Jordan_Clarkson a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Jordan_Goodwin a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:Jordan_Hawkins a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+nba:Jordan_McLaughlin a nba:Player ;
+    nba:hasHeight 1.8e+00 ;
+    nba:hasJerseyNumber "0"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Jordan_Ott a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Phoenix_Suns ;
+    nba:playerName "Jordan Ott" .
+
+nba:Jordan_Poole a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+nba:Jordan_Walsh a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "27"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Jordi_Fernandez a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Brooklyn_Nets ;
+    nba:playerName "Jordi Fernandez" .
+
+nba:Josh_Giddey a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Josh_Hart a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Kasparas_Jakučionis a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Kawhi_Leonard a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Keaton_Wallace a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Keegan_Murray a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "13"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kel'el_Ware> a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Keldon_Johnson a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Kelly_Olynyk a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kelly_Oubre_Jr.> a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Kenny_Atkinson a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Cleveland_Cavaliers ;
+    nba:playerName "Kenny Atkinson" .
+
+nba:Kenrich_Williams a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "34"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Kentavious_Caldwell-Pope a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "3"^^xsd:int ;
+    nba:playsFor nba:Memphis_Grizzlies .
+
+nba:Kevin_Durant a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playsFor nba:Houston_Rockets .
+
+nba:Kevin_Huerter a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "27"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Kevin_Love a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:playsFor nba:Utah_Jazz .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Kevin_McCullar_Jr.> a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Kris_Dunn a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Kris_Murray a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Kyle_Filipowski a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:playsFor nba:Utah_Jazz .
+
+nba:Kyle_Kuzma a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "18"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Kyle_Lowry a nba:Player ;
+    nba:hasHeight 1.83e+00 ;
+    nba:hasJerseyNumber "7"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Kyrie_Irving a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:LaMelo_Ball a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "1"^^xsd:int ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:Lachlan_Olbrich a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "47"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Landry_Shamet a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "44"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Larry_Nance_Jr.> a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "22"^^xsd:int ;
+    nba:playsFor nba:Cleveland_Cavaliers .
+
+nba:Lauri_Markkanen a nba:Player ;
+    nba:hasHeight 2.16e+00 ;
+    nba:playsFor nba:Utah_Jazz .
+
+nba:LeBron_James a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "23"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Leaky_Black a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "12"^^xsd:int ;
+    nba:playsFor nba:Washington_Wizards .
+
+nba:Leonard_Miller a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Liam_McNeeley a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "33"^^xsd:int ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:Marcus_Sasser a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:Detroit_Pistons .
+
+nba:Marcus_Smart a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "36"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Mark_Daigneault a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Oklahoma_City_Thunder ;
+    nba:playerName "Mark Daigneault" .
+
+nba:Marvin_Bagley_III a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Mason_Plumlee a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "45"^^xsd:int ;
+    nba:playPosition nba:Center ;
+    nba:playsFor nba:San_Antonio_Spurs .
+
+nba:Matisse_Thybulle a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playsFor nba:Portland_Trail_Blazers .
+
+nba:Max_Christie a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playsFor nba:Dallas_Mavericks .
+
+nba:Max_Shulga a nba:Player ;
+    nba:hasHeight 1.93e+00 ;
+    nba:hasJerseyNumber "44"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Max_Strus a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "2"^^xsd:int ;
+    nba:playsFor nba:Cleveland_Cavaliers .
+
+nba:Maxi_Kleber a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "14"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Maxime_Raynaud a nba:Player ;
+    nba:hasHeight 2.16e+00 ;
+    nba:hasJerseyNumber "42"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Micah_Peavy a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "14"^^xsd:int ;
+    nba:playsFor nba:New_Orleans_Pelicans .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Michael_Porter_Jr.> a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "17"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Mikal_Bridges a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "25"^^xsd:int ;
+    nba:playsFor nba:New_York_Knicks .
+
+nba:Mike_Brown a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:New_York_Knicks ;
+    nba:playerName "Mike Brown" .
+
+nba:Mitch_Johnson a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:San_Antonio_Spurs ;
+    nba:playerName "Mitch Johnson" .
+
+nba:Neemias_Queta a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "88"^^xsd:int ;
+    nba:playPosition nba:Center ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Nic_Claxton a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "33"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Nick_Nurse a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Philadelphia_76ers ;
+    nba:playerName "Nick Nurse" .
+
+nba:Nick_Richards a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "13"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+<http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/Nick_Smith_Jr.> a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Los_Angeles_Lakers .
+
+nba:Nickeil_Alexander-Walker a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Nicolas_Batum a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:playsFor nba:Los_Angeles_Clippers .
+
+nba:Nikola_Jokić a nba:Player ;
+    nba:hasHeight 2.11e+00 ;
+    nba:hasJerseyNumber "15"^^xsd:int ;
+    nba:playPosition nba:Center ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Nikola_Jović a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "5"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Nikola_Topić a nba:Player ;
+    nba:hasHeight 1.98e+00 ;
+    nba:hasJerseyNumber "44"^^xsd:int ;
+    nba:playPosition nba:Guard ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Nikola_Vučević a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "4"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Nique_Clifford a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "5"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Noa_Essengue a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:Chicago_Bulls .
+
+nba:Noah_Clowney a nba:Player ;
+    nba:hasHeight 2.08e+00 ;
+    nba:hasJerseyNumber "21"^^xsd:int ;
+    nba:playPosition nba:Forward ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Noah_Penda a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:playsFor nba:Orlando_Magic .
+
+nba:Nolan_Traore a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "88"^^xsd:int ;
+    nba:playsFor nba:Brooklyn_Nets .
+
+nba:Norman_Powell a nba:Player ;
+    nba:hasHeight 1.91e+00 ;
+    nba:hasJerseyNumber "24"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:PJ_Hall a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "16"^^xsd:int ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:Pat_Connaughton a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "21"^^xsd:int ;
+    nba:playsFor nba:Charlotte_Hornets .
+
+nba:Pat_Spencer a nba:Player ;
+    nba:hasHeight 1.88e+00 ;
+    nba:hasJerseyNumber "61"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Paul_George a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Philadelphia_76ers .
+
+nba:Payton_Pritchard a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:hasJerseyNumber "11"^^xsd:int ;
+    nba:playsFor nba:Boston_Celtics .
+
+nba:Payton_Sandfort a nba:Player ;
+    nba:hasHeight 2.01e+00 ;
+    nba:hasJerseyNumber "14"^^xsd:int ;
+    nba:playsFor nba:Oklahoma_City_Thunder .
+
+nba:Pelle_Larsson a nba:Player ;
+    nba:hasHeight 1.96e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:Miami_Heat .
+
+nba:Pete_Nance a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "35"^^xsd:int ;
+    nba:playsFor nba:Milwaukee_Bucks .
+
+nba:Peyton_Watson a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "8"^^xsd:int ;
+    nba:playsFor nba:Denver_Nuggets .
+
+nba:Precious_Achiuwa a nba:Player ;
+    nba:hasHeight 2.03e+00 ;
+    nba:hasJerseyNumber "9"^^xsd:int ;
+    nba:playsFor nba:Sacramento_Kings .
+
+nba:Quin_Snyder a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Atlanta_Hawks ;
+    nba:playerName "Quin Snyder" .
+
+nba:Quinten_Post a nba:Player ;
+    nba:hasHeight 2.13e+00 ;
+    nba:hasJerseyNumber "21"^^xsd:int ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Rasheer_Fleming a nba:Player ;
+    nba:hasHeight 2.06e+00 ;
+    nba:hasJerseyNumber "20"^^xsd:int ;
+    nba:playsFor nba:Phoenix_Suns .
+
+nba:RayJ_Dennis a nba:Player ;
+    nba:hasHeight 1.85e+00 ;
+    nba:playsFor nba:Atlanta_Hawks .
+
+nba:Rick_Carlisle a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Indiana_Pacers ;
+    nba:playerName "Rick Carlisle" .
+
+nba:Stephen_Curry a nba:Guard,
+        nba:Player,
+        owl:NamedIndividual ;
+    nba:hasHeight 1.88e+00 ;
+    nba:playsFor nba:Golden_State_Warriors .
+
+nba:Steve_Kerr a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Golden_State_Warriors ;
+    nba:playerName "Steve Kerr" .
+
+nba:Taylor_Jenkins a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Milwaukee_Bucks ;
+    nba:playerName "Taylor Jenkins" .
+
+nba:Tuomas_Iisalo a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Memphis_Grizzlies ;
+    nba:playerName "Tuomas Iisalo" .
+
+nba:Tyronn_Lue a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Los_Angeles_Clippers ;
+    nba:playerName "Tyronn Lue" .
+
+nba:WesternConferenceTeam a owl:Class ;
+    rdfs:subClassOf nba:Team .
+
+nba:Will_Hardy a nba:Coach,
+        owl:NamedIndividual ;
+    nba:coaches nba:Utah_Jazz ;
+    nba:playerName "Will Hardy" .
+
+nba:attendance a owl:DatatypeProperty ;
+    rdfs:subPropertyOf nba:hasCapacity .
+
+nba:belongsTo a owl:ObjectProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Conference ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:championshipsWon a owl:DatatypeProperty ;
+    rdfs:label "Championship number" ;
+    rdfs:domain nba:Team ;
+    rdfs:range xsd:int .
+
+nba:coaches a owl:ObjectProperty ;
+    rdfs:domain nba:Coach ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:hasHeight a owl:DatatypeProperty ;
+    rdfs:label "player height" ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:double .
+
+nba:hasHomeArena a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Arena ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:hasJerseyNumber a owl:DatatypeProperty ;
+    rdfs:label "jersey number" ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:int .
+
+nba:hasPlayer a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:inverseOf nba:playsFor .
+
+nba:hasRival a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:isDraftedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:playPosition a owl:ObjectProperty ;
+    rdfs:domain nba:Player ;
+    rdfs:range nba:Position ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:playerName a owl:DatatypeProperty ;
+    rdfs:label "player name" ;
+    rdfs:range xsd:string .
+
+nba:Atlanta_Hawks_Arena a nba:Arena .
+
+nba:Boston_Celtics_Arena a nba:Arena .
+
+nba:Brooklyn_Nets_Arena a nba:Arena .
+
+nba:Charlotte_Hornets_Arena a nba:Arena .
+
+nba:Chicago_Bulls_Arena a nba:Arena .
+
+nba:Cleveland_Cavaliers_Arena a nba:Arena .
+
+nba:Dallas_Mavericks_Arena a nba:Arena .
+
+nba:Denver_Nuggets_Arena a nba:Arena .
+
+nba:Detroit_Pistons_Arena a nba:Arena .
+
+nba:EasternConference a owl:Class ;
+    rdfs:subClassOf nba:Conference .
+
+nba:Golden_State_Warriors_Arena a nba:Arena .
+
+nba:Houston_Rockets_Arena a nba:Arena .
+
+nba:Indiana_Pacers_Arena a nba:Arena .
+
+nba:Los_Angeles_Clippers_Arena a nba:Arena .
+
+nba:Los_Angeles_Lakers_Arena a nba:Arena .
+
+nba:Memphis_Grizzlies_Arena a nba:Arena .
+
+nba:Miami_Heat_Arena a nba:Arena .
+
+nba:Milwaukee_Bucks_Arena a nba:Arena .
+
+nba:Minnesota_Timberwolves_Arena a nba:Arena .
+
+nba:New_Orleans_Pelicans_Arena a nba:Arena .
+
+nba:New_York_Knicks_Arena a nba:Arena .
+
+nba:Oklahoma_City_Thunder_Arena a nba:Arena .
+
+nba:Orlando_Magic_Arena a nba:Arena .
+
+nba:Philadelphia_76ers_Arena a nba:Arena .
+
+nba:Phoenix_Suns_Arena a nba:Arena .
+
+nba:Portland_Trail_Blazers_Arena a nba:Arena .
+
+nba:Sacramento_Kings_Arena a nba:Arena .
+
+nba:San_Antonio_Spurs_Arena a nba:Arena .
+
+nba:Toronto_Raptors_Arena a nba:Arena .
+
+nba:Utah_Jazz_Arena a nba:Arena .
+
+nba:Washington_Wizards_Arena a nba:Arena .
+
+nba:WesternConference a owl:Class ;
+    rdfs:subClassOf nba:Conference .
+
+nba:hasCapacity a owl:DatatypeProperty ;
+    rdfs:label "Capacity of the arena" ;
+    rdfs:domain nba:Arena ;
+    rdfs:range xsd:int .
+
+nba:playsFor a owl:ObjectProperty ;
+    rdfs:domain nba:Player ;
+    rdfs:range nba:Team ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+nba:Conference a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Center a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:Orlando_Magic a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Orlando_Magic_Arena ;
+    nba:playerName "Orlando Magic" .
+
+nba:Position a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Cleveland_Cavaliers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Cleveland_Cavaliers_Arena ;
+    nba:playerName "Cleveland Cavaliers" .
+
+nba:Forward a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:Indiana_Pacers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Indiana_Pacers_Arena ;
+    nba:playerName "Indiana Pacers" .
+
+nba:Minnesota_Timberwolves a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Minnesota_Timberwolves_Arena ;
+    nba:playerName "Minnesota Timberwolves" .
+
+nba:Utah_Jazz a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Utah_Jazz_Arena ;
+    nba:playerName "Utah Jazz" .
+
+nba:Washington_Wizards a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Washington_Wizards_Arena ;
+    nba:playerName "Washington Wizards" .
+
+nba:Atlanta_Hawks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Atlanta_Hawks_Arena ;
+    nba:playerName "Atlanta Hawks" .
+
+nba:Charlotte_Hornets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Charlotte_Hornets_Arena ;
+    nba:playerName "Charlotte Hornets" .
+
+nba:Chicago_Bulls a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Chicago_Bulls_Arena ;
+    nba:playerName "Chicago Bulls" .
+
+nba:Los_Angeles_Clippers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Los_Angeles_Clippers_Arena ;
+    nba:playerName "Los Angeles Clippers" .
+
+nba:NBA-Member a owl:Class .
+
+nba:New_Orleans_Pelicans a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:New_Orleans_Pelicans_Arena ;
+    nba:playerName "New Orleans Pelicans" .
+
+nba:Portland_Trail_Blazers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Portland_Trail_Blazers_Arena ;
+    nba:playerName "Portland Trail Blazers" .
+
+nba:Toronto_Raptors a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Toronto_Raptors_Arena ;
+    nba:playerName "Toronto Raptors" .
+
+nba:Brooklyn_Nets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Brooklyn_Nets_Arena ;
+    nba:playerName "Brooklyn Nets" .
+
+nba:Dallas_Mavericks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Dallas_Mavericks_Arena ;
+    nba:playerName "Dallas Mavericks" .
+
+nba:Detroit_Pistons a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Detroit_Pistons_Arena ;
+    nba:playerName "Detroit Pistons" .
+
+nba:Milwaukee_Bucks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Milwaukee_Bucks_Arena ;
+    nba:playerName "Milwaukee Bucks" .
+
+nba:New_York_Knicks a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:New_York_Knicks_Arena ;
+    nba:playerName "New York Knicks" .
+
+nba:Philadelphia_76ers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Philadelphia_76ers_Arena ;
+    nba:playerName "Philadelphia 76ers" .
+
+nba:Phoenix_Suns a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Phoenix_Suns_Arena ;
+    nba:playerName "Phoenix Suns" .
+
+nba:Denver_Nuggets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Denver_Nuggets_Arena ;
+    nba:playerName "Denver Nuggets" .
+
+nba:Guard a owl:Class ;
+    rdfs:subClassOf nba:Position .
+
+nba:Memphis_Grizzlies a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Memphis_Grizzlies_Arena ;
+    nba:playerName "Memphis Grizzlies" .
+
+nba:Boston_Celtics a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Boston_Celtics_Arena ;
+    nba:playerName "Boston Celtics" .
+
+nba:San_Antonio_Spurs a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:San_Antonio_Spurs_Arena ;
+    nba:playerName "San Antonio Spurs" .
+
+nba:Golden_State_Warriors a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Golden_State_Warriors_Arena ;
+    nba:playerName "Golden State Warriors" .
+
+nba:Houston_Rockets a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Houston_Rockets_Arena ;
+    nba:playerName "Houston Rockets" .
+
+nba:Miami_Heat a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Eastern_Conference ;
+    nba:hasHomeArena nba:Miami_Heat_Arena ;
+    nba:playerName "Miami Heat" .
+
+nba:Oklahoma_City_Thunder a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Oklahoma_City_Thunder_Arena ;
+    nba:playerName "Oklahoma City Thunder" .
+
+nba:Sacramento_Kings a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Sacramento_Kings_Arena ;
+    nba:playerName "Sacramento Kings" .
+
+nba:Los_Angeles_Lakers a nba:Team,
+        owl:NamedIndividual ;
+    nba:belongsTo nba:Western_Conference ;
+    nba:hasHomeArena nba:Los_Angeles_Lakers_Arena ;
+    nba:playerName "Los Angeles Lakers" .
+
+nba:Eastern_Conference a nba:EasternConference,
+        owl:NamedIndividual .
+
+nba:Western_Conference a nba:WesternConference,
+        owl:NamedIndividual .
+
+nba:Coach a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Arena a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Team a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+
+nba:Player a owl:Class ;
+    rdfs:subClassOf nba:NBA-Member .
+

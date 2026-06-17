@@ -1,0 +1,115 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix nba:  <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+# PlayerShape
+#  - Exactly one hasHeight, strictly typed xsd:double
+#  - At most one playsFor, and it MUST point to a declared nba:Team
+#    individual. This single constraint also catches the empty-URI
+#    / dangling object bug found in the audit, since an untyped
+#    empty node will never satisfy sh:class nba:Team.
+#  - playPosition, if present, must be one of the three valid
+#    position individuals (catches the playPosition/playsPosition
+#    predicate-name split silently dropping data).
+#################################################################
+nba:PlayerShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Player ;
+
+    sh:property [
+        sh:path nba:hasHeight ;
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Every Player must have exactly one hasHeight value typed as xsd:double." ;
+    ] ;
+
+    sh:property [
+        sh:path nba:playsFor ;
+        sh:class nba:Team ;
+        sh:maxCount 1 ;
+        sh:message "playsFor must reference exactly one declared nba:Team individual (no dangling/empty URIs, no duplicate historical teams)." ;
+    ] ;
+
+    sh:property [
+        sh:path nba:playPosition ;
+        sh:in ( nba:Guard nba:Forward nba:Center ) ;
+        sh:maxCount 1 ;
+        sh:message "playPosition must reference exactly one of: Guard, Forward, Center." ;
+    ] ;
+
+    sh:property [
+        sh:path nba:playPosition ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Player is missing a playPosition value (data-completeness warning, not a hard violation)." ;
+    ] ;
+
+    sh:property [
+        sh:path nba:hasJerseyNumber ;
+        sh:datatype xsd:int ;
+        sh:maxCount 1 ;
+        sh:message "hasJerseyNumber, if present, must be a single xsd:int value." ;
+    ] .
+
+
+#################################################################
+# CoachShape
+#  - A Coach may manage at most ONE team
+#################################################################
+nba:CoachShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Coach ;
+
+    sh:property [
+        sh:path nba:coaches ;
+        sh:class nba:Team ;
+        sh:maxCount 1 ;
+        sh:message "A Coach can manage at most one Team." ;
+    ] .
+
+
+#################################################################
+# TeamShape
+#  - Every Team should belong to exactly one Conference
+#  - Every Team can have at most one home arena
+#################################################################
+nba:TeamShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Team ;
+
+    sh:property [
+        sh:path nba:belongsTo ;
+        sh:class nba:Conference ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Team should belong to exactly one Conference." ;
+    ] ;
+
+    sh:property [
+        sh:path nba:hasHomeArena ;
+        sh:class nba:Arena ;
+        sh:maxCount 1 ;
+        sh:message "A Team can have at most one home arena." ;
+    ] .
+
+
+#################################################################
+# ArenaShape
+#  - hasCapacity, when present, must be a positive xsd:int
+#################################################################
+nba:ArenaShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Arena ;
+
+    sh:property [
+        sh:path nba:hasCapacity ;
+        sh:datatype xsd:int ;
+        sh:maxCount 1 ;
+        sh:minInclusive 1 ;
+        sh:message "hasCapacity, if present, must be a positive integer." ;
+    ] .

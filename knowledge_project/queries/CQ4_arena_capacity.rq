@@ -1,0 +1,13 @@
+PREFIX nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/>
+
+# CQ4 - Locate the home arena of a team and verify its seating capacity.
+# OPTIONAL is correctly retained here: hasCapacity is sparsely populated,
+# and an inner join would silently drop teams whose arena lacks a
+# recorded capacity instead of surfacing the gap.
+SELECT ?team ?arena ?capacity
+WHERE {
+  VALUES ?team { nba:Golden_State_Warriors }
+
+  ?team nba:hasHomeArena ?arena .
+  OPTIONAL { ?arena nba:hasCapacity ?capacity }
+}

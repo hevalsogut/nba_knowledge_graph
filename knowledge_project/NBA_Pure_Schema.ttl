@@ -1,0 +1,87 @@
+@prefix nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nba: a owl:Ontology ;
+    rdfs:label "NBA Knowledge Graph Ontology"@en ;
+    rdfs:comment "An integrated ontology for NBA players, coaches, teams, conferences, and arenas."@en .
+
+nba:Center a owl:Class ;
+    rdfs:label "Center"@en ;
+    rdfs:subClassOf nba:Player .
+
+nba:EasternConferance a owl:Class ;
+    rdfs:label "EasternConferance"@en ;
+    rdfs:subClassOf nba:Conference .
+
+nba:Forward a owl:Class ;
+    rdfs:label "Forward"@en ;
+    rdfs:subClassOf nba:Player .
+
+nba:Guard a owl:Class ;
+    rdfs:label "Guard"@en ;
+    rdfs:subClassOf nba:Player .
+
+nba:WesternConferance a owl:Class ;
+    rdfs:label "WesternConferance"@en ;
+    rdfs:subClassOf nba:Conference .
+
+nba:belongsTo a owl:ObjectProperty ;
+    rdfs:label "belongsTo"@en ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Conference .
+
+nba:coaches a owl:ObjectProperty ;
+    rdfs:label "coaches"@en ;
+    rdfs:domain nba:Coach ;
+    rdfs:range nba:Team .
+
+nba:hasCapacity a owl:DatatypeProperty ;
+    rdfs:label "hasCapacity"@en ;
+    rdfs:domain nba:Arena ;
+    rdfs:range xsd:int .
+
+nba:hasHeight a owl:DatatypeProperty ;
+    rdfs:label "hasHeight"@en ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:double .
+
+nba:hasHomeArena a owl:ObjectProperty ;
+    rdfs:label "hasHomeArena"@en ;
+    rdfs:domain nba:Team ;
+    rdfs:range nba:Arena .
+
+nba:hasJerseyNumber a owl:DatatypeProperty ;
+    rdfs:label "hasJerseyNumber"@en ;
+    rdfs:domain nba:Player ;
+    rdfs:range xsd:int .
+
+nba:playPosition a owl:ObjectProperty ;
+    rdfs:label "playPosition"@en ;
+    rdfs:domain nba:Player .
+
+nba:playerName a owl:DatatypeProperty ;
+    rdfs:label "playerName"@en ;
+    rdfs:range xsd:string .
+
+nba:playsFor a owl:ObjectProperty ;
+    rdfs:label "playsFor"@en ;
+    rdfs:domain nba:Player ;
+    rdfs:range nba:Team .
+
+nba:Coach a owl:Class ;
+    rdfs:label "Coach"@en .
+
+nba:Arena a owl:Class ;
+    rdfs:label "Arena"@en .
+
+nba:Conference a owl:Class ;
+    rdfs:label "Conference"@en .
+
+nba:Team a owl:Class ;
+    rdfs:label "Team"@en .
+
+nba:Player a owl:Class ;
+    rdfs:label "Player"@en .
+

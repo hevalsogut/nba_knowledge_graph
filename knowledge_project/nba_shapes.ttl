@@ -1,0 +1,37 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix nba: <http://www.semanticweb.org/veliu/ontologies/2026/3/untitled-ontology-10/> .
+
+# 1. PLAYER SHAPE: Oyuncu verileri için kalite kuralları
+nba:PlayerShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Player ;
+    
+    # Kural A: Her oyuncunun en az bir adet sayısal (double) boy verisi olmalıdır.
+    sh:property [
+        sh:path nba:hasHeight ;
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:message "HATA: Oyuncunun geçerli bir hasHeight (double) değeri bulunmamaktadır!" ;
+    ] ;
+
+    # Kural B: Her oyuncunun en az bir takım ilişkisi (playsFor) bulunmalıdır.
+    sh:property [
+        sh:path nba:playsFor ;
+        sh:class nba:Team ;
+        sh:minCount 1 ;
+        sh:message "HATA: Oyuncu playsFor mülkü ile geçerli bir Team sınıfına bağlanmalıdır!" ;
+    ] .
+
+# 2. COACH SHAPE: Koç verileri için kalite kuralları
+nba:CoachShape
+    a sh:NodeShape ;
+    sh:targetClass nba:Coach ;
+
+    # Kural C: Bir baş antrenör en fazla 1 takım çalıştırabilir (Kardinalite kısıtlaması)
+    sh:property [
+        sh:path nba:coaches ;
+        sh:class nba:Team ;
+        sh:maxCount 1 ;
+        sh:message "HATA: Bir baş antrenör ontolojide birden fazla takımı çalıştıramaz!" ;
+    ] .
